@@ -60,7 +60,8 @@ class PyCLIcreator():
         self.gui_needed = False
         self.main_filename = ''
         self.test_filename = ''
-        self.readme_filename = ''
+        self.notes_filename = ''
+        self.class_name = ''
 
     @staticmethod
     def parse_arguments():
@@ -139,6 +140,53 @@ class PyCLIcreator():
         if self.par_name == '' or self.par_folder == '':
             self.gui_needed = True
         LOGGER.debug('GUI needed: %s', self.gui_needed)
+
+    def create_main_filename(self):
+        pass
+
+    def create_test_filename(self):
+        pass
+
+    def create_notes_filename(self):
+        pass
+
+    def create_class_name(self):
+        pass
+
+    def normalized_name(self, name_str):
+        """Replace non US characters
+
+        Arguments:
+            name_str {str} -- string to normalize
+
+        Returns:
+            str -- normalized string
+        """
+
+        res = name_str
+        res = res.replace('á', 'a')
+        res = res.replace('Á', 'A')
+        res = res.replace('é', 'e')
+        res = res.replace('É', 'E')
+        res = res.replace('ö', 'o')
+        res = res.replace('Ö', 'O')
+        res = res.replace('ő', 'o')
+        res = res.replace('Ő', 'O')
+        res = res.replace('ó', 'o')
+        res = res.replace('Ó', 'O')
+        res = res.replace('ü', 'u')
+        res = res.replace('Ü', 'U')
+        res = res.replace('ű', 'u')
+        res = res.replace('Ű', 'U')
+        res = res.replace('ú', 'u')
+        res = res.replace('Ú', 'U')
+        res = res.replace('í', 'i')
+        res = res.replace('Í', 'i')
+        res = res.replace(' ', '_')
+        res = res.replace('.', '_')
+        res = res.replace(':', '_')
+        return res
+
 
 
 if __name__ == '__main__':
