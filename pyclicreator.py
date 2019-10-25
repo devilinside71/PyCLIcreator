@@ -225,6 +225,37 @@ class PyCLIcreator():
             res = full_res[:-1]
         return res
 
+    @staticmethod
+    def create_folder(folder_name):
+        """Create folder for new project.
+
+        Arguments:
+            folder_name {str} -- target folder name
+
+        Returns:
+            bool -- folder created succesfuly
+        """
+        ret = False
+        LOGGER.debug('Target folder: %s', folder_name)
+        # Check if folder exists
+        folder_exists = os.path.isdir(folder_name)
+        if folder_exists:
+            LOGGER.debug('Folder "%s" already exists', folder_name)
+        else:
+            # create folder
+            try:
+                os.makedirs(folder_name)
+                LOGGER.debug('Folder "%s" created succesfuly', folder_name)
+                ret = True
+            except OSError as os_err:
+                ret = False
+                if os_err.errno != errno.EEXIST:
+                    LOGGER.debug('Cannot create folder %s', folder_name)
+                    LOGGER.debug('Exit program')
+                    raise
+        return ret
+
+
 
 if __name__ == '__main__':
     LOGGER.debug('Start program')
