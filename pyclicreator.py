@@ -79,6 +79,8 @@ class PyCLIcreator():
         self.entry_template = Entry(self.master)
         self.entry_testtemplate = Entry(self.master)
         self.entry_licence = Entry(self.master)
+        self.entry_email = Entry(self.master)
+        self.entry_status = Entry(self.master)
         # TODO SQLite checkbox
 
     @staticmethod
