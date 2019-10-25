@@ -25,3 +25,35 @@
 2019-10-25 18:05:01,435 - pyclicreator - DEBUG - Template: sample.py
 2019-10-25 18:05:01,435 - pyclicreator - DEBUG - GUI needed: True
 2019-10-25 18:05:01,435 - pyclicreator - DEBUG - Exit program
+2019-10-25 18:57:27,822 - pyclicreator - DEBUG - Start program
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Name: Alma
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Description: 
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Folder: 
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - SQLite: False
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Licence: MIT
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - GUI needed: True
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Main filename: alma.py
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Test filename: alma_test.py
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Notes filename: alma_notes.txt
+2019-10-25 18:57:27,825 - pyclicreator - DEBUG - Class name: Alma
+2019-10-25 18:57:27,826 - pyclicreator - DEBUG - Exit program
+2019-10-25 18:58:29,113 - pyclicreator - DEBUG - Start program
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Name: Rázós kütyü
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Description: 
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Folder: 
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - SQLite: False
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Licence: MIT
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - GUI needed: True
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Main filename: razos_kutyu.py
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Test filename: razos_kutyu_test.py
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Notes filename: razos_kutyu_notes.txt
+2019-10-25 18:58:29,117 - pyclicreator - DEBUG - Class name: Razos_Kutyu
+2019-10-25 18:58:29,118 - pyclicreator - DEBUG - Exit program

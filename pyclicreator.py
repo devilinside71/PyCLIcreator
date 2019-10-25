@@ -132,6 +132,14 @@ class PyCLIcreator():
         LOGGER.debug('Template: %s', self.par_template)
         LOGGER.debug('Licence: %s', self.par_licence)
         self.check_if_gui_needed()
+        self.create_main_filename()
+        self.create_test_filename()
+        self.create_notes_filename()
+        self.create_class_name()
+        LOGGER.debug('Main filename: %s', self.main_filename)
+        LOGGER.debug('Test filename: %s', self.test_filename)
+        LOGGER.debug('Notes filename: %s', self.notes_filename)
+        LOGGER.debug('Class name: %s', self.class_name)
 
     def check_if_gui_needed(self):
         """Check if GUI needed becacuse of missing parameters.
@@ -142,18 +150,21 @@ class PyCLIcreator():
         LOGGER.debug('GUI needed: %s', self.gui_needed)
 
     def create_main_filename(self):
-        pass
+        self.main_filename = self.get_normalized_name(
+            self.par_name, 'filename')+'.py'
 
     def create_test_filename(self):
-        pass
+        self.test_filename = self.get_normalized_name(
+            self.par_name, 'filename')+'_test.py'
 
     def create_notes_filename(self):
-        pass
+        self.notes_filename = self.get_normalized_name(
+            self.par_name, 'filename')+'_notes.txt'
 
     def create_class_name(self):
-        pass
+        self.class_name = self.get_normalized_name(self.par_name, 'classname')
 
-    def normalized_name(self, name_str, mode):
+    def get_normalized_name(self, name_str, mode):
         """Replace non US characters
 
         Arguments:
