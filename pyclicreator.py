@@ -70,8 +70,14 @@ class PyCLIcreator():
         self.master = Tk()
         self.entry_folder = Entry(self.master)
         self.entry_name = Entry(self.master)
-        self.entry_desc = Entry(self.master)
+        self.entry_description = Entry(self.master)
         self.entry_author = Entry(self.master)
+        self.entry_copyright = Entry(self.master)
+        self.entry_version = Entry(self.master)
+        self.entry_template = Entry(self.master)
+        self.entry_testtemplate = Entry(self.master)
+        self.entry_licence = Entry(self.master)
+        # TODO SQLite checkbox
 
     @staticmethod
     def parse_arguments():
@@ -188,7 +194,8 @@ class PyCLIcreator():
         """
         self.class_name = self.get_normalized_name(self.par_name, 'classname')
 
-    def get_normalized_name(self, name_str, mode):
+    @staticmethod
+    def get_normalized_name(name_str, mode):
         """Replace non US characters
 
         Arguments:
