@@ -54,7 +54,12 @@ class PyCLIcreator():
         self.par_folder = ''
         self.par_version = '0.0.1'
         self.par_sqlite = False
+        self.par_template = 'sample_01.py'
+
         self.gui_needed = False
+        self.main_filename = ''
+        self.test_filename = ''
+        self.readme_filename = ''
 
     @staticmethod
     def parse_arguments():
@@ -79,6 +84,8 @@ class PyCLIcreator():
                             help='project version number')
         parser.add_argument('-s', '--sqlite', action='store_true',
                             help='sqlite functionality')
+        parser.add_argument('-t', '--template',
+                            help='template filename')
         parser.add_argument('-a1s', '--arg1short',
                             help='arg1 short name')
         parser.add_argument('-a1l', '--arg1long',
@@ -107,7 +114,8 @@ class PyCLIcreator():
             self.par_version = args.version
         if args.sqlite is not None:
             self.par_sqlite = args.sqlite
-        self.check_if_gui_needed()
+        if args.template is not None:
+            self.par_template = args.template
         LOGGER.debug('Name: %s', self.par_name)
         LOGGER.debug('Description: %s', self.par_description)
         LOGGER.debug('Author: %s', self.par_author)
@@ -115,6 +123,8 @@ class PyCLIcreator():
         LOGGER.debug('Folder: %s', self.par_folder)
         LOGGER.debug('Version: %s', self.par_version)
         LOGGER.debug('SQLite: %s', self.par_sqlite)
+        LOGGER.debug('Template: %s', self.par_template)
+        self.check_if_gui_needed()
 
     def check_if_gui_needed(self):
         """Check if GUI needed becacuse of missing parameters.
