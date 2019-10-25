@@ -192,6 +192,8 @@ class PyCLIcreator():
                 data = data.replace('__VERSION__', self.par_version)
                 data = data.replace('__EMAIL__', self.par_email)
                 data = data.replace('__STATUS__', self.par_status)
+                data = data.replace(
+                    '#__ARG1__', self.create_arg_line(args.arg1short, args.arg1long, args.arg1help, args.arg1bool))
 
                 # print(data)
                 text_file = open(self.main_filename, 'w',
@@ -244,6 +246,14 @@ class PyCLIcreator():
         """Create class name.
         """
         self.class_name = self.get_normalized_name(self.par_name, 'classname')
+
+    def create_arg_line(self, argshort, arglong, arghelp, argbool):
+        ret = ''
+        ret = 'parser.add_argument(\'-'+argshort+'\', \'--'+arglong+'\', '
+        if argbool:
+            ret += 'action=\'store_true\', '
+        ret += 'help=\''+arghelp+'\')'
+        return ret
 
     @staticmethod
     def get_normalized_name(name_str, mode):

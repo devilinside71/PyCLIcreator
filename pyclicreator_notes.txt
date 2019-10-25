@@ -7,5 +7,6 @@ python pyclicreator.py --help
 
 from pyclicreator import PyCLIcreator
 
-python pyclicreator.py -n "álom manó" -a "senki" -f "majom"
+python pyclicreator.py -n "álom manó" -a "senki" -f "majom" -a1s "e" -a1l "exput" -a1h "external out"
 
+python pyclicreator.py -n "álom manó" -a "senki" -f "majom" -a1s "e" -a1l "exput" -a1h "external out" -a1b

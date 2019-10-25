@@ -58,6 +58,7 @@ class __PROJECTNAME__():
         """
 
         parser = argparse.ArgumentParser()
+        #__ARG1__
         parser.add_argument('-i', '--input',
                             help='input file')
         parser.add_argument('-o', '--output',

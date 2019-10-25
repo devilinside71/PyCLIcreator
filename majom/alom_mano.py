@@ -43,7 +43,6 @@ LOGGER.addHandler(LOGGER_CH)
 
 class Alom_Mano():
     """Main class.
-
     """
 
     def __init__(self):
@@ -59,6 +58,7 @@ class Alom_Mano():
         """
 
         parser = argparse.ArgumentParser()
+        parser.add_argument('-e', '--exput', action='store_true', help='external out')
         parser.add_argument('-i', '--input',
                             help='input file')
         parser.add_argument('-o', '--output',
