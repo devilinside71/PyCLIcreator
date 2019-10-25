@@ -8,6 +8,8 @@ import errno
 import logging
 import os
 import sys
+from tkinter import Label, Entry, Button, W, END, Tk, filedialog
+
 # __SQLITEIMPORT__
 
 __author__ = 'Laszlo Tamas'
@@ -63,6 +65,13 @@ class PyCLIcreator():
         self.test_filename = ''
         self.notes_filename = ''
         self.class_name = ''
+        self.folder_created_by_dialog = True
+
+        self.master = Tk()
+        self.entry_folder = Entry(self.master)
+        self.entry_name = Entry(self.master)
+        self.entry_desc = Entry(self.master)
+        self.entry_author = Entry(self.master)
 
     @staticmethod
     def parse_arguments():
@@ -255,6 +264,15 @@ class PyCLIcreator():
                     raise
         return ret
 
+    def set_folder(self):
+        """Set the project folder by filedialog.
+        """
+
+        self.par_folder = filedialog.askdirectory()
+        self.entry_folder.delete(0, END)
+        self.entry_folder.insert(0, self.par_folder)
+        LOGGER.debug('Folder: %s', self.par_folder)
+        self.folder_created_by_dialog = True
 
 
 if __name__ == '__main__':
