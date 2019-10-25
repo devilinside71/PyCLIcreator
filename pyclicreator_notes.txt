@@ -1,0 +1,8 @@
+python pyclicreator.py  -f sample_function -v
+
+python pyclicreator_test.py -v
+
+python pyclicreator.py -h
+python pyclicreator.py --help
+
+from pyclicreator import PyCLIcreator
