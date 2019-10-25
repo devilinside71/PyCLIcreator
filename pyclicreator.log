@@ -322,3 +322,132 @@
 2019-10-25 21:26:33,020 - pyclicreator - DEBUG - Target folder: majom
 2019-10-25 21:26:33,020 - pyclicreator - DEBUG - Folder "majom" already exists
 2019-10-25 21:26:33,023 - pyclicreator - DEBUG - Exit program
+2019-10-25 21:48:07,220 - pyclicreator - DEBUG - Start program
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Name: álom manó
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Description: 
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Author: senki
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Folder: majom
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - SQLite: False
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Licence: MIT
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Status: Initial
+2019-10-25 21:48:07,289 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-25 21:48:07,290 - pyclicreator - DEBUG - GUI needed: False
+2019-10-25 21:48:07,290 - pyclicreator - DEBUG - Main filename: majom/alom_mano.py
+2019-10-25 21:48:07,290 - pyclicreator - DEBUG - Test filename: majom/alom_mano_test.py
+2019-10-25 21:48:07,290 - pyclicreator - DEBUG - Notes filename: alom_mano_notes.txt
+2019-10-25 21:48:07,290 - pyclicreator - DEBUG - Class name: Alom_Mano
+2019-10-25 21:48:07,290 - pyclicreator - DEBUG - Target folder: majom
+2019-10-25 21:48:07,290 - pyclicreator - DEBUG - Folder "majom" already exists
+2019-10-25 21:48:07,293 - pyclicreator - DEBUG - Exit program
+2019-10-25 21:48:25,168 - pyclicreator - DEBUG - Start program
+2019-10-25 21:48:25,239 - pyclicreator - DEBUG - Name: álom manó
+2019-10-25 21:48:25,239 - pyclicreator - DEBUG - Description: 
+2019-10-25 21:48:25,239 - pyclicreator - DEBUG - Author: senki
+2019-10-25 21:48:25,239 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Folder: 
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - SQLite: False
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Licence: MIT
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Status: Initial
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - GUI needed: True
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Main filename: /alom_mano.py
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Test filename: /alom_mano_test.py
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Notes filename: alom_mano_notes.txt
+2019-10-25 21:48:25,240 - pyclicreator - DEBUG - Class name: Alom_Mano
+2019-10-25 21:48:33,052 - pyclicreator - DEBUG - Target folder: 
+2019-10-25 21:48:33,053 - pyclicreator - DEBUG - Cannot create folder 
+2019-10-25 21:48:33,053 - pyclicreator - DEBUG - Exit program
+2019-10-25 21:49:44,699 - pyclicreator - DEBUG - Start program
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Name: álom manó
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Description: 
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Author: senki
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Folder: 
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - SQLite: False
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Licence: MIT
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Status: Initial
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-25 21:49:44,769 - pyclicreator - DEBUG - GUI needed: True
+2019-10-25 21:49:44,770 - pyclicreator - DEBUG - Main filename: /alom_mano.py
+2019-10-25 21:49:44,770 - pyclicreator - DEBUG - Test filename: /alom_mano_test.py
+2019-10-25 21:49:44,770 - pyclicreator - DEBUG - Notes filename: alom_mano_notes.txt
+2019-10-25 21:49:44,770 - pyclicreator - DEBUG - Class name: Alom_Mano
+2019-10-25 21:49:50,517 - pyclicreator - DEBUG - Target folder: 
+2019-10-25 21:49:50,518 - pyclicreator - DEBUG - Cannot create folder 
+2019-10-25 21:49:50,518 - pyclicreator - DEBUG - Exit program
+2019-10-25 21:50:48,047 - pyclicreator - DEBUG - Start program
+2019-10-25 21:50:48,117 - pyclicreator - DEBUG - Name: álom manó
+2019-10-25 21:50:48,117 - pyclicreator - DEBUG - Description: 
+2019-10-25 21:50:48,117 - pyclicreator - DEBUG - Author: senki
+2019-10-25 21:50:48,117 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-25 21:50:48,117 - pyclicreator - DEBUG - Folder: 
+2019-10-25 21:50:48,117 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-25 21:50:48,117 - pyclicreator - DEBUG - SQLite: False
+2019-10-25 21:50:48,117 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-25 21:50:48,117 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-25 21:50:48,118 - pyclicreator - DEBUG - Licence: MIT
+2019-10-25 21:50:48,118 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-25 21:50:48,118 - pyclicreator - DEBUG - Status: Initial
+2019-10-25 21:50:48,118 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-25 21:50:48,118 - pyclicreator - DEBUG - GUI needed: True
+2019-10-25 21:50:48,118 - pyclicreator - DEBUG - Main filename: /alom_mano.py
+2019-10-25 21:50:48,118 - pyclicreator - DEBUG - Test filename: /alom_mano_test.py
+2019-10-25 21:50:48,118 - pyclicreator - DEBUG - Notes filename: alom_mano_notes.txt
+2019-10-25 21:50:48,118 - pyclicreator - DEBUG - Class name: Alom_Mano
+2019-10-25 21:51:10,747 - pyclicreator - DEBUG - Start program
+2019-10-25 21:51:10,836 - pyclicreator - DEBUG - Name: álom manó
+2019-10-25 21:51:10,836 - pyclicreator - DEBUG - Description: 
+2019-10-25 21:51:10,836 - pyclicreator - DEBUG - Author: senki
+2019-10-25 21:51:10,836 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-25 21:51:10,836 - pyclicreator - DEBUG - Folder: 
+2019-10-25 21:51:10,836 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-25 21:51:10,837 - pyclicreator - DEBUG - SQLite: False
+2019-10-25 21:51:10,837 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-25 21:51:10,837 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-25 21:51:10,837 - pyclicreator - DEBUG - Licence: MIT
+2019-10-25 21:51:10,837 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-25 21:51:10,837 - pyclicreator - DEBUG - Status: Initial
+2019-10-25 21:51:10,837 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-25 21:51:10,837 - pyclicreator - DEBUG - GUI needed: True
+2019-10-25 21:51:10,837 - pyclicreator - DEBUG - Main filename: /alom_mano.py
+2019-10-25 21:51:10,837 - pyclicreator - DEBUG - Test filename: /alom_mano_test.py
+2019-10-25 21:51:10,838 - pyclicreator - DEBUG - Notes filename: alom_mano_notes.txt
+2019-10-25 21:51:10,838 - pyclicreator - DEBUG - Class name: Alom_Mano
+2019-10-25 21:51:18,683 - pyclicreator - DEBUG - Target folder: 
+2019-10-25 21:51:18,683 - pyclicreator - DEBUG - Cannot create folder 
+2019-10-25 21:51:18,683 - pyclicreator - DEBUG - Exit program
+2019-10-25 21:52:47,515 - pyclicreator - DEBUG - Start program
+2019-10-25 21:52:47,588 - pyclicreator - DEBUG - Name: álom manó
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Description: 
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Author: senki
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Folder: 
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - SQLite: False
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Licence: MIT
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Status: Initial
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - GUI needed: True
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Main filename: /alom_mano.py
+2019-10-25 21:52:47,589 - pyclicreator - DEBUG - Test filename: /alom_mano_test.py
+2019-10-25 21:52:47,590 - pyclicreator - DEBUG - Notes filename: alom_mano_notes.txt
+2019-10-25 21:52:47,590 - pyclicreator - DEBUG - Class name: Alom_Mano
+2019-10-25 21:52:57,443 - pyclicreator - DEBUG - Folder: C:/Users/Molnár Attila/Documents/GitHub/PyCLIcreator/majom
+2019-10-25 21:53:05,283 - pyclicreator - DEBUG - Target folder: C:/Users/Molnár Attila/Documents/GitHub/PyCLIcreator/majom
+2019-10-25 21:53:05,284 - pyclicreator - DEBUG - Folder "C:/Users/Molnár Attila/Documents/GitHub/PyCLIcreator/majom" already exists

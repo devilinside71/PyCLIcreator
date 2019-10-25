@@ -11,6 +11,7 @@ python pyclicreator.py -n "álom manó" -a "senki" -f "majom" -a1s "e" -a1l "exp
 
 python pyclicreator.py -n "álom manó" -a "senki" -f "majom" -a1s "e" -a1l "exput" -a1h "external out" -a1b
 
+python pyclicreator.py -n "álom manó" -a "senki"  -a1s "e" -a1l "exput" -a1h "external out" -a1b
 
 if args.name is not None:
             self.par_name = args.name

@@ -183,6 +183,16 @@ class PyCLIcreator():
         LOGGER.debug('Notes filename: %s', self.notes_filename)
         LOGGER.debug('Class name: %s', self.class_name)
 
+        if self.gui_needed:
+            Label(self.master, text='Folder Name').grid(row=0)
+            self.entry_folder.delete(0, END)
+            self.entry_folder.insert(0, self.par_folder)
+            self.entry_folder.grid(row=0, column=1)
+            Button(self.master, text='Browse', command=self.set_folder).grid(
+                row=0, column=2, sticky=W, pady=4)
+
+            self.master.mainloop()
+
         if self.create_folder(self.par_folder) or self.folder_created_by_dialog:
             # Create main file
             with open(self.par_template, 'r') as myfile:
