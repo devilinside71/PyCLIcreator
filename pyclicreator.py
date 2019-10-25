@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This class module is...
+Create Python3 CLI project
 """
 
 import argparse
@@ -47,8 +47,14 @@ class PyCLIcreator():
     """
 
     def __init__(self):
-        self.par_input = ''
-        self.par_output = ''
+        self.par_name = ''
+        self.par_description = ''
+        self.par_author = 'Laszlo Tamas'
+        self.par_copyright = '(C) 2027'
+        self.par_folder = ''
+        self.par_version = '0.0.1'
+        self.par_sqlite = False
+        self.gui_needed = False
 
     @staticmethod
     def parse_arguments():
@@ -59,28 +65,64 @@ class PyCLIcreator():
         """
 
         parser = argparse.ArgumentParser()
-        parser.add_argument('-i', '--input',
-                            help='input file')
-        parser.add_argument('-o', '--output',
-                            help='output file')
-        parser.add_argument('-v', '--verbose', action='store_true',
-                            help='increase output verbosity')
+        parser.add_argument('-n', '--name',
+                            help='project name')
+        parser.add_argument('-d', '--description',
+                            help='project description')
+        parser.add_argument('-a', '--author',
+                            help='project auhtor')
+        parser.add_argument('-c', '--copyright',
+                            help='copyright note')
+        parser.add_argument('-f', '--folder',
+                            help='project folder')
+        parser.add_argument('-v', '--version',
+                            help='project version number')
+        parser.add_argument('-s', '--sqlite', action='store_true',
+                            help='sqlite functionality')
+        parser.add_argument('-a1s', '--arg1short',
+                            help='arg1 short name')
+        parser.add_argument('-a1l', '--arg1long',
+                            help='arg1 long name')
+        parser.add_argument('-a1h', '--arg1help',
+                            help='arg1 help text')
+        parser.add_argument('-a1b', '--arg1bool',
+                            action='store_true', help='arg1 is boolean')
         return parser.parse_args()
 
     def execute_program(self):
         """Execute the program by arguments.
         """
         args = self.parse_arguments()
-        self.par_input = args.input
-        self.par_output = args.output
-        LOGGER.debug('Input: %s', self.par_input)
-        LOGGER.debug('Output: %s', self.par_output)
+        if args.name is not None:
+            self.par_name = args.name
+        if args.description is not None:
+            self.par_description = args.description
+        if args.author is not None:
+            self.par_author = args.author
+        if args.copyright is not None:
+            self.par_copyright = args.copyright
+        if args.folder is not None:
+            self.par_folder = args.folder
+        if args.version is not None:
+            self.par_version = args.version
+        if args.sqlite is not None:
+            self.par_sqlite = args.sqlite
+        self.check_if_gui_needed()
+        LOGGER.debug('Name: %s', self.par_name)
+        LOGGER.debug('Description: %s', self.par_description)
+        LOGGER.debug('Author: %s', self.par_author)
+        LOGGER.debug('Copyright: %s', self.par_copyright)
+        LOGGER.debug('Folder: %s', self.par_folder)
+        LOGGER.debug('Version: %s', self.par_version)
+        LOGGER.debug('SQLite: %s', self.par_sqlite)
 
-    def sample_function(self):
-        """Sample function
+    def check_if_gui_needed(self):
+        """Check if GUI needed becacuse of missing parameters.
         """
-        res = self.par_input
-        return res
+        self.gui_needed = False
+        if self.par_name == '' or self.par_folder == '':
+            self.gui_needed = True
+        LOGGER.debug('GUI needed: %s', self.gui_needed)
 
 
 if __name__ == '__main__':

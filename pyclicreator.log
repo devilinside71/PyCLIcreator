@@ -1,0 +1,16 @@
+2019-10-25 17:19:30,717 - pyclicreator - DEBUG - Start program
+2019-10-25 17:25:08,839 - pyclicreator - DEBUG - Start program
+2019-10-25 17:37:43,474 - pyclicreator - DEBUG - Start program
+2019-10-25 17:37:43,477 - pyclicreator - DEBUG - Name: Alma
+2019-10-25 17:37:43,477 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-25 17:37:43,477 - pyclicreator - DEBUG - Exit program
+2019-10-25 17:53:42,048 - pyclicreator - DEBUG - Start program
+2019-10-25 17:53:42,051 - pyclicreator - DEBUG - Name: Alma
+2019-10-25 17:53:42,051 - pyclicreator - DEBUG - Description: 
+2019-10-25 17:53:42,051 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-25 17:53:42,059 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-25 17:53:42,059 - pyclicreator - DEBUG - Folder: 
+2019-10-25 17:53:42,059 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-25 17:53:42,059 - pyclicreator - DEBUG - SQLite: False
+2019-10-25 17:53:42,059 - pyclicreator - DEBUG - GUI needed: True
+2019-10-25 17:53:42,059 - pyclicreator - DEBUG - Exit program
