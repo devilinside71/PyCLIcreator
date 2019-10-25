@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-__DESCRIPTION__
+
 """
 
 import argparse
@@ -10,20 +10,20 @@ import os
 import sys
 # __SQLITEIMPORT__
 
-__author__ = '__AUTHOR__'
-__copyright__ = '__COPYRIGHT__, __AUTHOR__'
-__license__ = '__LICENCE__'
-__version__ = '__VERSION__'
-__maintainer__ = '__AUTHOR__'
-__email__ = '__EMAIL__'
-__status__ = '__STATUS__'
+__author__ = 'senki'
+__copyright__ = '(C) 2027, senki'
+__license__ = 'MIT'
+__version__ = '0.0.1'
+__maintainer__ = 'senki'
+__email__ = 'noreply@gmail.com'
+__status__ = 'Initial'
 
-LOGGER = logging.getLogger('__PROJECTNAMELCASE__')
+LOGGER = logging.getLogger('alom_mano')
 # set level for file handling (NOTSET>DEBUG>INFO>WARNING>ERROR>CRITICAL)
 LOGGER.setLevel(logging.DEBUG)
 
 # create file handler which logs even debug messages
-LOGGER_FH = logging.FileHandler('__PROJECTNAMELCASE__.log')
+LOGGER_FH = logging.FileHandler('alom_mano.log')
 
 # create console handler with a higher log level
 LOGGER_CH = logging.StreamHandler()
@@ -41,8 +41,9 @@ LOGGER.addHandler(LOGGER_FH)
 LOGGER.addHandler(LOGGER_CH)
 
 
-class __PROJECTNAME__():
+class Alom_Mano():
     """Main class.
+
     """
 
     def __init__(self):
@@ -84,7 +85,7 @@ class __PROJECTNAME__():
 
 if __name__ == '__main__':
     LOGGER.debug('Start program')
-    PROG = __PROJECTNAME__()
+    PROG = Alom_Mano()
     PROG.execute_program()
     LOGGER.debug('Exit program')
     sys.exit()

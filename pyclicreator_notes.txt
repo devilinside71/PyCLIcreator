@@ -7,5 +7,5 @@ python pyclicreator.py --help
 
 from pyclicreator import PyCLIcreator
 
-python pyclicreator.py -n "álommanó" -a "senki" -f "majom"
+python pyclicreator.py -n "álom manó" -a "senki" -f "majom"
 

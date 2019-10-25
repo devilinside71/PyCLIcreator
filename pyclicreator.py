@@ -59,6 +59,8 @@ class PyCLIcreator():
         self.par_template = 'sample_01.py'
         self.par_testemplate = 'sample_01_test.py'
         self.par_licence = 'MIT'
+        self.par_email = 'noreply@gmail.com'
+        self.par_status = 'Initial'
 
         self.gui_needed = False
         self.main_filename = ''
@@ -108,6 +110,10 @@ class PyCLIcreator():
                             help='test template filename')
         parser.add_argument('-l', '--licence',
                             help='licence type')
+        parser.add_argument('-e', '--email',
+                            help='email of the author')
+        parser.add_argument('-st', '--status',
+                            help='status of the project')
         parser.add_argument('-a1s', '--arg1short',
                             help='arg1 short name')
         parser.add_argument('-a1l', '--arg1long',
@@ -142,6 +148,10 @@ class PyCLIcreator():
             self.par_testemplate = args.testtemplate
         if args.licence is not None:
             self.par_licence = args.licence
+        if args.email is not None:
+            self.par_email = args.email
+        if args.status is not None:
+            self.par_status = args.status
         LOGGER.debug('Name: %s', self.par_name)
         LOGGER.debug('Description: %s', self.par_description)
         LOGGER.debug('Author: %s', self.par_author)
@@ -152,6 +162,8 @@ class PyCLIcreator():
         LOGGER.debug('Template: %s', self.par_template)
         LOGGER.debug('Test template: %s', self.par_testemplate)
         LOGGER.debug('Licence: %s', self.par_licence)
+        LOGGER.debug('Email: %s', self.par_email)
+        LOGGER.debug('Status: %s', self.par_status)
         self.check_if_gui_needed()
 
         self.create_main_filename()
@@ -162,6 +174,41 @@ class PyCLIcreator():
         LOGGER.debug('Test filename: %s', self.test_filename)
         LOGGER.debug('Notes filename: %s', self.notes_filename)
         LOGGER.debug('Class name: %s', self.class_name)
+
+        if self.create_folder(self.par_folder) or self.folder_created_by_dialog:
+            # Create main file
+            with open(self.par_template, 'r') as myfile:
+                data = myfile.read()
+                data = data.replace('__AUTHOR__', self.par_author)
+                data = data.replace('__PROJECTNAME__',
+                                    self.class_name)
+                data = data.replace('__PROJECTNAMELCASE__',
+                                    self.class_name.lower())
+                data = data.replace('__DESCRIPTION__', self.par_description)
+                data = data.replace('__COPYRIGHT__', self.par_copyright)
+                data = data.replace('__LICENCE__', self.par_licence)
+                data = data.replace('__VERSION__', self.par_version)
+                data = data.replace('__EMAIL__', self.par_email)
+                data = data.replace('__STATUS__', self.par_status)
+
+                # print(data)
+                text_file = open(self.main_filename, 'w',
+                                 encoding='utf-8')
+                text_file.write(data)
+                text_file.close()
+            # Create unittest file
+            with open(self.par_testemplate, 'r') as myfile:
+                data = myfile.read()
+                data = data.replace('__PROJECTNAME__',
+                                    self.class_name)
+                data = data.replace('__PROJECTNAMELCASE__',
+                                    self.class_name.lower())
+                data = data.replace('__DESCRIPTION__', self.par_description)
+                # print(data)
+                text_file = open(self.test_filename, 'w',
+                                 encoding='utf-8')
+                text_file.write(data)
+                text_file.close()
 
     def check_if_gui_needed(self):
         """Check if GUI needed becacuse of missing parameters.
@@ -176,12 +223,14 @@ class PyCLIcreator():
         """
         self.main_filename = self.get_normalized_name(
             self.par_name, 'filename')+'.py'
+        self.main_filename = self.par_folder+'/'+self.main_filename
 
     def create_test_filename(self):
         """Create unittest filename.
         """
         self.test_filename = self.get_normalized_name(
             self.par_name, 'filename')+'_test.py'
+        self.test_filename = self.par_folder+'/'+self.test_filename
 
     def create_notes_filename(self):
         """Create notes.txt for command line examples.
