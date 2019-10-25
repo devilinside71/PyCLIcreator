@@ -46,8 +46,8 @@ class __PROJECTNAME__():
     """
 
     def __init__(self):
-        self.par_input = ''
-        self.par_output = ''
+        # __INITARG1__
+        pass
 
     @staticmethod
     def parse_arguments():
@@ -58,11 +58,7 @@ class __PROJECTNAME__():
         """
 
         parser = argparse.ArgumentParser()
-        #__ARG1__
-        parser.add_argument('-i', '--input',
-                            help='input file')
-        parser.add_argument('-o', '--output',
-                            help='output file')
+        # __ARG1__
         parser.add_argument('-v', '--verbose', action='store_true',
                             help='increase output verbosity')
         return parser.parse_args()
@@ -71,16 +67,10 @@ class __PROJECTNAME__():
         """Execute the program by arguments.
         """
         args = self.parse_arguments()
-        self.par_input = args.input
-        self.par_output = args.output
-        LOGGER.debug('Input: %s', self.par_input)
-        LOGGER.debug('Output: %s', self.par_output)
+        # __EXECARG1__
 
-    def sample_function(self):
-        """Sample function
-        """
-        res = self.par_input
-        return res
+        # __EXECLOGARG1__
+        pass
 
 
 if __name__ == '__main__':

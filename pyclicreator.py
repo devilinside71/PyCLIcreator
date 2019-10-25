@@ -61,6 +61,7 @@ class PyCLIcreator():
         self.par_licence = 'MIT'
         self.par_email = 'noreply@gmail.com'
         self.par_status = 'Initial'
+        self.par_forcegui = False
 
         self.gui_needed = False
         self.main_filename = ''
@@ -114,6 +115,8 @@ class PyCLIcreator():
                             help='licence type')
         parser.add_argument('-e', '--email',
                             help='email of the author')
+        parser.add_argument('-g', '--gui',
+                            help='force gui mode')
         parser.add_argument('-st', '--status',
                             help='status of the project')
         parser.add_argument('-a1s', '--arg1short',
@@ -154,6 +157,8 @@ class PyCLIcreator():
             self.par_email = args.email
         if args.status is not None:
             self.par_status = args.status
+        if args.gui is not None:
+            self.par_forcegui = args.gui
         LOGGER.debug('Name: %s', self.par_name)
         LOGGER.debug('Description: %s', self.par_description)
         LOGGER.debug('Author: %s', self.par_author)
@@ -166,6 +171,7 @@ class PyCLIcreator():
         LOGGER.debug('Licence: %s', self.par_licence)
         LOGGER.debug('Email: %s', self.par_email)
         LOGGER.debug('Status: %s', self.par_status)
+        LOGGER.debug('Force GUI mode: %s', self.par_forcegui)
         self.check_if_gui_needed()
 
         self.create_main_filename()
@@ -193,8 +199,13 @@ class PyCLIcreator():
                 data = data.replace('__EMAIL__', self.par_email)
                 data = data.replace('__STATUS__', self.par_status)
                 data = data.replace(
-                    '#__ARG1__', self.create_arg_line(args.arg1short, args.arg1long, args.arg1help, args.arg1bool))
-
+                    '# __ARG1__', self.create_arg_line(args.arg1short, args.arg1long, args.arg1help, args.arg1bool))
+                data = data.replace(
+                    '# __INITARG1__', self.create_init_arg_line(args.arg1long))
+                data = data.replace(
+                    '# __EXECARG1__', self.create_exec_arg_line(args.arg1long))
+                data = data.replace(
+                    '# __EXECLOGARG1__', self.create_execlog_arg_line(args.arg1help, args.arg1long))
                 # print(data)
                 text_file = open(self.main_filename, 'w',
                                  encoding='utf-8')
@@ -218,7 +229,7 @@ class PyCLIcreator():
         """Check if GUI needed becacuse of missing parameters.
         """
         self.gui_needed = False
-        if self.par_name == '' or self.par_folder == '':
+        if self.par_name == '' or self.par_folder == '' or self.par_forcegui:
             self.gui_needed = True
         LOGGER.debug('GUI needed: %s', self.gui_needed)
 
@@ -247,12 +258,57 @@ class PyCLIcreator():
         """
         self.class_name = self.get_normalized_name(self.par_name, 'classname')
 
-    def create_arg_line(self, argshort, arglong, arghelp, argbool):
+    @staticmethod
+    def create_arg_line(argshort, arglong, arghelp, argbool):
+        """Create argumentum line.
+
+        Arguments:
+            argshort {str} -- short name
+            arglong {str} -- long name
+            arghelp {str} -- help text
+            argbool {bool} -- boolean type
+
+        Returns:
+            str -- args line
+        """
         ret = ''
-        ret = 'parser.add_argument(\'-'+argshort+'\', \'--'+arglong+'\', '
-        if argbool:
-            ret += 'action=\'store_true\', '
-        ret += 'help=\''+arghelp+'\')'
+        if argshort != '' and arglong != '' and arghelp != '':
+            ret = 'parser.add_argument(\'-'+argshort+'\', \'--'+arglong+'\', '
+            if argbool:
+                ret += 'action=\'store_true\', '
+            ret += 'help=\''+arghelp+'\')'
+        return ret
+
+    @staticmethod
+    def create_execlog_arg_line(arghelp, arglong):
+        ret = 'LOGGER.debug(\''+arghelp+': %s\', self.par_'+arglong+')'
+        return ret
+
+    @staticmethod
+    def create_exec_arg_line(arglong):
+        """Create execute arg line
+
+        Arguments:
+            arglong {str} -- long name
+
+        Returns:
+            str -- execute args line
+        """
+        ret = 'if args.'+arglong+' is not None:\n            self.par_' + \
+            arglong+' = args.'+arglong
+        return ret
+
+    @staticmethod
+    def create_init_arg_line(arglong):
+        """Create init argumentum line
+
+        Arguments:
+            arglong {str} -- long name
+
+        Returns:
+            str -- init args line
+        """
+        ret = 'self.par_'+arglong+' = \'\''
         return ret
 
     @staticmethod

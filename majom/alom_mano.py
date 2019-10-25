@@ -46,8 +46,8 @@ class Alom_Mano():
     """
 
     def __init__(self):
-        self.par_input = ''
-        self.par_output = ''
+        self.par_exput = ''
+        pass
 
     @staticmethod
     def parse_arguments():
@@ -59,10 +59,6 @@ class Alom_Mano():
 
         parser = argparse.ArgumentParser()
         parser.add_argument('-e', '--exput', action='store_true', help='external out')
-        parser.add_argument('-i', '--input',
-                            help='input file')
-        parser.add_argument('-o', '--output',
-                            help='output file')
         parser.add_argument('-v', '--verbose', action='store_true',
                             help='increase output verbosity')
         return parser.parse_args()
@@ -71,16 +67,11 @@ class Alom_Mano():
         """Execute the program by arguments.
         """
         args = self.parse_arguments()
-        self.par_input = args.input
-        self.par_output = args.output
-        LOGGER.debug('Input: %s', self.par_input)
-        LOGGER.debug('Output: %s', self.par_output)
+        if args.exput is not None:
+            self.par_exput = args.exput
 
-    def sample_function(self):
-        """Sample function
-        """
-        res = self.par_input
-        return res
+        LOGGER.debug('external out: %s', self.par_exput)
+        pass
 
 
 if __name__ == '__main__':
