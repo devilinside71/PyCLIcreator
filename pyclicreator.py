@@ -55,6 +55,7 @@ class PyCLIcreator():
         self.par_version = '0.0.1'
         self.par_sqlite = False
         self.par_template = 'sample_01.py'
+        self.par_testemplate = 'sample_01_test.py'
         self.par_licence = 'MIT'
 
         self.gui_needed = False
@@ -88,6 +89,8 @@ class PyCLIcreator():
                             help='sqlite functionality')
         parser.add_argument('-t', '--template',
                             help='template filename')
+        parser.add_argument('-tt', '--testtemplate',
+                            help='test template filename')
         parser.add_argument('-l', '--licence',
                             help='licence type')
         parser.add_argument('-a1s', '--arg1short',
@@ -120,6 +123,8 @@ class PyCLIcreator():
             self.par_sqlite = args.sqlite
         if args.template is not None:
             self.par_template = args.template
+        if args.testtemplate is not None:
+            self.par_testemplate = args.testtemplate
         if args.licence is not None:
             self.par_licence = args.licence
         LOGGER.debug('Name: %s', self.par_name)
@@ -130,8 +135,10 @@ class PyCLIcreator():
         LOGGER.debug('Version: %s', self.par_version)
         LOGGER.debug('SQLite: %s', self.par_sqlite)
         LOGGER.debug('Template: %s', self.par_template)
+        LOGGER.debug('Test template: %s', self.par_testemplate)
         LOGGER.debug('Licence: %s', self.par_licence)
         self.check_if_gui_needed()
+
         self.create_main_filename()
         self.create_test_filename()
         self.create_notes_filename()
@@ -150,18 +157,26 @@ class PyCLIcreator():
         LOGGER.debug('GUI needed: %s', self.gui_needed)
 
     def create_main_filename(self):
+        """Create main project filename.
+        """
         self.main_filename = self.get_normalized_name(
             self.par_name, 'filename')+'.py'
 
     def create_test_filename(self):
+        """Create unittest filename.
+        """
         self.test_filename = self.get_normalized_name(
             self.par_name, 'filename')+'_test.py'
 
     def create_notes_filename(self):
+        """Create notes.txt for command line examples.
+        """
         self.notes_filename = self.get_normalized_name(
             self.par_name, 'filename')+'_notes.txt'
 
     def create_class_name(self):
+        """Create class name.
+        """
         self.class_name = self.get_normalized_name(self.par_name, 'classname')
 
     def get_normalized_name(self, name_str, mode):
