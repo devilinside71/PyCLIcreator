@@ -153,12 +153,15 @@ class PyCLIcreator():
     def create_class_name(self):
         pass
 
-    def normalized_name(self, name_str):
+    def normalized_name(self, name_str, mode):
         """Replace non US characters
 
         Arguments:
             name_str {str} -- string to normalize
-
+            mode {str} -- conversion mode
+                          normal -- replace non US chars
+                          filename -- no space and lowercase
+                          classname -- PascalCase
         Returns:
             str -- normalized string
         """
@@ -182,11 +185,19 @@ class PyCLIcreator():
         res = res.replace('Ú', 'U')
         res = res.replace('í', 'i')
         res = res.replace('Í', 'i')
-        res = res.replace(' ', '_')
-        res = res.replace('.', '_')
-        res = res.replace(':', '_')
+        if mode != 'normal':
+            res = res.replace(' ', '_')
+            res = res.replace('.', '_')
+            res = res.replace(':', '_')
+        if mode == 'filename':
+            res = res.lower()
+        if mode == 'classname':
+            full_res = ''
+            parts = res.split('_')
+            for part in parts:
+                full_res += part.capitalize()+'_'
+            res = full_res[:-1]
         return res
-
 
 
 if __name__ == '__main__':
