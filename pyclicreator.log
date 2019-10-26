@@ -865,3 +865,31 @@
 2019-10-26 08:08:51,553 - pyclicreator - DEBUG - Target folder: majom
 2019-10-26 08:08:51,554 - pyclicreator - DEBUG - Folder "majom" already exists
 2019-10-26 08:08:51,556 - pyclicreator - DEBUG - Exit program
+2019-10-26 15:57:23,525 - pyclicreator - DEBUG - Start program
+2019-10-26 15:57:23,783 - pyclicreator - DEBUG - Name: 
+2019-10-26 15:57:23,785 - pyclicreator - DEBUG - Description: 
+2019-10-26 15:57:23,785 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-26 15:57:23,785 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-26 15:57:23,786 - pyclicreator - DEBUG - Folder: 
+2019-10-26 15:57:23,786 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-26 15:57:23,786 - pyclicreator - DEBUG - SQLite: False
+2019-10-26 15:57:23,786 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-26 15:57:23,787 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-26 15:57:23,787 - pyclicreator - DEBUG - Licence: MIT
+2019-10-26 15:57:23,787 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-26 15:57:23,787 - pyclicreator - DEBUG - Status: Initial
+2019-10-26 15:57:23,788 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-26 15:57:23,788 - pyclicreator - DEBUG - Main filename: /.py
+2019-10-26 15:57:23,788 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-10-26 15:57:23,789 - pyclicreator - DEBUG - Notes filename: _notes.txt
+2019-10-26 15:57:23,789 - pyclicreator - DEBUG - Class name: 
+2019-10-26 15:57:23,789 - pyclicreator - DEBUG - Predefined: 
+2019-10-26 15:57:23,789 - pyclicreator - DEBUG - ARG1: |||False
+2019-10-26 15:57:23,790 - pyclicreator - DEBUG - ARG2: |||False
+2019-10-26 15:57:23,790 - pyclicreator - DEBUG - ARG3: |||False
+2019-10-26 15:57:23,790 - pyclicreator - DEBUG - ARG4: |||False
+2019-10-26 15:57:23,790 - pyclicreator - DEBUG - ARG5: |||False
+2019-10-26 15:57:23,790 - pyclicreator - DEBUG - GUI needed: True
+2019-10-26 15:57:29,875 - pyclicreator - DEBUG - Target folder: 
+2019-10-26 15:57:29,877 - pyclicreator - DEBUG - Cannot create folder 
+2019-10-26 15:57:29,879 - pyclicreator - DEBUG - Exit program
