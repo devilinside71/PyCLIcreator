@@ -331,52 +331,68 @@ class PyCLIcreator():
                         data = data.replace(
                             '# __EXECARG1__', self.create_exec_arg_line('input'))
                         data = data.replace(
-                            '# __EXECLOGARG1__', self.create_execlog_arg_line('input file', 'input'))
+                            '# __EXECLOGARG1__',
+                            self.create_execlog_arg_line('input file', 'input'))
                 else:
                     data = data.replace(
-                        '# __ARG1__', self.create_arg_line(args.arg1short, args.arg1long, args.arg1help, args.arg1bool))
+                        '# __ARG1__',
+                        self.create_arg_line(args.arg1short,
+                                             args.arg1long, args.arg1help, args.arg1bool))
                     data = data.replace(
                         '# __INITARG1__', self.create_init_arg_line(args.arg1long))
                     data = data.replace(
                         '# __EXECARG1__', self.create_exec_arg_line(args.arg1long))
                     data = data.replace(
-                        '# __EXECLOGARG1__', self.create_execlog_arg_line(args.arg1help, args.arg1long))
+                        '# __EXECLOGARG1__',
+                        self.create_execlog_arg_line(args.arg1help, args.arg1long))
 
                     data = data.replace(
-                        '# __ARG2__', self.create_arg_line(args.arg2short, args.arg2long, args.arg2help, args.arg2bool))
+                        '# __ARG2__',
+                        self.create_arg_line(args.arg2short,
+                                             args.arg2long, args.arg2help, args.arg2bool))
                     data = data.replace(
                         '# __INITARG2__', self.create_init_arg_line(args.arg2long))
                     data = data.replace(
                         '# __EXECARG2__', self.create_exec_arg_line(args.arg2long))
                     data = data.replace(
-                        '# __EXECLOGARG2__', self.create_execlog_arg_line(args.arg2help, args.arg2long))
+                        '# __EXECLOGARG2__',
+                        self.create_execlog_arg_line(args.arg2help, args.arg2long))
 
                     data = data.replace(
-                        '# __ARG3__', self.create_arg_line(args.arg3short, args.arg3long, args.arg3help, args.arg3bool))
+                        '# __ARG3__',
+                        self.create_arg_line(args.arg3short,
+                                             args.arg3long, args.arg3help, args.arg3bool))
                     data = data.replace(
                         '# __INITARG3__', self.create_init_arg_line(args.arg3long))
                     data = data.replace(
                         '# __EXECARG3__', self.create_exec_arg_line(args.arg3long))
                     data = data.replace(
-                        '# __EXECLOGARG3__', self.create_execlog_arg_line(args.arg3help, args.arg3long))
+                        '# __EXECLOGARG3__',
+                        self.create_execlog_arg_line(args.arg3help, args.arg3long))
 
                     data = data.replace(
-                        '# __ARG4__', self.create_arg_line(args.arg4short, args.arg4long, args.arg4help, args.arg4bool))
+                        '# __ARG4__',
+                        self.create_arg_line(args.arg4short,
+                                             args.arg4long, args.arg4help, args.arg4bool))
                     data = data.replace(
                         '# __INITARG4__', self.create_init_arg_line(args.arg4long))
                     data = data.replace(
                         '# __EXECARG4__', self.create_exec_arg_line(args.arg4long))
                     data = data.replace(
-                        '# __EXECLOGARG4__', self.create_execlog_arg_line(args.arg4help, args.arg4long))
+                        '# __EXECLOGARG4__',
+                        self.create_execlog_arg_line(args.arg4help, args.arg4long))
 
                     data = data.replace(
-                        '# __ARG5__', self.create_arg_line(args.arg5short, args.arg5long, args.arg5help, args.arg5bool))
+                        '# __ARG5__',
+                        self.create_arg_line(args.arg5short,
+                                             args.arg5long, args.arg5help, args.arg5bool))
                     data = data.replace(
                         '# __INITARG5__', self.create_init_arg_line(args.arg5long))
                     data = data.replace(
                         '# __EXECARG5__', self.create_exec_arg_line(args.arg5long))
                     data = data.replace(
-                        '# __EXECLOGARG5__', self.create_execlog_arg_line(args.arg5help, args.arg5long))
+                        '# __EXECLOGARG5__',
+                        self.create_execlog_arg_line(args.arg5help, args.arg5long))
 
                 # print(data)
                 text_file = open(self.main_filename, 'w',
@@ -444,7 +460,8 @@ class PyCLIcreator():
             str -- args line
         """
         ret = ''
-        if argshort != '' and arglong != '' and arghelp != '' and argshort != None and arglong != None and arghelp != None:
+        if (argshort != '' and arglong != '' and arghelp != '' and
+                argshort is not None and arglong is not None and arghelp is not None):
             ret = 'parser.add_argument(\'-'+argshort+'\', \'--'+arglong+'\', '
             if argbool:
                 ret += 'action=\'store_true\', '
@@ -453,8 +470,17 @@ class PyCLIcreator():
 
     @staticmethod
     def create_execlog_arg_line(arghelp, arglong):
+        """Create LOGGER line
+
+        Arguments:
+            arghelp {str} -- help text
+            arglong {str} -- long name
+
+        Returns:
+            str -- LOGGER line
+        """
         ret = ''
-        if arglong != '' and arglong != None and arghelp != '' and arghelp != None:
+        if arglong != '' and arglong is not None and arghelp != '' and arghelp is not None:
             ret = 'LOGGER.debug(\''+arghelp+': %s\', self.par_'+arglong+')'
         return ret
 
@@ -469,7 +495,7 @@ class PyCLIcreator():
             str -- execute args line
         """
         ret = ''
-        if arglong != '' and arglong != None:
+        if arglong != '' and arglong is not None:
             ret = 'if args.'+arglong+' is not None:\n            self.par_' + \
                 arglong+' = args.'+arglong
         return ret
@@ -485,7 +511,7 @@ class PyCLIcreator():
             str -- init args line
         """
         ret = ''
-        if arglong != '' and arglong != None:
+        if arglong != '' and arglong is not None:
             ret = 'self.par_'+arglong+' = \'\''
         return ret
 
