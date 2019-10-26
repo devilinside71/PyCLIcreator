@@ -295,6 +295,16 @@ class PyCLIcreator():
         LOGGER.debug('Notes filename: %s', self.notes_filename)
         LOGGER.debug('Class name: %s', self.class_name)
         LOGGER.debug('Predefined: %s', self.par_predefined)
+        LOGGER.debug('ARG1: %s', self.par_arg1s+'|'+self.par_arg1l +
+                     '|'+self.par_arg1help+'|'+str(self.par_arg1bool))
+        LOGGER.debug('ARG2: %s', self.par_arg2s+'|'+self.par_arg2l +
+                     '|'+self.par_arg2help+'|'+str(self.par_arg2bool))
+        LOGGER.debug('ARG3: %s', self.par_arg3s+'|'+self.par_arg3l +
+                     '|'+self.par_arg3help+'|'+str(self.par_arg3bool))
+        LOGGER.debug('ARG4: %s', self.par_arg4s+'|'+self.par_arg4l +
+                     '|'+self.par_arg4help+'|'+str(self.par_arg4bool))
+        LOGGER.debug('ARG5: %s', self.par_arg5s+'|'+self.par_arg5l +
+                     '|'+self.par_arg5help+'|'+str(self.par_arg5bool))
 
         self.check_if_gui_needed()
         if self.gui_needed:
