@@ -16,3 +16,5 @@ python pyclicreator.py -n "álom manó" -a "senki"  -a1s "e" -a1l "exput" -a1h "
 python pyclicreator.py -n "álom manó" -p "IO" -f "majom" 
 
 python pyclicreator.py -n "álom manó" -a "senki"  -a1s "e" -a1l "exput" -a1h "external out" -a1b -a2s "o" -a2l "output" -a2h "kimenet fájl"
+
+python pyclicreator.py -n "álom manó" -a "senki"  -a1s "e" -a1l "exput" -a1h "external out" -a1b -a2s "o" -a2l "output"

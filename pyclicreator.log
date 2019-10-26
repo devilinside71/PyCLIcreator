@@ -893,3 +893,31 @@
 2019-10-26 15:57:29,875 - pyclicreator - DEBUG - Target folder: 
 2019-10-26 15:57:29,877 - pyclicreator - DEBUG - Cannot create folder 
 2019-10-26 15:57:29,879 - pyclicreator - DEBUG - Exit program
+2019-10-26 18:20:34,173 - pyclicreator - DEBUG - Start program
+2019-10-26 18:20:34,564 - pyclicreator - DEBUG - Name: álom manó
+2019-10-26 18:20:34,564 - pyclicreator - DEBUG - Description: 
+2019-10-26 18:20:34,564 - pyclicreator - DEBUG - Author: senki
+2019-10-26 18:20:34,564 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-26 18:20:34,564 - pyclicreator - DEBUG - Folder: 
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - SQLite: False
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Licence: MIT
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Status: Initial
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Main filename: /alom_mano.py
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Test filename: /alom_mano_test.py
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Notes filename: alom_mano_notes.txt
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Class name: Alom_Mano
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - Predefined: 
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - ARG1: e|exput|external out|True
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - ARG2: o|output||False
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - ARG3: |||False
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - ARG4: |||False
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - ARG5: |||False
+2019-10-26 18:20:34,565 - pyclicreator - DEBUG - GUI needed: True
+2019-10-26 18:20:48,493 - pyclicreator - DEBUG - Target folder: 
+2019-10-26 18:20:48,493 - pyclicreator - DEBUG - Cannot create folder 
+2019-10-26 18:20:48,493 - pyclicreator - DEBUG - Exit program

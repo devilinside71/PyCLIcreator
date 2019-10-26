@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# pylint: disable=C0111
 """
 This module tests for pyclicreator.
 pyclicreator module:
