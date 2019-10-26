@@ -8,7 +8,7 @@ import errno
 import logging
 import os
 import sys
-from tkinter import Label, Entry, Button, W, END, Tk, filedialog
+from tkinter import Label, Entry, Button, W, E, END, Tk, filedialog
 
 # __SQLITEIMPORT__
 
@@ -309,12 +309,32 @@ class PyCLIcreator():
 
         self.check_if_gui_needed()
         if self.gui_needed:
-            Label(self.master, text='Folder Name').grid(row=0)
+            Label(self.master, text='Folder Name').grid(row=0, sticky=E)
             self.entry_folder.delete(0, END)
             self.entry_folder.insert(0, self.par_folder)
             self.entry_folder.grid(row=0, column=1)
             Button(self.master, text='Browse', command=self.set_folder).grid(
                 row=0, column=2, sticky=W, pady=4)
+
+            Label(self.master, text='Project Name').grid(row=1, column=0, sticky=E)
+            self.entry_name.delete(0, END)
+            self.entry_name.insert(0, self.par_name)
+            self.entry_name.grid(row=1, column=1)
+
+            Label(self.master, text='Description').grid(row=2, column=0, sticky=E)
+            self.entry_description.delete(0, END)
+            self.entry_description.insert(0, self.par_description)
+            self.entry_description.grid(row=2, column=1)
+
+            Label(self.master, text='Author').grid(row=3, column=0, sticky=E)
+            self.entry_author.delete(0, END)
+            self.entry_author.insert(0, self.par_author)
+            self.entry_author.grid(row=3, column=1)
+
+            Label(self.master, text='Copyright').grid(row=4, column=0, sticky=E)
+            self.entry_copyright.delete(0, END)
+            self.entry_copyright.insert(0, self.par_copyright)
+            self.entry_copyright.grid(row=4, column=1)
 
             self.master.mainloop()
 
