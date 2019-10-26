@@ -10,11 +10,11 @@ import os
 import sys
 # __SQLITEIMPORT__
 
-__author__ = 'senki'
-__copyright__ = '(C) 2027, senki'
+__author__ = 'Laszlo Tamas'
+__copyright__ = '(C) 2027, Laszlo Tamas'
 __license__ = 'MIT'
 __version__ = '0.0.1'
-__maintainer__ = 'senki'
+__maintainer__ = 'Laszlo Tamas'
 __email__ = 'noreply@gmail.com'
 __status__ = 'Initial'
 
@@ -41,12 +41,12 @@ LOGGER.addHandler(LOGGER_FH)
 LOGGER.addHandler(LOGGER_CH)
 
 
-class Alom_Mano():
+class Alom_Mano:
     """Main class.
     """
 
     def __init__(self):
-        self.par_exput = ''
+        self.par_input = ''
         self.par_output = ''
         
         
@@ -62,8 +62,8 @@ class Alom_Mano():
         """
 
         parser = argparse.ArgumentParser()
-        parser.add_argument('-e', '--exput', action='store_true', help='external out')
-        parser.add_argument('-o', '--output', help='kimenet fájl')
+        parser.add_argument('-i', '--input', help='input file')
+        parser.add_argument('-o', '--output', help='output file')
         
         
         
@@ -75,25 +75,29 @@ class Alom_Mano():
         """Execute the program by arguments.
         """
         args = self.parse_arguments()
-        if args.exput is not None:
-            self.par_exput = args.exput
+        if args.input is not None:
+            self.par_input = args.input
         if args.output is not None:
             self.par_output = args.output
         
         
         
 
-        LOGGER.debug('external out: %s', self.par_exput)
-        LOGGER.debug('kimenet fájl: %s', self.par_output)
+        LOGGER.debug('input file: %s', self.par_input)
+        LOGGER.debug('output file: %s', self.par_output)
         
         
         
         pass
 
+    def sample_function(self, input_str):
+        ret = input_str
+        return ret
+
 
 if __name__ == '__main__':
     LOGGER.debug('Start program')
-    PROG = Alom_Mano()
+    PROG = Alom_Mano
     PROG.execute_program()
     LOGGER.debug('Exit program')
     sys.exit()

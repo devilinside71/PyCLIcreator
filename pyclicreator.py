@@ -322,8 +322,8 @@ class PyCLIcreator():
             with open(self.par_template, 'r') as myfile:
                 data = myfile.read()
                 data = data.replace('__AUTHOR__', self.par_author)
-                data = data.replace('__PROJECTNAME__',
-                                    self.class_name)
+                data = data.replace('ProjectName()',
+                                    self.class_name+'()')
                 data = data.replace('__PROJECTNAMELCASE__',
                                     self.class_name.lower())
                 data = data.replace('__DESCRIPTION__', self.par_description)
@@ -343,6 +343,28 @@ class PyCLIcreator():
                         data = data.replace(
                             '# __EXECLOGARG1__',
                             self.create_execlog_arg_line('input file', 'input'))
+                        data = data.replace(
+                            '# __ARG2__', self.create_arg_line('o', 'output', 'output file', False))
+                        data = data.replace(
+                            '# __INITARG2__', self.create_init_arg_line('output'))
+                        data = data.replace(
+                            '# __EXECARG2__', self.create_exec_arg_line('output'))
+                        data = data.replace(
+                            '# __EXECLOGARG2__',
+                            self.create_execlog_arg_line('output file', 'output'))
+                        data = data.replace('# __ARG3__', '')
+                        data = data.replace('# __INITARG3__', '')
+                        data = data.replace('# __EXECARG3__', '')
+                        data = data.replace('# __EXECLOGARG3__', '')
+                        data = data.replace('# __ARG4__', '')
+                        data = data.replace('# __INITARG4__', '')
+                        data = data.replace('# __EXECARG4__', '')
+                        data = data.replace('# __EXECLOGARG4__', '')
+                        data = data.replace('# __ARG5__', '')
+                        data = data.replace('# __INITARG5__', '')
+                        data = data.replace('# __EXECARG5__', '')
+                        data = data.replace('# __EXECLOGARG5__', '')
+
                 else:
                     data = data.replace(
                         '# __ARG1__',

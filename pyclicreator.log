@@ -921,3 +921,87 @@
 2019-10-26 18:20:48,493 - pyclicreator - DEBUG - Target folder: 
 2019-10-26 18:20:48,493 - pyclicreator - DEBUG - Cannot create folder 
 2019-10-26 18:20:48,493 - pyclicreator - DEBUG - Exit program
+2019-10-26 18:30:20,249 - pyclicreator - DEBUG - Start program
+2019-10-26 18:30:20,302 - pyclicreator - DEBUG - Name: álom manó
+2019-10-26 18:30:20,302 - pyclicreator - DEBUG - Description: 
+2019-10-26 18:30:20,302 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-26 18:30:20,302 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-26 18:30:20,302 - pyclicreator - DEBUG - Folder: majom
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - SQLite: False
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Licence: MIT
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Status: Initial
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Main filename: majom/alom_mano.py
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Test filename: majom/alom_mano_test.py
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Notes filename: alom_mano_notes.txt
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Class name: Alom_Mano
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - Predefined: IO
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - ARG1: |||False
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - ARG2: |||False
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - ARG3: |||False
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - ARG4: |||False
+2019-10-26 18:30:20,303 - pyclicreator - DEBUG - ARG5: |||False
+2019-10-26 18:30:20,304 - pyclicreator - DEBUG - GUI needed: False
+2019-10-26 18:30:20,304 - pyclicreator - DEBUG - Target folder: majom
+2019-10-26 18:30:20,304 - pyclicreator - DEBUG - Folder "majom" already exists
+2019-10-26 18:30:20,314 - pyclicreator - DEBUG - Exit program
+2019-10-26 18:42:16,702 - pyclicreator - DEBUG - Start program
+2019-10-26 18:42:16,754 - pyclicreator - DEBUG - Name: álom manó
+2019-10-26 18:42:16,754 - pyclicreator - DEBUG - Description: 
+2019-10-26 18:42:16,754 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-26 18:42:16,754 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-26 18:42:16,754 - pyclicreator - DEBUG - Folder: majom
+2019-10-26 18:42:16,754 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-26 18:42:16,754 - pyclicreator - DEBUG - SQLite: False
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Licence: MIT
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Status: Initial
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Main filename: majom/alom_mano.py
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Test filename: majom/alom_mano_test.py
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Notes filename: alom_mano_notes.txt
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Class name: Alom_Mano
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Predefined: IO
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - ARG1: |||False
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - ARG2: |||False
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - ARG3: |||False
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - ARG4: |||False
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - ARG5: |||False
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - GUI needed: False
+2019-10-26 18:42:16,755 - pyclicreator - DEBUG - Target folder: majom
+2019-10-26 18:42:16,756 - pyclicreator - DEBUG - Folder "majom" already exists
+2019-10-26 18:42:16,757 - pyclicreator - DEBUG - Exit program
+2019-10-26 18:47:38,508 - pyclicreator - DEBUG - Start program
+2019-10-26 18:47:38,561 - pyclicreator - DEBUG - Name: álom manó
+2019-10-26 18:47:38,561 - pyclicreator - DEBUG - Description: 
+2019-10-26 18:47:38,561 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-26 18:47:38,561 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-26 18:47:38,561 - pyclicreator - DEBUG - Folder: majom
+2019-10-26 18:47:38,561 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-26 18:47:38,561 - pyclicreator - DEBUG - SQLite: False
+2019-10-26 18:47:38,561 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-26 18:47:38,561 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Licence: MIT
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Status: Initial
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Main filename: majom/alom_mano.py
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Test filename: majom/alom_mano_test.py
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Notes filename: alom_mano_notes.txt
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Class name: Alom_Mano
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Predefined: IO
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - ARG1: |||False
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - ARG2: |||False
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - ARG3: |||False
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - ARG4: |||False
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - ARG5: |||False
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - GUI needed: False
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Target folder: majom
+2019-10-26 18:47:38,562 - pyclicreator - DEBUG - Folder "majom" already exists
+2019-10-26 18:47:38,564 - pyclicreator - DEBUG - Exit program

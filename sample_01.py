@@ -41,7 +41,7 @@ LOGGER.addHandler(LOGGER_FH)
 LOGGER.addHandler(LOGGER_CH)
 
 
-class __PROJECTNAME__():
+class ProjectName():
     """Main class.
     """
 
@@ -88,10 +88,22 @@ class __PROJECTNAME__():
         # __EXECLOGARG5__
         pass
 
+    def sample_function(self, input_str):
+        """Sample function
+        
+        Arguments:
+            input_str {str} -- input string
+        
+        Returns:
+            str -- result string
+        """
+        ret = input_str
+        return ret
+
 
 if __name__ == '__main__':
     LOGGER.debug('Start program')
-    PROG = __PROJECTNAME__()
+    PROG = ProjectName()
     PROG.execute_program()
     LOGGER.debug('Exit program')
     sys.exit()

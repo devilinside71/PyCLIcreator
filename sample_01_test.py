@@ -9,7 +9,7 @@ import unittest
 import __PROJECTNAMELCASE__
 
 
-class testFunctions(unittest.TestCase):
+class TestFunctions(unittest.TestCase):
     """Test cases.
 
     Arguments:
@@ -17,15 +17,19 @@ class testFunctions(unittest.TestCase):
     """
 
     def setUp(self):
-        self.test_str_01 = 'input text'
+        self.test_class = __PROJECTNAMELCASE__.__PROJECTNAME__()
 
-    def test_sample_function(self):
-        """Test01
+    def test_sample_function_01(self):
+        """Test01 for sample_function
         """
 
-        test_class = __PROJECTNAMELCASE__.__PROJECTNAME__()
-        test_class.par_input = self.test_str_01
-        self.assertEqual(test_class.sample_function(), 'inp text')
+        self.assertEqual(self.test_class.sample_function('sample result'), 'sample result')
+
+    def test_sample_function_02(self):
+        """Test02 for sample_function
+        """
+
+        self.assertEqual(self.test_class.sample_function('sample result2'), 'sample wrong result2')
 
 
 if __name__ == '__main__':
