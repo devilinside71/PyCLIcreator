@@ -41,7 +41,7 @@ LOGGER.addHandler(LOGGER_FH)
 LOGGER.addHandler(LOGGER_CH)
 
 
-class Alom_Mano:
+class Alom_Mano():
     """Main class.
     """
 
@@ -91,13 +91,21 @@ class Alom_Mano:
         pass
 
     def sample_function(self, input_str):
+        """Sample function
+        
+        Arguments:
+            input_str {str} -- input string
+        
+        Returns:
+            str -- result string
+        """
         ret = input_str
         return ret
 
 
 if __name__ == '__main__':
     LOGGER.debug('Start program')
-    PROG = Alom_Mano
+    PROG = Alom_Mano()
     PROG.execute_program()
     LOGGER.debug('Exit program')
     sys.exit()

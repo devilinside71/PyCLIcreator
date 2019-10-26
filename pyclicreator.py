@@ -58,6 +58,7 @@ class PyCLIcreator():
         self.par_sqlite = False
         self.par_template = 'sample_01.py'
         self.par_testemplate = 'sample_01_test.py'
+        self.par_notestemplate = 'sample_01_notes.txt'
         self.par_licence = 'MIT'
         self.par_email = 'noreply@gmail.com'
         self.par_status = 'Initial'
@@ -444,6 +445,19 @@ class PyCLIcreator():
                                  encoding='utf-8')
                 text_file.write(data)
                 text_file.close()
+            # Create notes file
+            with open(self.par_notestemplate, 'r') as myfile:
+                data = myfile.read()
+                data = data.replace('__PROJECTNAME__',
+                                    self.class_name)
+                data = data.replace('__PROJECTNAMELCASE__',
+                                    self.class_name.lower())
+                data = data.replace('__DESCRIPTION__', self.par_description)
+                # print(data)
+                text_file = open(self.notes_filename, 'w',
+                                 encoding='utf-8')
+                text_file.write(data)
+                text_file.close()
 
     def check_if_gui_needed(self):
         """Check if GUI needed becacuse of missing parameters.
@@ -472,6 +486,7 @@ class PyCLIcreator():
         """
         self.notes_filename = self.get_normalized_name(
             self.par_name, 'filename')+'_notes.txt'
+        self.notes_filename = self.par_folder+'/'+self.notes_filename
 
     def create_class_name(self):
         """Create class name.
