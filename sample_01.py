@@ -47,6 +47,10 @@ class __PROJECTNAME__():
 
     def __init__(self):
         # __INITARG1__
+        # __INITARG2__
+        # __INITARG3__
+        # __INITARG4__
+        # __INITARG5__
         pass
 
     @staticmethod
@@ -59,6 +63,10 @@ class __PROJECTNAME__():
 
         parser = argparse.ArgumentParser()
         # __ARG1__
+        # __ARG2__
+        # __ARG3__
+        # __ARG4__
+        # __ARG5__
         parser.add_argument('-v', '--verbose', action='store_true',
                             help='increase output verbosity')
         return parser.parse_args()
@@ -68,8 +76,16 @@ class __PROJECTNAME__():
         """
         args = self.parse_arguments()
         # __EXECARG1__
+        # __EXECARG2__
+        # __EXECARG3__
+        # __EXECARG4__
+        # __EXECARG5__
 
         # __EXECLOGARG1__
+        # __EXECLOGARG2__
+        # __EXECLOGARG3__
+        # __EXECLOGARG4__
+        # __EXECLOGARG5__
         pass
 
 

@@ -47,6 +47,10 @@ class Alom_Mano():
 
     def __init__(self):
         self.par_exput = ''
+        self.par_output = ''
+        
+        
+        
         pass
 
     @staticmethod
@@ -59,6 +63,10 @@ class Alom_Mano():
 
         parser = argparse.ArgumentParser()
         parser.add_argument('-e', '--exput', action='store_true', help='external out')
+        parser.add_argument('-o', '--output', help='kimenet fájl')
+        
+        
+        
         parser.add_argument('-v', '--verbose', action='store_true',
                             help='increase output verbosity')
         return parser.parse_args()
@@ -69,8 +77,17 @@ class Alom_Mano():
         args = self.parse_arguments()
         if args.exput is not None:
             self.par_exput = args.exput
+        if args.output is not None:
+            self.par_output = args.output
+        
+        
+        
 
         LOGGER.debug('external out: %s', self.par_exput)
+        LOGGER.debug('kimenet fájl: %s', self.par_output)
+        
+        
+        
         pass
 
 

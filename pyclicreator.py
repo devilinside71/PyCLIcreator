@@ -62,6 +62,32 @@ class PyCLIcreator():
         self.par_email = 'noreply@gmail.com'
         self.par_status = 'Initial'
         self.par_forcegui = False
+        self.par_predefined = ''
+
+        self.par_arg1s = ''
+        self.par_arg1l = ''
+        self.par_arg1help = ''
+        self.par_arg1bool = False
+
+        self.par_arg2s = ''
+        self.par_arg2l = ''
+        self.par_arg2help = ''
+        self.par_arg2bool = False
+
+        self.par_arg3s = ''
+        self.par_arg3l = ''
+        self.par_arg3help = ''
+        self.par_arg3bool = False
+
+        self.par_arg4s = ''
+        self.par_arg4l = ''
+        self.par_arg4help = ''
+        self.par_arg4bool = False
+
+        self.par_arg5s = ''
+        self.par_arg5l = ''
+        self.par_arg5help = ''
+        self.par_arg5bool = False
 
         self.gui_needed = False
         self.main_filename = ''
@@ -117,6 +143,8 @@ class PyCLIcreator():
                             help='email of the author')
         parser.add_argument('-g', '--gui',
                             help='force gui mode')
+        parser.add_argument('-p', '--predefined',
+                            help='predefined settings >> IO:input-output file')
         parser.add_argument('-st', '--status',
                             help='status of the project')
         parser.add_argument('-a1s', '--arg1short',
@@ -127,6 +155,43 @@ class PyCLIcreator():
                             help='arg1 help text')
         parser.add_argument('-a1b', '--arg1bool',
                             action='store_true', help='arg1 is boolean')
+
+        parser.add_argument('-a2s', '--arg2short',
+                            help='arg2 short name')
+        parser.add_argument('-a2l', '--arg2long',
+                            help='arg2 long name')
+        parser.add_argument('-a2h', '--arg2help',
+                            help='arg2 help text')
+        parser.add_argument('-a2b', '--arg2bool',
+                            action='store_true', help='arg2 is boolean')
+
+        parser.add_argument('-a3s', '--arg3short',
+                            help='arg3 short name')
+        parser.add_argument('-a3l', '--arg3long',
+                            help='arg3 long name')
+        parser.add_argument('-a3h', '--arg3help',
+                            help='arg3 help text')
+        parser.add_argument('-a3b', '--arg3bool',
+                            action='store_true', help='arg3 is boolean')
+
+        parser.add_argument('-a4s', '--arg4short',
+                            help='arg4 short name')
+        parser.add_argument('-a4l', '--arg4long',
+                            help='arg4 long name')
+        parser.add_argument('-a4h', '--arg4help',
+                            help='arg4 help text')
+        parser.add_argument('-a4b', '--arg4bool',
+                            action='store_true', help='arg4 is boolean')
+
+        parser.add_argument('-a5s', '--arg5short',
+                            help='arg5 short name')
+        parser.add_argument('-a5l', '--arg5long',
+                            help='arg5 long name')
+        parser.add_argument('-a5h', '--arg5help',
+                            help='arg5 help text')
+        parser.add_argument('-a5b', '--arg5bool',
+                            action='store_true', help='arg5 is boolean')
+
         return parser.parse_args()
 
     def execute_program(self):
@@ -159,6 +224,54 @@ class PyCLIcreator():
             self.par_status = args.status
         if args.gui is not None:
             self.par_forcegui = args.gui
+        if args.predefined is not None:
+            self.par_predefined = args.predefined
+
+        if args.arg1short is not None:
+            self.par_arg1s = args.arg1short
+        if args.arg1long is not None:
+            self.par_arg1l = args.arg1long
+        if args.arg1help is not None:
+            self.par_arg1help = args.arg1help
+        if args.arg1bool is not None:
+            self.par_arg1bool = args.arg1bool
+
+        if args.arg2short is not None:
+            self.par_arg2s = args.arg2short
+        if args.arg2long is not None:
+            self.par_arg2l = args.arg2long
+        if args.arg2help is not None:
+            self.par_arg2help = args.arg2help
+        if args.arg2bool is not None:
+            self.par_arg2bool = args.arg2bool
+
+        if args.arg3short is not None:
+            self.par_arg3s = args.arg3short
+        if args.arg3long is not None:
+            self.par_arg3l = args.arg3long
+        if args.arg3help is not None:
+            self.par_arg3help = args.arg3help
+        if args.arg3bool is not None:
+            self.par_arg3bool = args.arg3bool
+
+        if args.arg4short is not None:
+            self.par_arg4s = args.arg4short
+        if args.arg4long is not None:
+            self.par_arg4l = args.arg4long
+        if args.arg4help is not None:
+            self.par_arg4help = args.arg4help
+        if args.arg4bool is not None:
+            self.par_arg4bool = args.arg4bool
+
+        if args.arg5short is not None:
+            self.par_arg5s = args.arg5short
+        if args.arg5long is not None:
+            self.par_arg5l = args.arg5long
+        if args.arg5help is not None:
+            self.par_arg5help = args.arg5help
+        if args.arg5bool is not None:
+            self.par_arg5bool = args.arg5bool
+
         LOGGER.debug('Name: %s', self.par_name)
         LOGGER.debug('Description: %s', self.par_description)
         LOGGER.debug('Author: %s', self.par_author)
@@ -172,7 +285,6 @@ class PyCLIcreator():
         LOGGER.debug('Email: %s', self.par_email)
         LOGGER.debug('Status: %s', self.par_status)
         LOGGER.debug('Force GUI mode: %s', self.par_forcegui)
-        self.check_if_gui_needed()
 
         self.create_main_filename()
         self.create_test_filename()
@@ -182,7 +294,9 @@ class PyCLIcreator():
         LOGGER.debug('Test filename: %s', self.test_filename)
         LOGGER.debug('Notes filename: %s', self.notes_filename)
         LOGGER.debug('Class name: %s', self.class_name)
+        LOGGER.debug('Predefined: %s', self.par_predefined)
 
+        self.check_if_gui_needed()
         if self.gui_needed:
             Label(self.master, text='Folder Name').grid(row=0)
             self.entry_folder.delete(0, END)
@@ -208,14 +322,62 @@ class PyCLIcreator():
                 data = data.replace('__VERSION__', self.par_version)
                 data = data.replace('__EMAIL__', self.par_email)
                 data = data.replace('__STATUS__', self.par_status)
-                data = data.replace(
-                    '# __ARG1__', self.create_arg_line(args.arg1short, args.arg1long, args.arg1help, args.arg1bool))
-                data = data.replace(
-                    '# __INITARG1__', self.create_init_arg_line(args.arg1long))
-                data = data.replace(
-                    '# __EXECARG1__', self.create_exec_arg_line(args.arg1long))
-                data = data.replace(
-                    '# __EXECLOGARG1__', self.create_execlog_arg_line(args.arg1help, args.arg1long))
+                if self.par_predefined != '':
+                    if self.par_predefined == 'IO':
+                        data = data.replace(
+                            '# __ARG1__', self.create_arg_line('i', 'input', 'input file', False))
+                        data = data.replace(
+                            '# __INITARG1__', self.create_init_arg_line('input'))
+                        data = data.replace(
+                            '# __EXECARG1__', self.create_exec_arg_line('input'))
+                        data = data.replace(
+                            '# __EXECLOGARG1__', self.create_execlog_arg_line('input file', 'input'))
+                else:
+                    data = data.replace(
+                        '# __ARG1__', self.create_arg_line(args.arg1short, args.arg1long, args.arg1help, args.arg1bool))
+                    data = data.replace(
+                        '# __INITARG1__', self.create_init_arg_line(args.arg1long))
+                    data = data.replace(
+                        '# __EXECARG1__', self.create_exec_arg_line(args.arg1long))
+                    data = data.replace(
+                        '# __EXECLOGARG1__', self.create_execlog_arg_line(args.arg1help, args.arg1long))
+
+                    data = data.replace(
+                        '# __ARG2__', self.create_arg_line(args.arg2short, args.arg2long, args.arg2help, args.arg2bool))
+                    data = data.replace(
+                        '# __INITARG2__', self.create_init_arg_line(args.arg2long))
+                    data = data.replace(
+                        '# __EXECARG2__', self.create_exec_arg_line(args.arg2long))
+                    data = data.replace(
+                        '# __EXECLOGARG2__', self.create_execlog_arg_line(args.arg2help, args.arg2long))
+
+                    data = data.replace(
+                        '# __ARG3__', self.create_arg_line(args.arg3short, args.arg3long, args.arg3help, args.arg3bool))
+                    data = data.replace(
+                        '# __INITARG3__', self.create_init_arg_line(args.arg3long))
+                    data = data.replace(
+                        '# __EXECARG3__', self.create_exec_arg_line(args.arg3long))
+                    data = data.replace(
+                        '# __EXECLOGARG3__', self.create_execlog_arg_line(args.arg3help, args.arg3long))
+
+                    data = data.replace(
+                        '# __ARG4__', self.create_arg_line(args.arg4short, args.arg4long, args.arg4help, args.arg4bool))
+                    data = data.replace(
+                        '# __INITARG4__', self.create_init_arg_line(args.arg4long))
+                    data = data.replace(
+                        '# __EXECARG4__', self.create_exec_arg_line(args.arg4long))
+                    data = data.replace(
+                        '# __EXECLOGARG4__', self.create_execlog_arg_line(args.arg4help, args.arg4long))
+
+                    data = data.replace(
+                        '# __ARG5__', self.create_arg_line(args.arg5short, args.arg5long, args.arg5help, args.arg5bool))
+                    data = data.replace(
+                        '# __INITARG5__', self.create_init_arg_line(args.arg5long))
+                    data = data.replace(
+                        '# __EXECARG5__', self.create_exec_arg_line(args.arg5long))
+                    data = data.replace(
+                        '# __EXECLOGARG5__', self.create_execlog_arg_line(args.arg5help, args.arg5long))
+
                 # print(data)
                 text_file = open(self.main_filename, 'w',
                                  encoding='utf-8')
@@ -282,7 +444,7 @@ class PyCLIcreator():
             str -- args line
         """
         ret = ''
-        if argshort != '' and arglong != '' and arghelp != '':
+        if argshort != '' and arglong != '' and arghelp != '' and argshort != None and arglong != None and arghelp != None:
             ret = 'parser.add_argument(\'-'+argshort+'\', \'--'+arglong+'\', '
             if argbool:
                 ret += 'action=\'store_true\', '
@@ -291,7 +453,9 @@ class PyCLIcreator():
 
     @staticmethod
     def create_execlog_arg_line(arghelp, arglong):
-        ret = 'LOGGER.debug(\''+arghelp+': %s\', self.par_'+arglong+')'
+        ret = ''
+        if arglong != '' and arglong != None and arghelp != '' and arghelp != None:
+            ret = 'LOGGER.debug(\''+arghelp+': %s\', self.par_'+arglong+')'
         return ret
 
     @staticmethod
@@ -304,8 +468,10 @@ class PyCLIcreator():
         Returns:
             str -- execute args line
         """
-        ret = 'if args.'+arglong+' is not None:\n            self.par_' + \
-            arglong+' = args.'+arglong
+        ret = ''
+        if arglong != '' and arglong != None:
+            ret = 'if args.'+arglong+' is not None:\n            self.par_' + \
+                arglong+' = args.'+arglong
         return ret
 
     @staticmethod
@@ -318,7 +484,9 @@ class PyCLIcreator():
         Returns:
             str -- init args line
         """
-        ret = 'self.par_'+arglong+' = \'\''
+        ret = ''
+        if arglong != '' and arglong != None:
+            ret = 'self.par_'+arglong+' = \'\''
         return ret
 
     @staticmethod
