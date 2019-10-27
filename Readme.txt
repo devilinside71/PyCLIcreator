@@ -1,6 +1,7 @@
 Az SQLite külön sample legyen
 
 Test without GUI
+Doxygen
 
         self.par_name
         self.par_description
