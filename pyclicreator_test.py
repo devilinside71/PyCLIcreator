@@ -57,6 +57,14 @@ class TestFunctions(unittest.TestCase):
         self.assertEqual(self.test_class.create_init_arg_line(
             'input'), 'self.par_input = \'\'')
 
+    def test_arg_valid_1(self):
+        self.assertEqual(self.test_class.arg_valid(
+            'i', 'input', 'help', False), True)
+
+    def test_arg_valid_2(self):
+        self.assertEqual(self.test_class.arg_valid(
+            'i', 'input', '', False), False)
+
 
 if __name__ == '__main__':
     unittest.main()

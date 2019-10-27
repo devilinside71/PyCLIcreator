@@ -419,71 +419,107 @@ class PyCLIcreator():
                         data = data.replace('# __EXECLOGARG5__', '')
 
                 else:
-                    data = data.replace(
-                        '# __ARG1__',
-                        self.create_arg_line(self.par_arg1s,
-                                             self.par_arg1l, self.par_arg1help,
-                                             self.par_arg1bool))
-                    data = data.replace(
-                        '# __INITARG1__', self.create_init_arg_line(
-                            self.par_arg1l))
-                    data = data.replace(
-                        '# __EXECARG1__', self.create_exec_arg_line(self.par_arg1l))
-                    data = data.replace(
-                        '# __EXECLOGARG1__',
-                        self.create_execlog_arg_line(self.par_arg1help, self.par_arg1l))
+                    if self.arg_valid(self.par_arg1s, self.par_arg2l,
+                                      self.par_arg1help, self.par_arg1bool):
+                        data = data.replace(
+                            '# __ARG1__',
+                            self.create_arg_line(self.par_arg1s,
+                                                 self.par_arg1l, self.par_arg1help,
+                                                 self.par_arg1bool))
+                        data = data.replace(
+                            '# __INITARG1__', self.create_init_arg_line(
+                                self.par_arg1l))
+                        data = data.replace(
+                            '# __EXECARG1__', self.create_exec_arg_line(self.par_arg1l))
+                        data = data.replace(
+                            '# __EXECLOGARG1__',
+                            self.create_execlog_arg_line(self.par_arg1help, self.par_arg1l))
+                    else:
+                        data = data.replace('# __ARG1__', '')
+                        data = data.replace('# __INITARG1__', '')
+                        data = data.replace('# __EXECARG1__', '')
+                        data = data.replace('# __EXECLOGARG1__', '')
+                    if self.arg_valid(self.par_arg2s, self.par_arg2l,
+                                      self.par_arg2help, self.par_arg2bool):
+                        data = data.replace(
+                            '# __ARG2__',
+                            self.create_arg_line(self.par_arg2s,
+                                                 self.par_arg2l, self.par_arg2help,
+                                                 self.par_arg2bool))
+                        data = data.replace(
+                            '# __INITARG2__', self.create_init_arg_line(
+                                self.par_arg2l))
+                        data = data.replace(
+                            '# __EXECARG2__', self.create_exec_arg_line(self.par_arg2l))
+                        data = data.replace(
+                            '# __EXECLOGARG2__',
+                            self.create_execlog_arg_line(self.par_arg2help, self.par_arg2l))
+                    else:
+                        data = data.replace('# __ARG2__', '')
+                        data = data.replace('# __INITARG2__', '')
+                        data = data.replace('# __EXECARG2__', '')
+                        data = data.replace('# __EXECLOGARG2__', '')
+                    if self.arg_valid(self.par_arg3s, self.par_arg3l,
+                                      self.par_arg3help, self.par_arg3bool):
+                        data = data.replace(
+                            '# __ARG3__',
+                            self.create_arg_line(self.par_arg3s,
+                                                 self.par_arg3l, self.par_arg3help,
+                                                 self.par_arg3bool))
+                        data = data.replace(
+                            '# __INITARG3__', self.create_init_arg_line(
+                                self.par_arg3l))
+                        data = data.replace(
+                            '# __EXECARG3__', self.create_exec_arg_line(self.par_arg3l))
+                        data = data.replace(
+                            '# __EXECLOGARG3__',
+                            self.create_execlog_arg_line(self.par_arg3help, self.par_arg3l))
+                    else:
+                        data = data.replace('# __ARG3__', '')
+                        data = data.replace('# __INITARG3__', '')
+                        data = data.replace('# __EXECARG3__', '')
+                        data = data.replace('# __EXECLOGARG3__', '')
+                    if self.arg_valid(self.par_arg4s, self.par_arg4l,
+                                      self.par_arg4help, self.par_arg4bool):
+                        data = data.replace(
+                            '# __ARG4__',
+                            self.create_arg_line(self.par_arg4s,
+                                                 self.par_arg4l, self.par_arg4help,
+                                                 self.par_arg4bool))
+                        data = data.replace(
+                            '# __INITARG4__', self.create_init_arg_line(
+                                self.par_arg4l))
+                        data = data.replace(
+                            '# __EXECARG4__', self.create_exec_arg_line(self.par_arg4l))
+                        data = data.replace(
+                            '# __EXECLOGARG4__',
+                            self.create_execlog_arg_line(self.par_arg4help, self.par_arg4l))
+                    else:
+                        data = data.replace('# __ARG4__', '')
+                        data = data.replace('# __INITARG4__', '')
+                        data = data.replace('# __EXECARG4__', '')
+                        data = data.replace('# __EXECLOGARG4__', '')
+                    if self.arg_valid(self.par_arg5s, self.par_arg5l,
+                                      self.par_arg5help, self.par_arg5bool):
+                        data = data.replace(
+                            '# __ARG5__',
+                            self.create_arg_line(self.par_arg5s,
+                                                 self.par_arg5l, self.par_arg5help,
+                                                 self.par_arg5bool))
+                        data = data.replace(
+                            '# __INITARG5__', self.create_init_arg_line(
+                                self.par_arg5l))
+                        data = data.replace(
+                            '# __EXECARG5__', self.create_exec_arg_line(self.par_arg5l))
+                        data = data.replace(
+                            '# __EXECLOGARG5__',
+                            self.create_execlog_arg_line(self.par_arg5help, self.par_arg5l))
+                    else:
+                        data = data.replace('# __ARG5__', '')
+                        data = data.replace('# __INITARG5__', '')
+                        data = data.replace('# __EXECARG5__', '')
+                        data = data.replace('# __EXECLOGARG5__', '')
 
-                    data = data.replace(
-                        '# __ARG2__',
-                        self.create_arg_line(self.args.arg2short,
-                                             self.args.arg2long, self.args.arg2help,
-                                             self.args.arg2bool))
-                    data = data.replace(
-                        '# __INITARG2__', self.create_init_arg_line(self.args.arg2long))
-                    data = data.replace(
-                        '# __EXECARG2__', self.create_exec_arg_line(self.args.arg2long))
-                    data = data.replace(
-                        '# __EXECLOGARG2__',
-                        self.create_execlog_arg_line(self.args.arg2help, self.args.arg2long))
-
-                    data = data.replace(
-                        '# __ARG3__',
-                        self.create_arg_line(self.args.arg3short,
-                                             self.args.arg3long, self.args.arg3help,
-                                             self.args.arg3bool))
-                    data = data.replace(
-                        '# __INITARG3__', self.create_init_arg_line(self.args.arg3long))
-                    data = data.replace(
-                        '# __EXECARG3__', self.create_exec_arg_line(self.args.arg3long))
-                    data = data.replace(
-                        '# __EXECLOGARG3__',
-                        self.create_execlog_arg_line(self.args.arg3help, self.args.arg3long))
-
-                    data = data.replace(
-                        '# __ARG4__',
-                        self.create_arg_line(self.args.arg4short,
-                                             self.args.arg4long, self.args.arg4help,
-                                             self.args.arg4bool))
-                    data = data.replace(
-                        '# __INITARG4__', self.create_init_arg_line(self.args.arg4long))
-                    data = data.replace(
-                        '# __EXECARG4__', self.create_exec_arg_line(self.args.arg4long))
-                    data = data.replace(
-                        '# __EXECLOGARG4__',
-                        self.create_execlog_arg_line(self.args.arg4help, self.args.arg4long))
-
-                    data = data.replace(
-                        '# __ARG5__',
-                        self.create_arg_line(self.args.arg5short,
-                                             self.args.arg5long, self.args.arg5help,
-                                             self.args.arg5bool))
-                    data = data.replace(
-                        '# __INITARG5__', self.create_init_arg_line(self.args.arg5long))
-                    data = data.replace(
-                        '# __EXECARG5__', self.create_exec_arg_line(self.args.arg5long))
-                    data = data.replace(
-                        '# __EXECLOGARG5__',
-                        self.create_execlog_arg_line(self.args.arg5help, self.args.arg5long))
 
                 # print(data)
                 text_file = open(self.main_filename, 'w',
@@ -524,6 +560,26 @@ class PyCLIcreator():
         if self.par_name == '' or self.par_folder == '' or self.par_forcegui:
             self.gui_needed = True
         LOGGER.debug('GUI needed: %s', self.gui_needed)
+
+    @staticmethod
+    def arg_valid(argshort, arglong, arghelp, argbool):
+        """Check if arg is valid
+
+        Arguments:
+            argshort {str} -- short name
+            arglong {str} -- long name
+            arghelp {str} -- help text
+            argbool {bool} -- boolean
+
+        Returns:
+            bool -- arg is valid or not
+        """
+        ret = False
+        temp_str = ''
+        if argshort != '' and arglong != '' and arghelp != '':
+            if argshort is not None and arglong is not None and arghelp is not None:
+                ret = True
+        return ret
 
     def create_main_filename(self):
         """Create main project filename.

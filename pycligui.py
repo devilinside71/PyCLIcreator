@@ -8,7 +8,7 @@ import errno
 import logging
 import os
 import sys
-from tkinter import Label, Entry, Button, Checkbutton, W, E, END, Tk, filedialog
+from tkinter import Label, Entry, Button, Checkbutton, W, E, END, Tk, filedialog, IntVar, BooleanVar
 
 
 __author__ = 'Laszlo Tamas'
@@ -50,6 +50,7 @@ class PyCLIGUI():
     def __init__(self):
         self.par_output = ''
         self.folder_created_by_dialog = True
+        self.master = Tk()
 
         self.par_name = ''
         self.par_description = ''
@@ -70,28 +71,32 @@ class PyCLIGUI():
         self.par_arg1l = ''
         self.par_arg1help = ''
         self.par_arg1bool = True
+        self.par_arg1b = BooleanVar()
 
         self.par_arg2s = ''
         self.par_arg2l = ''
         self.par_arg2help = ''
         self.par_arg2bool = False
+        self.par_arg2b = BooleanVar()
 
         self.par_arg3s = ''
         self.par_arg3l = ''
         self.par_arg3help = ''
         self.par_arg3bool = False
+        self.par_arg3b = BooleanVar()
 
         self.par_arg4s = ''
         self.par_arg4l = ''
         self.par_arg4help = ''
         self.par_arg4bool = False
+        self.par_arg4b = BooleanVar()
 
         self.par_arg5s = ''
         self.par_arg5l = ''
         self.par_arg5help = ''
         self.par_arg5bool = False
+        self.par_arg5b = BooleanVar()
 
-        self.master = Tk()
         self.master.title('Python CLI creator')
         self.entry_folder = Entry(self.master)
         self.entry_name = Entry(self.master)
@@ -115,31 +120,36 @@ class PyCLIGUI():
         self.entry_arg1s = Entry(self.master)
         self.entry_arg1l = Entry(self.master)
         self.entry_arg1help = Entry(self.master)
-        self.chk_arg1bool = Checkbutton(self.master, text="Bool", variable=self.par_arg1bool)
+        self.chk_arg1bool = Checkbutton(
+            self.master, text="Bool", variable=self.par_arg1b)
         if self.par_arg1bool:
             self.chk_arg1bool.select()
         self.entry_arg2s = Entry(self.master)
         self.entry_arg2l = Entry(self.master)
         self.entry_arg2help = Entry(self.master)
-        self.chk_arg2bool = Checkbutton(self.master, text="Bool", variable=self.par_arg2bool)
+        self.chk_arg2bool = Checkbutton(
+            self.master, text="Bool", variable=self.par_arg2b)
         if self.par_arg2bool:
-            self.chk_arg2bool.select()        
+            self.chk_arg2bool.select()
         self.entry_arg3s = Entry(self.master)
         self.entry_arg3l = Entry(self.master)
         self.entry_arg3help = Entry(self.master)
-        self.chk_arg3bool = Checkbutton(self.master, text="Bool", variable=self.par_arg3bool)
+        self.chk_arg3bool = Checkbutton(
+            self.master, text="Bool", variable=self.par_arg3b)
         if self.par_arg3bool:
             self.chk_arg3bool.select()
         self.entry_arg4s = Entry(self.master)
         self.entry_arg4l = Entry(self.master)
         self.entry_arg4help = Entry(self.master)
-        self.chk_arg4bool = Checkbutton(self.master, text="Bool", variable=self.par_arg4bool)
+        self.chk_arg4bool = Checkbutton(
+            self.master, text="Bool", variable=self.par_arg4b)
         if self.par_arg4bool:
             self.chk_arg4bool.select()
         self.entry_arg5s = Entry(self.master)
         self.entry_arg5l = Entry(self.master)
         self.entry_arg5help = Entry(self.master)
-        self.chk_arg5bool = Checkbutton(self.master, text="Bool", variable=self.par_arg5bool)
+        self.chk_arg5bool = Checkbutton(
+            self.master, text="Bool", variable=self.par_arg5b)
         if self.par_arg5bool:
             self.chk_arg5bool.select()
 
@@ -285,7 +295,6 @@ class PyCLIGUI():
         self.entry_arg5help.grid(row=16, column=3)
         self.chk_arg5bool.grid(row=16, column=4)
 
-
         self.btn_cancel.grid(row=18, column=0, sticky=W)
         self.btn_ok.grid(row=18, column=2, sticky=W, columnspan=3)
         self.btn_ok.config(width=25)
@@ -312,22 +321,27 @@ class PyCLIGUI():
         self.par_arg1s = self.entry_arg1s.get()
         self.par_arg1l = self.entry_arg1l.get()
         self.par_arg1help = self.entry_arg1help.get()
+        self.par_arg1bool = self.par_arg1b.get()
         # self.par_arg1bool = False
         self.par_arg2s = self.entry_arg2s.get()
         self.par_arg2l = self.entry_arg2l.get()
         self.par_arg2help = self.entry_arg2help.get()
+        self.par_arg2bool = self.par_arg2b.get()
         # self.par_arg2bool = False
         self.par_arg3s = self.entry_arg3s.get()
         self.par_arg3l = self.entry_arg3l.get()
         self.par_arg3help = self.entry_arg3help.get()
+        self.par_arg3bool = self.par_arg3b.get()
         # self.par_arg3bool = False
         self.par_arg4s = self.entry_arg4s.get()
         self.par_arg4l = self.entry_arg4l.get()
         self.par_arg4help = self.entry_arg4help.get()
+        self.par_arg4bool = self.par_arg4b.get()
         # self.par_arg4bool = False
         self.par_arg5s = self.entry_arg5s.get()
         self.par_arg5l = self.entry_arg5l.get()
         self.par_arg5help = self.entry_arg5help.get()
+        self.par_arg5bool = self.par_arg5b.get()
         # self.par_arg5bool = False
 
         self.master.quit()
