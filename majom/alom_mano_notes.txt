@@ -1,8 +1,0 @@
-python alom_mano.py -v
-
-python alom_mano_test.py -v
-
-python alom_mano.py -h
-python alom_mano.py --help
-
-from alom_mano import Alom_Mano
