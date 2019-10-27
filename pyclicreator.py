@@ -516,34 +516,29 @@ class PyCLIcreator():
                         data = data.replace('# __EXECLOGARG5__', '')
 
                 # print(data)
-                text_file = open(self.main_filename, 'w',
-                                 encoding='utf-8')
+                text_file = open(self.main_filename, 'w', encoding='utf-8')
                 text_file.write(data)
                 text_file.close()
             # Create unittest file
             with open(self.par_testtemplate, 'r') as myfile:
                 data = myfile.read()
-                data = data.replace('__PROJECTNAME__',
-                                    self.class_name)
+                data = data.replace('__PROJECTNAME__', self.class_name)
                 data = data.replace('__PROJECTNAMELCASE__',
                                     self.class_name.lower())
                 data = data.replace('__DESCRIPTION__', self.par_description)
                 # print(data)
-                text_file = open(self.test_filename, 'w',
-                                 encoding='utf-8')
+                text_file = open(self.test_filename, 'w', encoding='utf-8')
                 text_file.write(data)
                 text_file.close()
             # Create notes file
             with open(self.par_notestemplate, 'r') as myfile:
                 data = myfile.read()
-                data = data.replace('__PROJECTNAME__',
-                                    self.class_name)
+                data = data.replace('__PROJECTNAME__', self.class_name)
                 data = data.replace('__PROJECTNAMELCASE__',
                                     self.class_name.lower())
                 data = data.replace('__DESCRIPTION__', self.par_description)
                 # print(data)
-                text_file = open(self.notes_filename, 'w',
-                                 encoding='utf-8')
+                text_file = open(self.notes_filename, 'w', encoding='utf-8')
                 text_file.write(data)
                 text_file.close()
 
