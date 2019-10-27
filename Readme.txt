@@ -1,6 +1,6 @@
 Az SQLite klün sample legyen
 
-GUI külön class?
+GUI args
 
 
         self.par_name
@@ -19,4 +19,4 @@ GUI külön class?
         self.par_forcegui
         self.par_predefined
 
-        
+

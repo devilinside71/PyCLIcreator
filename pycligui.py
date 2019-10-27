@@ -112,7 +112,7 @@ class PyCLIGUI():
         self.create_gui()
 
     def create_gui(self):
-        """Sample function
+        """Create GUI.
         """
         Label(self.master, text='Folder Name').grid(row=0, sticky=E)
         self.entry_folder.delete(0, END)

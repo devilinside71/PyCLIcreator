@@ -8,7 +8,6 @@ import errno
 import logging
 import os
 import sys
-from tkinter import Label, Entry, Button, Checkbutton, W, E, END, Tk, filedialog
 from textformatter import TextFormatter
 from pycligui import PyCLIGUI
 
@@ -49,7 +48,7 @@ class PyCLIcreator():
     """
 
     def __init__(self):
-        self.tf = TextFormatter()
+        self.tfm = TextFormatter()
         self.args = self.parse_arguments()
         self.gui = PyCLIGUI()
 
@@ -479,28 +478,28 @@ class PyCLIcreator():
     def create_main_filename(self):
         """Create main project filename.
         """
-        self.main_filename = self.tf.get_normalized_name(
+        self.main_filename = self.tfm.get_normalized_name(
             self.par_name, 'filename')+'.py'
         self.main_filename = self.par_folder+'/'+self.main_filename
 
     def create_test_filename(self):
         """Create unittest filename.
         """
-        self.test_filename = self.tf.get_normalized_name(
+        self.test_filename = self.tfm.get_normalized_name(
             self.par_name, 'filename')+'_test.py'
         self.test_filename = self.par_folder+'/'+self.test_filename
 
     def create_notes_filename(self):
-        """Create notes.txt for command line examples.
+        """Create notes.txt with command line examples.
         """
-        self.notes_filename = self.tf.get_normalized_name(
+        self.notes_filename = self.tfm.get_normalized_name(
             self.par_name, 'filename')+'_notes.txt'
         self.notes_filename = self.par_folder+'/'+self.notes_filename
 
     def create_class_name(self):
         """Create class name.
         """
-        self.class_name = self.tf.get_normalized_name(
+        self.class_name = self.tfm.get_normalized_name(
             self.par_name, 'classname')
 
     @staticmethod
