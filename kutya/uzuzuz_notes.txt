@@ -1,0 +1,8 @@
+python uzuzuz.py -v
+
+python uzuzuz_test.py -v
+
+python uzuzuz.py -h
+python uzuzuz.py --help
+
+from uzuzuz import Uzuzuz

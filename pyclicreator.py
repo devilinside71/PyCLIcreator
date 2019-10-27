@@ -10,8 +10,7 @@ import os
 import sys
 from tkinter import Label, Entry, Button, Checkbutton, W, E, END, Tk, filedialog
 from textformatter import TextFormatter
-
-# __SQLITEIMPORT__
+from pycligui import PyCLIGUI
 
 __author__ = 'Laszlo Tamas'
 __copyright__ = 'Copyright 2027, Laszlo Tamas'
@@ -51,6 +50,9 @@ class PyCLIcreator():
 
     def __init__(self):
         self.tf = TextFormatter()
+        self.args = self.parse_arguments()
+        self.gui = PyCLIGUI()
+
         self.par_name = ''
         self.par_description = ''
         self.par_author = 'Laszlo Tamas'
@@ -67,7 +69,6 @@ class PyCLIcreator():
         self.par_forcegui = False
         self.par_predefined = ''
 
-        self.args = self.parse_arguments()
         self.par_arg1s = ''
         self.par_arg1l = ''
         self.par_arg1help = ''
@@ -99,26 +100,6 @@ class PyCLIcreator():
         self.notes_filename = ''
         self.class_name = ''
         self.folder_created_by_dialog = True
-
-        self.master = Tk()
-        self.master.title('Python CLI creator')
-        self.entry_folder = Entry(self.master)
-        self.entry_name = Entry(self.master)
-        self.entry_description = Entry(self.master)
-        self.entry_author = Entry(self.master)
-        self.entry_copyright = Entry(self.master)
-        self.entry_version = Entry(self.master)
-        self.entry_template = Entry(self.master)
-        self.entry_testtemplate = Entry(self.master)
-        self.entry_licence = Entry(self.master)
-        self.entry_email = Entry(self.master)
-        self.entry_status = Entry(self.master)
-        self.chk_sqlite = Checkbutton(
-            self.master, text="SQLite", variable=self.par_sqlite)
-        self.btn_ok = Button(self.master, text='OK', command=self.set_project)
-        self.btn_cancel = Button(
-            self.master, text='Cancel', command=self.master.quit)
-        # TODO tkinter checkboxes, fileselect
 
     @staticmethod
     def parse_arguments():
@@ -317,93 +298,24 @@ class PyCLIcreator():
 
         self.check_if_gui_needed()
         if self.gui_needed:
-            Label(self.master, text='Folder Name').grid(row=0, sticky=E)
-            self.entry_folder.delete(0, END)
-            self.entry_folder.insert(0, self.par_folder)
-            self.entry_folder.grid(row=0, column=1)
-            Button(self.master, text='Browse', command=self.set_folder).grid(
-                row=0, column=2, sticky=W, pady=4)
+            self.gui.create_gui()
+            self.par_name = self.gui.par_name
+            self.par_description = self.gui.par_description
+            self.par_author = self.gui.par_author
+            self.par_copyright = self.gui.par_copyright
+            self.par_folder = self.gui.par_folder
+            self.par_version = self.gui.par_version
+            self.par_template = self.gui.par_template
+            self.par_testtemplate = self.gui.par_testtemplate
+            self.par_notestemplate = self.gui.par_notestemplate
+            self.par_licence = self.gui.par_licence
+            self.par_email = self.gui.par_email
+            self.par_status = self.gui.par_status
+            self.create_main_filename()
+            self.create_test_filename()
+            self.create_notes_filename()
+            self.create_class_name()
 
-            Label(self.master, text='Project Name').grid(
-                row=1, column=0, sticky=E)
-            self.entry_name.delete(0, END)
-            self.entry_name.insert(0, self.par_name)
-            self.entry_name.grid(row=1, column=1)
-
-            Label(self.master, text='Description').grid(
-                row=2, column=0, sticky=E)
-            self.entry_description.delete(0, END)
-            self.entry_description.insert(0, self.par_description)
-            self.entry_description.grid(row=2, column=1)
-
-            Label(self.master, text='Author').grid(row=3, column=0, sticky=E)
-            self.entry_author.delete(0, END)
-            self.entry_author.insert(0, self.par_author)
-            self.entry_author.grid(row=3, column=1)
-
-            Label(self.master, text='Copyright').grid(
-                row=4, column=0, sticky=E)
-            self.entry_copyright.delete(0, END)
-            self.entry_copyright.insert(0, self.par_copyright)
-            self.entry_copyright.grid(row=4, column=1)
-
-            Label(self.master, text='Version').grid(row=5, column=0, sticky=E)
-            self.entry_version.delete(0, END)
-            self.entry_version.insert(0, self.par_version)
-            self.entry_version.grid(row=5, column=1)
-
-            Label(self.master, text='Template').grid(row=6, column=0, sticky=E)
-            self.entry_template.delete(0, END)
-            self.entry_template.insert(0, self.par_template)
-            self.entry_template.grid(row=6, column=1)
-            Button(self.master, text='Browse', command=self.set_folder).grid(
-                row=6, column=2, sticky=W, pady=4)
-
-            Label(self.master, text='Test template').grid(
-                row=7, column=0, sticky=E)
-            self.entry_testtemplate.delete(0, END)
-            self.entry_testtemplate.insert(0, self.par_testtemplate)
-            self.entry_testtemplate.grid(row=7, column=1)
-            Button(self.master, text='Browse', command=self.set_folder).grid(
-                row=7, column=2, sticky=W, pady=4)
-
-            Label(self.master, text='Licence').grid(row=8, column=0, sticky=E)
-            self.entry_licence.delete(0, END)
-            self.entry_licence.insert(0, self.par_licence)
-            self.entry_licence.grid(row=8, column=1)
-
-            Label(self.master, text='Email').grid(row=9, column=0, sticky=E)
-            self.entry_email.delete(0, END)
-            self.entry_email.insert(0, self.par_email)
-            self.entry_email.grid(row=9, column=1)
-
-            Label(self.master, text='Status').grid(row=10, column=0, sticky=E)
-            self.entry_status.delete(0, END)
-            self.entry_status.insert(0, self.par_status)
-            self.entry_status.grid(row=10, column=1)
-
-            self.chk_sqlite.grid(row=11, column=1, sticky=W)
-
-            self.btn_cancel.grid(row=12, column=0, sticky=W)
-            self.btn_ok.grid(row=12, column=2, sticky=W)
-
-            self.master.mainloop()
-        else:
-            self.create_project()
-
-    def set_project(self):
-        """Setup variables from GUI for project creation.
-        """
-
-        self.par_folder = self.entry_folder.get()
-        self.par_name = self.entry_name.get()
-
-        self.create_main_filename()
-        self.create_test_filename()
-        self.create_notes_filename()
-        self.create_class_name()
-
-        self.master.quit()
         self.create_project()
 
     def create_project(self):
@@ -689,16 +601,6 @@ class PyCLIcreator():
                     LOGGER.debug('Exit program')
                     raise
         return ret
-
-    def set_folder(self):
-        """Set the project folder by filedialog.
-        """
-
-        self.par_folder = filedialog.askdirectory()
-        self.entry_folder.delete(0, END)
-        self.entry_folder.insert(0, self.par_folder)
-        LOGGER.debug('Folder: %s', self.par_folder)
-        self.folder_created_by_dialog = True
 
 
 if __name__ == '__main__':

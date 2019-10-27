@@ -46,7 +46,7 @@ class TextFormatter():
     """
 
     def __init__(self):
-        pass
+        self.string_to_format = ''
 
     def get_normalized_name(self, name_str, mode):
         """Replace non US characters
@@ -99,7 +99,9 @@ if __name__ == '__main__':
     LOGGER.debug('Start program')
     PROG = TextFormatter()
     LOGGER.debug(PROG.get_normalized_name('Árvíztűrő tükörfúrógép', 'normal'))
-    LOGGER.debug(PROG.get_normalized_name('Árvíztűrő tükörfúrógép', 'filename'))
-    LOGGER.debug(PROG.get_normalized_name('Árvíztűrő tükörfúrógép', 'classname'))
+    LOGGER.debug(PROG.get_normalized_name(
+        'Árvíztűrő tükörfúrógép', 'filename'))
+    LOGGER.debug(PROG.get_normalized_name(
+        'Árvíztűrő tükörfúrógép', 'classname'))
     LOGGER.debug('Exit program')
     sys.exit()

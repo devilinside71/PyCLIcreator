@@ -1,6 +1,22 @@
-ARG1-5-ig megcsinálni
-ARG1-5 TK elemeket hozzáadni
-Predfined 
+Az SQLite klün sample legyen
+
+GUI külön class?
 
 
-egy függvény, hogy lehessen a test-ben használni
+        self.par_name
+        self.par_description
+        self.par_author
+        self.par_copyright
+        self.par_folder
+        self.par_version
+        self.par_sqlite
+        self.par_template
+        self.par_testtemplate
+        self.par_notestemplate
+        self.par_licence
+        self.par_email
+        self.par_status
+        self.par_forcegui
+        self.par_predefined
+
+        
