@@ -4,11 +4,9 @@ Class to create GUI for PyCLIcreator
 """
 
 import argparse
-import errno
 import logging
-import os
 import sys
-from tkinter import Label, Entry, Button, Checkbutton, W, E, END, Tk, filedialog, IntVar, BooleanVar
+from tkinter import Label, Entry, Button, Checkbutton, W, E, END, Tk, filedialog, BooleanVar
 
 
 __author__ = 'Laszlo Tamas'

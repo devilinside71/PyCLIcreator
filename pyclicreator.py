@@ -520,7 +520,6 @@ class PyCLIcreator():
                         data = data.replace('# __EXECARG5__', '')
                         data = data.replace('# __EXECLOGARG5__', '')
 
-
                 # print(data)
                 text_file = open(self.main_filename, 'w',
                                  encoding='utf-8')
@@ -575,7 +574,6 @@ class PyCLIcreator():
             bool -- arg is valid or not
         """
         ret = False
-        temp_str = ''
         if argshort != '' and arglong != '' and arghelp != '':
             if argshort is not None and arglong is not None and arghelp is not None:
                 ret = True

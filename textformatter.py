@@ -3,10 +3,7 @@
 Text formatter class
 """
 
-import argparse
-import errno
 import logging
-import os
 import sys
 
 __author__ = 'Laszlo Tamas'

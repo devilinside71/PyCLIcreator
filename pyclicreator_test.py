@@ -3,9 +3,8 @@
 """
 This module tests for pyclicreator.
 pyclicreator module:
-This class module is...
 """
-import sys
+
 import unittest
 import pyclicreator
 import textformatter
@@ -35,13 +34,15 @@ class TestFunctions(unittest.TestCase):
             'Árvíztűrő tükörfúrógép', 'classname'), 'Arvizturo_Tukorfurogep')
 
     def test_create_arg_line1(self):
-        self.assertEqual(self.test_class.create_arg_line(
-            'i', 'input', 'some text', True),
+        self.assertEqual(
+            self.test_class.create_arg_line(
+                'i', 'input', 'some text', True),
             'parser.add_argument(\'-i\', \'--input\', action=\'store_true\', help=\'some text\')')
 
     def test_create_arg_line2(self):
-        self.assertEqual(self.test_class.create_arg_line(
-            'i', 'input', 'some text', False),
+        self.assertEqual(
+            self.test_class.create_arg_line(
+                'i', 'input', 'some text', False),
             'parser.add_argument(\'-i\', \'--input\', help=\'some text\')')
 
     def test_create_exec_arg_line(self):
