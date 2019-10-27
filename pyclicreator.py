@@ -13,8 +13,8 @@ from pycligui import PyCLIGUI
 
 __author__ = 'Laszlo Tamas'
 __copyright__ = 'Copyright 2027, Laszlo Tamas'
-__license__ = 'GPL'
-__version__ = '0.0.1'
+__license__ = 'MIT'
+__version__ = '0.1.1'
 __maintainer__ = 'Laszlo Tamas'
 __email__ = 'noreply@gmail.com'
 __status__ = 'Initial'

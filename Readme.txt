@@ -1,8 +1,6 @@
 Az SQLite külön sample legyen
 
-GUI args
-Checkbox values
-436 sortól
+Test without GUI
 
         self.par_name
         self.par_description
