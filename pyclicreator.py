@@ -419,8 +419,7 @@ class PyCLIcreator():
                         data = data.replace('# __EXECLOGARG5__', '')
 
                 else:
-                    if self.arg_valid(self.par_arg1s, self.par_arg2l,
-                                      self.par_arg1help, self.par_arg1bool):
+                    if self.arg_valid(self.par_arg1s, self.par_arg2l, self.par_arg1help):
                         data = data.replace(
                             '# __ARG1__',
                             self.create_arg_line(self.par_arg1s,
@@ -439,8 +438,7 @@ class PyCLIcreator():
                         data = data.replace('# __INITARG1__', '')
                         data = data.replace('# __EXECARG1__', '')
                         data = data.replace('# __EXECLOGARG1__', '')
-                    if self.arg_valid(self.par_arg2s, self.par_arg2l,
-                                      self.par_arg2help, self.par_arg2bool):
+                    if self.arg_valid(self.par_arg2s, self.par_arg2l, self.par_arg2help):
                         data = data.replace(
                             '# __ARG2__',
                             self.create_arg_line(self.par_arg2s,
@@ -459,8 +457,7 @@ class PyCLIcreator():
                         data = data.replace('# __INITARG2__', '')
                         data = data.replace('# __EXECARG2__', '')
                         data = data.replace('# __EXECLOGARG2__', '')
-                    if self.arg_valid(self.par_arg3s, self.par_arg3l,
-                                      self.par_arg3help, self.par_arg3bool):
+                    if self.arg_valid(self.par_arg3s, self.par_arg3l, self.par_arg3help):
                         data = data.replace(
                             '# __ARG3__',
                             self.create_arg_line(self.par_arg3s,
@@ -479,8 +476,7 @@ class PyCLIcreator():
                         data = data.replace('# __INITARG3__', '')
                         data = data.replace('# __EXECARG3__', '')
                         data = data.replace('# __EXECLOGARG3__', '')
-                    if self.arg_valid(self.par_arg4s, self.par_arg4l,
-                                      self.par_arg4help, self.par_arg4bool):
+                    if self.arg_valid(self.par_arg4s, self.par_arg4l, self.par_arg4help):
                         data = data.replace(
                             '# __ARG4__',
                             self.create_arg_line(self.par_arg4s,
@@ -499,8 +495,7 @@ class PyCLIcreator():
                         data = data.replace('# __INITARG4__', '')
                         data = data.replace('# __EXECARG4__', '')
                         data = data.replace('# __EXECLOGARG4__', '')
-                    if self.arg_valid(self.par_arg5s, self.par_arg5l,
-                                      self.par_arg5help, self.par_arg5bool):
+                    if self.arg_valid(self.par_arg5s, self.par_arg5l, self.par_arg5help):
                         data = data.replace(
                             '# __ARG5__',
                             self.create_arg_line(self.par_arg5s,
@@ -561,14 +556,13 @@ class PyCLIcreator():
         LOGGER.debug('GUI needed: %s', self.gui_needed)
 
     @staticmethod
-    def arg_valid(argshort, arglong, arghelp, argbool):
+    def arg_valid(argshort, arglong, arghelp):
         """Check if arg is valid
 
         Arguments:
             argshort {str} -- short name
             arglong {str} -- long name
             arghelp {str} -- help text
-            argbool {bool} -- boolean
 
         Returns:
             bool -- arg is valid or not
