@@ -153,7 +153,7 @@ class PyCLIGUI():
         self.entry_template.delete(0, END)
         self.entry_template.insert(0, self.par_template)
         self.entry_template.grid(row=6, column=1)
-        Button(self.master, text='Browse', command=self.set_folder).grid(
+        Button(self.master, text='Browse', command=self.set_templatefile).grid(
             row=6, column=2, sticky=W, pady=4)
 
         Label(self.master, text='Test template').grid(
@@ -161,7 +161,7 @@ class PyCLIGUI():
         self.entry_testtemplate.delete(0, END)
         self.entry_testtemplate.insert(0, self.par_testtemplate)
         self.entry_testtemplate.grid(row=7, column=1)
-        Button(self.master, text='Browse', command=self.set_folder).grid(
+        Button(self.master, text='Browse', command=self.set_test_templatefile).grid(
             row=7, column=2, sticky=W, pady=4)
 
         Label(self.master, text='Notes template').grid(
@@ -169,7 +169,7 @@ class PyCLIGUI():
         self.entry_notestemplate.delete(0, END)
         self.entry_notestemplate.insert(0, self.par_notestemplate)
         self.entry_notestemplate.grid(row=8, column=1)
-        Button(self.master, text='Browse', command=self.set_folder).grid(
+        Button(self.master, text='Browse', command=self.set_notes_templatefile).grid(
             row=8, column=2, sticky=W, pady=4)
 
         Label(self.master, text='Licence').grid(row=9, column=0, sticky=E)
@@ -222,6 +222,33 @@ class PyCLIGUI():
         self.entry_folder.insert(0, self.par_folder)
         LOGGER.debug('Folder: %s', self.par_folder)
         self.folder_created_by_dialog = True
+
+    def set_templatefile(self):
+        """Set the template file by filedialog.
+        """
+
+        self.par_template = filedialog.askopenfilename()
+        self.entry_template.delete(0, END)
+        self.entry_template.insert(0, self.par_template)
+        LOGGER.debug('Template: %s', self.par_template)
+
+    def set_test_templatefile(self):
+        """Set the testtemplate file by filedialog.
+        """
+
+        self.par_testtemplate = filedialog.askopenfilename()
+        self.entry_testtemplate.delete(0, END)
+        self.entry_testtemplate.insert(0, self.par_testtemplate)
+        LOGGER.debug('Test template: %s', self.par_testtemplate)
+
+    def set_notes_templatefile(self):
+        """Set the notes template file by filedialog.
+        """
+
+        self.par_notestemplate = filedialog.askopenfilename()
+        self.entry_notestemplate.delete(0, END)
+        self.entry_notestemplate.insert(0, self.par_notestemplate)
+        LOGGER.debug('Notes template: %s', self.par_notestemplate)
 
 
 if __name__ == '__main__':
