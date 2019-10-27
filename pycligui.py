@@ -66,6 +66,30 @@ class PyCLIGUI():
         self.par_status = 'Initial'
         # self.par_forcegui = False
         # self.par_predefined = ''
+        self.par_arg1s = ''
+        self.par_arg1l = ''
+        self.par_arg1help = ''
+        self.par_arg1bool = True
+
+        self.par_arg2s = ''
+        self.par_arg2l = ''
+        self.par_arg2help = ''
+        self.par_arg2bool = False
+
+        self.par_arg3s = ''
+        self.par_arg3l = ''
+        self.par_arg3help = ''
+        self.par_arg3bool = False
+
+        self.par_arg4s = ''
+        self.par_arg4l = ''
+        self.par_arg4help = ''
+        self.par_arg4bool = False
+
+        self.par_arg5s = ''
+        self.par_arg5l = ''
+        self.par_arg5help = ''
+        self.par_arg5bool = False
 
         self.master = Tk()
         self.master.title('Python CLI creator')
@@ -87,6 +111,37 @@ class PyCLIGUI():
                              command=self.set_variables)
         self.btn_cancel = Button(
             self.master, text='Cancel', command=self.master.quit)
+        # ARGS
+        self.entry_arg1s = Entry(self.master)
+        self.entry_arg1l = Entry(self.master)
+        self.entry_arg1help = Entry(self.master)
+        self.chk_arg1bool = Checkbutton(self.master, text="Bool", variable=self.par_arg1bool)
+        if self.par_arg1bool:
+            self.chk_arg1bool.select()
+        self.entry_arg2s = Entry(self.master)
+        self.entry_arg2l = Entry(self.master)
+        self.entry_arg2help = Entry(self.master)
+        self.chk_arg2bool = Checkbutton(self.master, text="Bool", variable=self.par_arg2bool)
+        if self.par_arg2bool:
+            self.chk_arg2bool.select()        
+        self.entry_arg3s = Entry(self.master)
+        self.entry_arg3l = Entry(self.master)
+        self.entry_arg3help = Entry(self.master)
+        self.chk_arg3bool = Checkbutton(self.master, text="Bool", variable=self.par_arg3bool)
+        if self.par_arg3bool:
+            self.chk_arg3bool.select()
+        self.entry_arg4s = Entry(self.master)
+        self.entry_arg4l = Entry(self.master)
+        self.entry_arg4help = Entry(self.master)
+        self.chk_arg4bool = Checkbutton(self.master, text="Bool", variable=self.par_arg4bool)
+        if self.par_arg4bool:
+            self.chk_arg4bool.select()
+        self.entry_arg5s = Entry(self.master)
+        self.entry_arg5l = Entry(self.master)
+        self.entry_arg5help = Entry(self.master)
+        self.chk_arg5bool = Checkbutton(self.master, text="Bool", variable=self.par_arg5bool)
+        if self.par_arg5bool:
+            self.chk_arg5bool.select()
 
     @staticmethod
     def parse_arguments():
@@ -114,83 +169,126 @@ class PyCLIGUI():
     def create_gui(self):
         """Create GUI.
         """
-        Label(self.master, text='Folder Name').grid(row=0, sticky=E)
+        Label(self.master, text='Folder Name').grid(row=0, sticky=E+W)
         self.entry_folder.delete(0, END)
         self.entry_folder.insert(0, self.par_folder)
-        self.entry_folder.grid(row=0, column=1)
+        self.entry_folder.grid(row=0, column=1, columnspan=3, sticky=W)
+        self.entry_folder.config(width=70)
         Button(self.master, text='Browse', command=self.set_folder).grid(
-            row=0, column=2, sticky=W, pady=4)
+            row=0, column=4, sticky=W, pady=4)
 
         Label(self.master, text='Project Name').grid(
             row=1, column=0, sticky=E)
         self.entry_name.delete(0, END)
         self.entry_name.insert(0, self.par_name)
-        self.entry_name.grid(row=1, column=1)
+        self.entry_name.grid(row=1, column=1, columnspan=3, sticky=W)
 
         Label(self.master, text='Description').grid(
             row=2, column=0, sticky=E)
         self.entry_description.delete(0, END)
         self.entry_description.insert(0, self.par_description)
-        self.entry_description.grid(row=2, column=1)
+        self.entry_description.grid(row=2, column=1, columnspan=3, sticky=W)
 
         Label(self.master, text='Author').grid(row=3, column=0, sticky=E)
         self.entry_author.delete(0, END)
         self.entry_author.insert(0, self.par_author)
-        self.entry_author.grid(row=3, column=1)
+        self.entry_author.grid(row=3, column=1, columnspan=3, sticky=W)
 
         Label(self.master, text='Copyright').grid(
             row=4, column=0, sticky=E)
         self.entry_copyright.delete(0, END)
         self.entry_copyright.insert(0, self.par_copyright)
-        self.entry_copyright.grid(row=4, column=1)
+        self.entry_copyright.grid(row=4, column=1, columnspan=3, sticky=W)
 
         Label(self.master, text='Version').grid(row=5, column=0, sticky=E)
         self.entry_version.delete(0, END)
         self.entry_version.insert(0, self.par_version)
-        self.entry_version.grid(row=5, column=1)
+        self.entry_version.grid(row=5, column=1, columnspan=3, sticky=W)
 
         Label(self.master, text='Template').grid(row=6, column=0, sticky=E)
         self.entry_template.delete(0, END)
         self.entry_template.insert(0, self.par_template)
-        self.entry_template.grid(row=6, column=1)
+        self.entry_template.grid(row=6, column=1, columnspan=3, sticky=W)
+        self.entry_template.config(width=70)
         Button(self.master, text='Browse', command=self.set_templatefile).grid(
-            row=6, column=2, sticky=W, pady=4)
+            row=6, column=4, sticky=W, pady=4)
 
         Label(self.master, text='Test template').grid(
             row=7, column=0, sticky=E)
         self.entry_testtemplate.delete(0, END)
         self.entry_testtemplate.insert(0, self.par_testtemplate)
-        self.entry_testtemplate.grid(row=7, column=1)
+        self.entry_testtemplate.grid(row=7, column=1, columnspan=3, sticky=W)
+        self.entry_testtemplate.config(width=70)
         Button(self.master, text='Browse', command=self.set_test_templatefile).grid(
-            row=7, column=2, sticky=W, pady=4)
+            row=7, column=4, sticky=W, pady=4)
 
         Label(self.master, text='Notes template').grid(
             row=8, column=0, sticky=E)
         self.entry_notestemplate.delete(0, END)
         self.entry_notestemplate.insert(0, self.par_notestemplate)
-        self.entry_notestemplate.grid(row=8, column=1)
+        self.entry_notestemplate.grid(row=8, column=1, columnspan=3, sticky=W)
+        self.entry_notestemplate.config(width=70)
         Button(self.master, text='Browse', command=self.set_notes_templatefile).grid(
-            row=8, column=2, sticky=W, pady=4)
+            row=8, column=4, sticky=W, pady=4)
 
         Label(self.master, text='Licence').grid(row=9, column=0, sticky=E)
         self.entry_licence.delete(0, END)
         self.entry_licence.insert(0, self.par_licence)
-        self.entry_licence.grid(row=9, column=1)
+        self.entry_licence.grid(row=9, column=1, columnspan=3, sticky=W)
 
         Label(self.master, text='Email').grid(row=10, column=0, sticky=E)
         self.entry_email.delete(0, END)
         self.entry_email.insert(0, self.par_email)
-        self.entry_email.grid(row=10, column=1)
+        self.entry_email.config(width=25)
+        self.entry_email.grid(row=10, column=1, columnspan=3, sticky=W)
 
         Label(self.master, text='Status').grid(row=11, column=0, sticky=E)
         self.entry_status.delete(0, END)
         self.entry_status.insert(0, self.par_status)
-        self.entry_status.grid(row=11, column=1)
+        self.entry_status.grid(row=11, column=1, columnspan=3, sticky=W)
 
         # self.chk_sqlite.grid(row=12, column=1, sticky=W)
+        # ARGS
+        Label(self.master, text='ARG1').grid(row=12, column=0, sticky=E)
+        self.entry_arg1s.grid(row=12, column=1)
+        self.entry_arg1s.config(width=2)
+        self.entry_arg1l.grid(row=12, column=2)
+        self.entry_arg1l.config(width=12)
+        self.entry_arg1help.grid(row=12, column=3)
+        self.chk_arg1bool.grid(row=12, column=4)
+        Label(self.master, text='ARG2').grid(row=13, column=0, sticky=E)
+        self.entry_arg2s.grid(row=13, column=1)
+        self.entry_arg2s.config(width=2)
+        self.entry_arg2l.grid(row=13, column=2)
+        self.entry_arg2l.config(width=12)
+        self.entry_arg2help.grid(row=13, column=3)
+        self.chk_arg2bool.grid(row=13, column=4)
+        Label(self.master, text='ARG3').grid(row=14, column=0, sticky=E)
+        self.entry_arg3s.grid(row=14, column=1)
+        self.entry_arg3s.config(width=2)
+        self.entry_arg3l.grid(row=14, column=2)
+        self.entry_arg3l.config(width=12)
+        self.entry_arg3help.grid(row=14, column=3)
+        self.chk_arg3bool.grid(row=14, column=4)
+        Label(self.master, text='ARG4').grid(row=15, column=0, sticky=E)
+        self.entry_arg4s.grid(row=15, column=1)
+        self.entry_arg4s.config(width=2)
+        self.entry_arg4l.grid(row=15, column=2)
+        self.entry_arg4l.config(width=12)
+        self.entry_arg4help.grid(row=15, column=3)
+        self.chk_arg4bool.grid(row=15, column=4)
+        Label(self.master, text='ARG5').grid(row=16, column=0, sticky=E)
+        self.entry_arg5s.grid(row=16, column=1)
+        self.entry_arg5s.config(width=2)
+        self.entry_arg5l.grid(row=16, column=2)
+        self.entry_arg5l.config(width=12)
+        self.entry_arg5help.grid(row=16, column=3)
+        self.chk_arg5bool.grid(row=16, column=4)
 
-        self.btn_cancel.grid(row=13, column=0, sticky=W)
-        self.btn_ok.grid(row=13, column=2, sticky=W)
+
+        self.btn_cancel.grid(row=18, column=0, sticky=W)
+        self.btn_ok.grid(row=18, column=2, sticky=W, columnspan=3)
+        self.btn_ok.config(width=25)
 
         self.master.mainloop()
 
@@ -210,6 +308,27 @@ class PyCLIGUI():
         self.par_licence = self.entry_licence.get()
         self.par_email = self.entry_email.get()
         self.par_status = self.entry_status.get()
+
+        self.par_arg1s = self.entry_arg1s.get()
+        self.par_arg1l = self.entry_arg1l.get()
+        self.par_arg1help = self.entry_arg1help.get()
+        # self.par_arg1bool = False
+        self.par_arg2s = self.entry_arg2s.get()
+        self.par_arg2l = self.entry_arg2l.get()
+        self.par_arg2help = self.entry_arg2help.get()
+        # self.par_arg2bool = False
+        self.par_arg3s = self.entry_arg3s.get()
+        self.par_arg3l = self.entry_arg3l.get()
+        self.par_arg3help = self.entry_arg3help.get()
+        # self.par_arg3bool = False
+        self.par_arg4s = self.entry_arg4s.get()
+        self.par_arg4l = self.entry_arg4l.get()
+        self.par_arg4help = self.entry_arg4help.get()
+        # self.par_arg4bool = False
+        self.par_arg5s = self.entry_arg5s.get()
+        self.par_arg5l = self.entry_arg5l.get()
+        self.par_arg5help = self.entry_arg5help.get()
+        # self.par_arg5bool = False
 
         self.master.quit()
 

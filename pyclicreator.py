@@ -310,11 +310,60 @@ class PyCLIcreator():
             self.par_licence = self.gui.par_licence
             self.par_email = self.gui.par_email
             self.par_status = self.gui.par_status
+
+            self.par_arg1s = self.gui.par_arg1s
+            self.par_arg1l = self.gui.par_arg1l
+            self.par_arg1help = self.gui.par_arg1help
+            self.par_arg1bool = self.gui.par_arg1bool
+            self.par_arg2s = self.gui.par_arg2s
+            self.par_arg2l = self.gui.par_arg2l
+            self.par_arg2help = self.gui.par_arg2help
+            self.par_arg2bool = self.gui.par_arg2bool
+            self.par_arg3s = self.gui.par_arg3s
+            self.par_arg3l = self.gui.par_arg3l
+            self.par_arg3help = self.gui.par_arg3help
+            self.par_arg3bool = self.gui.par_arg3bool
+            self.par_arg4s = self.gui.par_arg4s
+            self.par_arg4l = self.gui.par_arg4l
+            self.par_arg4help = self.gui.par_arg4help
+            self.par_arg4bool = self.gui.par_arg4bool
+            self.par_arg5s = self.gui.par_arg5s
+            self.par_arg5l = self.gui.par_arg5l
+            self.par_arg5help = self.gui.par_arg5help
+            self.par_arg5bool = self.gui.par_arg5bool
+
             self.create_main_filename()
             self.create_test_filename()
             self.create_notes_filename()
             self.create_class_name()
-
+            LOGGER.debug('Name: %s', self.par_name)
+            LOGGER.debug('Description: %s', self.par_description)
+            LOGGER.debug('Author: %s', self.par_author)
+            LOGGER.debug('Copyright: %s', self.par_copyright)
+            LOGGER.debug('Folder: %s', self.par_folder)
+            LOGGER.debug('Version: %s', self.par_version)
+            LOGGER.debug('SQLite: %s', self.par_sqlite)
+            LOGGER.debug('Template: %s', self.par_template)
+            LOGGER.debug('Test template: %s', self.par_testtemplate)
+            LOGGER.debug('Licence: %s', self.par_licence)
+            LOGGER.debug('Email: %s', self.par_email)
+            LOGGER.debug('Status: %s', self.par_status)
+            LOGGER.debug('Force GUI mode: %s', self.par_forcegui)
+            LOGGER.debug('Main filename: %s', self.main_filename)
+            LOGGER.debug('Test filename: %s', self.test_filename)
+            LOGGER.debug('Notes filename: %s', self.notes_filename)
+            LOGGER.debug('Class name: %s', self.class_name)
+            LOGGER.debug('Predefined: %s', self.par_predefined)
+            LOGGER.debug('ARG1: %s', self.par_arg1s+'|'+self.par_arg1l +
+                         '|'+self.par_arg1help+'|'+str(self.par_arg1bool))
+            LOGGER.debug('ARG2: %s', self.par_arg2s+'|'+self.par_arg2l +
+                         '|'+self.par_arg2help+'|'+str(self.par_arg2bool))
+            LOGGER.debug('ARG3: %s', self.par_arg3s+'|'+self.par_arg3l +
+                         '|'+self.par_arg3help+'|'+str(self.par_arg3bool))
+            LOGGER.debug('ARG4: %s', self.par_arg4s+'|'+self.par_arg4l +
+                         '|'+self.par_arg4help+'|'+str(self.par_arg4bool))
+            LOGGER.debug('ARG5: %s', self.par_arg5s+'|'+self.par_arg5l +
+                         '|'+self.par_arg5help+'|'+str(self.par_arg5bool))
         self.create_project()
 
     def create_project(self):
@@ -372,16 +421,17 @@ class PyCLIcreator():
                 else:
                     data = data.replace(
                         '# __ARG1__',
-                        self.create_arg_line(self.args.arg1short,
-                                             self.args.arg1long, self.args.arg1help,
-                                             self.args.arg1bool))
+                        self.create_arg_line(self.par_arg1s,
+                                             self.par_arg1l, self.par_arg1help,
+                                             self.par_arg1bool))
                     data = data.replace(
-                        '# __INITARG1__', self.create_init_arg_line(self.args.arg1long))
+                        '# __INITARG1__', self.create_init_arg_line(
+                            self.par_arg1l))
                     data = data.replace(
-                        '# __EXECARG1__', self.create_exec_arg_line(self.args.arg1long))
+                        '# __EXECARG1__', self.create_exec_arg_line(self.par_arg1l))
                     data = data.replace(
                         '# __EXECLOGARG1__',
-                        self.create_execlog_arg_line(self.args.arg1help, self.args.arg1long))
+                        self.create_execlog_arg_line(self.par_arg1help, self.par_arg1l))
 
                     data = data.replace(
                         '# __ARG2__',
