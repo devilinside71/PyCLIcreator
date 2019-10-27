@@ -60,11 +60,11 @@ class TestFunctions(unittest.TestCase):
 
     def test_arg_valid_1(self):
         self.assertEqual(self.test_class.arg_valid(
-            'i', 'input', 'help', False), True)
+            'i', 'input', 'help'), True)
 
     def test_arg_valid_2(self):
         self.assertEqual(self.test_class.arg_valid(
-            'i', 'input', '', False), False)
+            'i', 'input', ''), False)
 
 
 if __name__ == '__main__':
