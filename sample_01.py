@@ -90,10 +90,10 @@ class ProjectName():
 
     def sample_function(self, input_str):
         """Sample function
-        
+
         Arguments:
             input_str {str} -- input string
-        
+
         Returns:
             str -- result string
         """

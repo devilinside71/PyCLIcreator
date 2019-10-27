@@ -8,7 +8,8 @@ import errno
 import logging
 import os
 import sys
-from tkinter import Label, Entry, Button, W, E, END, Tk, filedialog
+from tkinter import Label, Entry, Button, Checkbutton, W, E, END, Tk, filedialog
+from textformatter import TextFormatter
 
 # __SQLITEIMPORT__
 
@@ -49,15 +50,16 @@ class PyCLIcreator():
     """
 
     def __init__(self):
+        self.tf = TextFormatter()
         self.par_name = ''
         self.par_description = ''
         self.par_author = 'Laszlo Tamas'
         self.par_copyright = '(C) 2027'
         self.par_folder = ''
         self.par_version = '0.0.1'
-        self.par_sqlite = False
+        self.par_sqlite = True
         self.par_template = 'sample_01.py'
-        self.par_testemplate = 'sample_01_test.py'
+        self.par_testtemplate = 'sample_01_test.py'
         self.par_notestemplate = 'sample_01_notes.txt'
         self.par_licence = 'MIT'
         self.par_email = 'noreply@gmail.com'
@@ -65,6 +67,7 @@ class PyCLIcreator():
         self.par_forcegui = False
         self.par_predefined = ''
 
+        self.args = self.parse_arguments()
         self.par_arg1s = ''
         self.par_arg1l = ''
         self.par_arg1help = ''
@@ -98,6 +101,7 @@ class PyCLIcreator():
         self.folder_created_by_dialog = True
 
         self.master = Tk()
+        self.master.title('Python CLI creator')
         self.entry_folder = Entry(self.master)
         self.entry_name = Entry(self.master)
         self.entry_description = Entry(self.master)
@@ -109,7 +113,12 @@ class PyCLIcreator():
         self.entry_licence = Entry(self.master)
         self.entry_email = Entry(self.master)
         self.entry_status = Entry(self.master)
-        # TODO SQLite checkbox
+        self.chk_sqlite = Checkbutton(
+            self.master, text="SQLite", variable=self.par_sqlite)
+        self.btn_ok = Button(self.master, text='OK', command=self.set_project)
+        self.btn_cancel = Button(
+            self.master, text='Cancel', command=self.master.quit)
+        # TODO tkinter checkboxes, fileselect
 
     @staticmethod
     def parse_arguments():
@@ -198,80 +207,79 @@ class PyCLIcreator():
     def execute_program(self):
         """Execute the program by arguments.
         """
-        args = self.parse_arguments()
-        if args.name is not None:
-            self.par_name = args.name
-        if args.description is not None:
-            self.par_description = args.description
-        if args.author is not None:
-            self.par_author = args.author
-        if args.copyright is not None:
-            self.par_copyright = args.copyright
-        if args.folder is not None:
-            self.par_folder = args.folder
-        if args.version is not None:
-            self.par_version = args.version
-        if args.sqlite is not None:
-            self.par_sqlite = args.sqlite
-        if args.template is not None:
-            self.par_template = args.template
-        if args.testtemplate is not None:
-            self.par_testemplate = args.testtemplate
-        if args.licence is not None:
-            self.par_licence = args.licence
-        if args.email is not None:
-            self.par_email = args.email
-        if args.status is not None:
-            self.par_status = args.status
-        if args.gui is not None:
-            self.par_forcegui = args.gui
-        if args.predefined is not None:
-            self.par_predefined = args.predefined
+        if self.args.name is not None:
+            self.par_name = self.args.name
+        if self.args.description is not None:
+            self.par_description = self.args.description
+        if self.args.author is not None:
+            self.par_author = self.args.author
+        if self.args.copyright is not None:
+            self.par_copyright = self.args.copyright
+        if self.args.folder is not None:
+            self.par_folder = self.args.folder
+        if self.args.version is not None:
+            self.par_version = self.args.version
+        if self.args.sqlite is not None:
+            self.par_sqlite = self.args.sqlite
+        if self.args.template is not None:
+            self.par_template = self.args.template
+        if self.args.testtemplate is not None:
+            self.par_testtemplate = self.args.testtemplate
+        if self.args.licence is not None:
+            self.par_licence = self.args.licence
+        if self.args.email is not None:
+            self.par_email = self.args.email
+        if self.args.status is not None:
+            self.par_status = self.args.status
+        if self.args.gui is not None:
+            self.par_forcegui = self.args.gui
+        if self.args.predefined is not None:
+            self.par_predefined = self.args.predefined
 
-        if args.arg1short is not None:
-            self.par_arg1s = args.arg1short
-        if args.arg1long is not None:
-            self.par_arg1l = args.arg1long
-        if args.arg1help is not None:
-            self.par_arg1help = args.arg1help
-        if args.arg1bool is not None:
-            self.par_arg1bool = args.arg1bool
+        if self.args.arg1short is not None:
+            self.par_arg1s = self.args.arg1short
+        if self.args.arg1long is not None:
+            self.par_arg1l = self.args.arg1long
+        if self.args.arg1help is not None:
+            self.par_arg1help = self.args.arg1help
+        if self.args.arg1bool is not None:
+            self.par_arg1bool = self.args.arg1bool
 
-        if args.arg2short is not None:
-            self.par_arg2s = args.arg2short
-        if args.arg2long is not None:
-            self.par_arg2l = args.arg2long
-        if args.arg2help is not None:
-            self.par_arg2help = args.arg2help
-        if args.arg2bool is not None:
-            self.par_arg2bool = args.arg2bool
+        if self.args.arg2short is not None:
+            self.par_arg2s = self.args.arg2short
+        if self.args.arg2long is not None:
+            self.par_arg2l = self.args.arg2long
+        if self.args.arg2help is not None:
+            self.par_arg2help = self.args.arg2help
+        if self.args.arg2bool is not None:
+            self.par_arg2bool = self.args.arg2bool
 
-        if args.arg3short is not None:
-            self.par_arg3s = args.arg3short
-        if args.arg3long is not None:
-            self.par_arg3l = args.arg3long
-        if args.arg3help is not None:
-            self.par_arg3help = args.arg3help
-        if args.arg3bool is not None:
-            self.par_arg3bool = args.arg3bool
+        if self.args.arg3short is not None:
+            self.par_arg3s = self.args.arg3short
+        if self.args.arg3long is not None:
+            self.par_arg3l = self.args.arg3long
+        if self.args.arg3help is not None:
+            self.par_arg3help = self.args.arg3help
+        if self.args.arg3bool is not None:
+            self.par_arg3bool = self.args.arg3bool
 
-        if args.arg4short is not None:
-            self.par_arg4s = args.arg4short
-        if args.arg4long is not None:
-            self.par_arg4l = args.arg4long
-        if args.arg4help is not None:
-            self.par_arg4help = args.arg4help
-        if args.arg4bool is not None:
-            self.par_arg4bool = args.arg4bool
+        if self.args.arg4short is not None:
+            self.par_arg4s = self.args.arg4short
+        if self.args.arg4long is not None:
+            self.par_arg4l = self.args.arg4long
+        if self.args.arg4help is not None:
+            self.par_arg4help = self.args.arg4help
+        if self.args.arg4bool is not None:
+            self.par_arg4bool = self.args.arg4bool
 
-        if args.arg5short is not None:
-            self.par_arg5s = args.arg5short
-        if args.arg5long is not None:
-            self.par_arg5l = args.arg5long
-        if args.arg5help is not None:
-            self.par_arg5help = args.arg5help
-        if args.arg5bool is not None:
-            self.par_arg5bool = args.arg5bool
+        if self.args.arg5short is not None:
+            self.par_arg5s = self.args.arg5short
+        if self.args.arg5long is not None:
+            self.par_arg5l = self.args.arg5long
+        if self.args.arg5help is not None:
+            self.par_arg5help = self.args.arg5help
+        if self.args.arg5bool is not None:
+            self.par_arg5bool = self.args.arg5bool
 
         LOGGER.debug('Name: %s', self.par_name)
         LOGGER.debug('Description: %s', self.par_description)
@@ -281,7 +289,7 @@ class PyCLIcreator():
         LOGGER.debug('Version: %s', self.par_version)
         LOGGER.debug('SQLite: %s', self.par_sqlite)
         LOGGER.debug('Template: %s', self.par_template)
-        LOGGER.debug('Test template: %s', self.par_testemplate)
+        LOGGER.debug('Test template: %s', self.par_testtemplate)
         LOGGER.debug('Licence: %s', self.par_licence)
         LOGGER.debug('Email: %s', self.par_email)
         LOGGER.debug('Status: %s', self.par_status)
@@ -316,12 +324,14 @@ class PyCLIcreator():
             Button(self.master, text='Browse', command=self.set_folder).grid(
                 row=0, column=2, sticky=W, pady=4)
 
-            Label(self.master, text='Project Name').grid(row=1, column=0, sticky=E)
+            Label(self.master, text='Project Name').grid(
+                row=1, column=0, sticky=E)
             self.entry_name.delete(0, END)
             self.entry_name.insert(0, self.par_name)
             self.entry_name.grid(row=1, column=1)
 
-            Label(self.master, text='Description').grid(row=2, column=0, sticky=E)
+            Label(self.master, text='Description').grid(
+                row=2, column=0, sticky=E)
             self.entry_description.delete(0, END)
             self.entry_description.insert(0, self.par_description)
             self.entry_description.grid(row=2, column=1)
@@ -331,12 +341,74 @@ class PyCLIcreator():
             self.entry_author.insert(0, self.par_author)
             self.entry_author.grid(row=3, column=1)
 
-            Label(self.master, text='Copyright').grid(row=4, column=0, sticky=E)
+            Label(self.master, text='Copyright').grid(
+                row=4, column=0, sticky=E)
             self.entry_copyright.delete(0, END)
             self.entry_copyright.insert(0, self.par_copyright)
             self.entry_copyright.grid(row=4, column=1)
 
+            Label(self.master, text='Version').grid(row=5, column=0, sticky=E)
+            self.entry_version.delete(0, END)
+            self.entry_version.insert(0, self.par_version)
+            self.entry_version.grid(row=5, column=1)
+
+            Label(self.master, text='Template').grid(row=6, column=0, sticky=E)
+            self.entry_template.delete(0, END)
+            self.entry_template.insert(0, self.par_template)
+            self.entry_template.grid(row=6, column=1)
+            Button(self.master, text='Browse', command=self.set_folder).grid(
+                row=6, column=2, sticky=W, pady=4)
+
+            Label(self.master, text='Test template').grid(
+                row=7, column=0, sticky=E)
+            self.entry_testtemplate.delete(0, END)
+            self.entry_testtemplate.insert(0, self.par_testtemplate)
+            self.entry_testtemplate.grid(row=7, column=1)
+            Button(self.master, text='Browse', command=self.set_folder).grid(
+                row=7, column=2, sticky=W, pady=4)
+
+            Label(self.master, text='Licence').grid(row=8, column=0, sticky=E)
+            self.entry_licence.delete(0, END)
+            self.entry_licence.insert(0, self.par_licence)
+            self.entry_licence.grid(row=8, column=1)
+
+            Label(self.master, text='Email').grid(row=9, column=0, sticky=E)
+            self.entry_email.delete(0, END)
+            self.entry_email.insert(0, self.par_email)
+            self.entry_email.grid(row=9, column=1)
+
+            Label(self.master, text='Status').grid(row=10, column=0, sticky=E)
+            self.entry_status.delete(0, END)
+            self.entry_status.insert(0, self.par_status)
+            self.entry_status.grid(row=10, column=1)
+
+            self.chk_sqlite.grid(row=11, column=1, sticky=W)
+
+            self.btn_cancel.grid(row=12, column=0, sticky=W)
+            self.btn_ok.grid(row=12, column=2, sticky=W)
+
             self.master.mainloop()
+        else:
+            self.create_project()
+
+    def set_project(self):
+        """Setup variables from GUI for project creation.
+        """
+
+        self.par_folder = self.entry_folder.get()
+        self.par_name = self.entry_name.get()
+
+        self.create_main_filename()
+        self.create_test_filename()
+        self.create_notes_filename()
+        self.create_class_name()
+
+        self.master.quit()
+        self.create_project()
+
+    def create_project(self):
+        """Create project.
+        """
 
         if self.create_folder(self.par_folder) or self.folder_created_by_dialog:
             # Create main file
@@ -389,63 +461,68 @@ class PyCLIcreator():
                 else:
                     data = data.replace(
                         '# __ARG1__',
-                        self.create_arg_line(args.arg1short,
-                                             args.arg1long, args.arg1help, args.arg1bool))
+                        self.create_arg_line(self.args.arg1short,
+                                             self.args.arg1long, self.args.arg1help,
+                                             self.args.arg1bool))
                     data = data.replace(
-                        '# __INITARG1__', self.create_init_arg_line(args.arg1long))
+                        '# __INITARG1__', self.create_init_arg_line(self.args.arg1long))
                     data = data.replace(
-                        '# __EXECARG1__', self.create_exec_arg_line(args.arg1long))
+                        '# __EXECARG1__', self.create_exec_arg_line(self.args.arg1long))
                     data = data.replace(
                         '# __EXECLOGARG1__',
-                        self.create_execlog_arg_line(args.arg1help, args.arg1long))
+                        self.create_execlog_arg_line(self.args.arg1help, self.args.arg1long))
 
                     data = data.replace(
                         '# __ARG2__',
-                        self.create_arg_line(args.arg2short,
-                                             args.arg2long, args.arg2help, args.arg2bool))
+                        self.create_arg_line(self.args.arg2short,
+                                             self.args.arg2long, self.args.arg2help,
+                                             self.args.arg2bool))
                     data = data.replace(
-                        '# __INITARG2__', self.create_init_arg_line(args.arg2long))
+                        '# __INITARG2__', self.create_init_arg_line(self.args.arg2long))
                     data = data.replace(
-                        '# __EXECARG2__', self.create_exec_arg_line(args.arg2long))
+                        '# __EXECARG2__', self.create_exec_arg_line(self.args.arg2long))
                     data = data.replace(
                         '# __EXECLOGARG2__',
-                        self.create_execlog_arg_line(args.arg2help, args.arg2long))
+                        self.create_execlog_arg_line(self.args.arg2help, self.args.arg2long))
 
                     data = data.replace(
                         '# __ARG3__',
-                        self.create_arg_line(args.arg3short,
-                                             args.arg3long, args.arg3help, args.arg3bool))
+                        self.create_arg_line(self.args.arg3short,
+                                             self.args.arg3long, self.args.arg3help,
+                                             self.args.arg3bool))
                     data = data.replace(
-                        '# __INITARG3__', self.create_init_arg_line(args.arg3long))
+                        '# __INITARG3__', self.create_init_arg_line(self.args.arg3long))
                     data = data.replace(
-                        '# __EXECARG3__', self.create_exec_arg_line(args.arg3long))
+                        '# __EXECARG3__', self.create_exec_arg_line(self.args.arg3long))
                     data = data.replace(
                         '# __EXECLOGARG3__',
-                        self.create_execlog_arg_line(args.arg3help, args.arg3long))
+                        self.create_execlog_arg_line(self.args.arg3help, self.args.arg3long))
 
                     data = data.replace(
                         '# __ARG4__',
-                        self.create_arg_line(args.arg4short,
-                                             args.arg4long, args.arg4help, args.arg4bool))
+                        self.create_arg_line(self.args.arg4short,
+                                             self.args.arg4long, self.args.arg4help,
+                                             self.args.arg4bool))
                     data = data.replace(
-                        '# __INITARG4__', self.create_init_arg_line(args.arg4long))
+                        '# __INITARG4__', self.create_init_arg_line(self.args.arg4long))
                     data = data.replace(
-                        '# __EXECARG4__', self.create_exec_arg_line(args.arg4long))
+                        '# __EXECARG4__', self.create_exec_arg_line(self.args.arg4long))
                     data = data.replace(
                         '# __EXECLOGARG4__',
-                        self.create_execlog_arg_line(args.arg4help, args.arg4long))
+                        self.create_execlog_arg_line(self.args.arg4help, self.args.arg4long))
 
                     data = data.replace(
                         '# __ARG5__',
-                        self.create_arg_line(args.arg5short,
-                                             args.arg5long, args.arg5help, args.arg5bool))
+                        self.create_arg_line(self.args.arg5short,
+                                             self.args.arg5long, self.args.arg5help,
+                                             self.args.arg5bool))
                     data = data.replace(
-                        '# __INITARG5__', self.create_init_arg_line(args.arg5long))
+                        '# __INITARG5__', self.create_init_arg_line(self.args.arg5long))
                     data = data.replace(
-                        '# __EXECARG5__', self.create_exec_arg_line(args.arg5long))
+                        '# __EXECARG5__', self.create_exec_arg_line(self.args.arg5long))
                     data = data.replace(
                         '# __EXECLOGARG5__',
-                        self.create_execlog_arg_line(args.arg5help, args.arg5long))
+                        self.create_execlog_arg_line(self.args.arg5help, self.args.arg5long))
 
                 # print(data)
                 text_file = open(self.main_filename, 'w',
@@ -453,7 +530,7 @@ class PyCLIcreator():
                 text_file.write(data)
                 text_file.close()
             # Create unittest file
-            with open(self.par_testemplate, 'r') as myfile:
+            with open(self.par_testtemplate, 'r') as myfile:
                 data = myfile.read()
                 data = data.replace('__PROJECTNAME__',
                                     self.class_name)
@@ -490,28 +567,29 @@ class PyCLIcreator():
     def create_main_filename(self):
         """Create main project filename.
         """
-        self.main_filename = self.get_normalized_name(
+        self.main_filename = self.tf.get_normalized_name(
             self.par_name, 'filename')+'.py'
         self.main_filename = self.par_folder+'/'+self.main_filename
 
     def create_test_filename(self):
         """Create unittest filename.
         """
-        self.test_filename = self.get_normalized_name(
+        self.test_filename = self.tf.get_normalized_name(
             self.par_name, 'filename')+'_test.py'
         self.test_filename = self.par_folder+'/'+self.test_filename
 
     def create_notes_filename(self):
         """Create notes.txt for command line examples.
         """
-        self.notes_filename = self.get_normalized_name(
+        self.notes_filename = self.tf.get_normalized_name(
             self.par_name, 'filename')+'_notes.txt'
         self.notes_filename = self.par_folder+'/'+self.notes_filename
 
     def create_class_name(self):
         """Create class name.
         """
-        self.class_name = self.get_normalized_name(self.par_name, 'classname')
+        self.class_name = self.tf.get_normalized_name(
+            self.par_name, 'classname')
 
     @staticmethod
     def create_arg_line(argshort, arglong, arghelp, argbool):
@@ -581,53 +659,6 @@ class PyCLIcreator():
         if arglong != '' and arglong is not None:
             ret = 'self.par_'+arglong+' = \'\''
         return ret
-
-    @staticmethod
-    def get_normalized_name(name_str, mode):
-        """Replace non US characters
-
-        Arguments:
-            name_str {str} -- string to normalize
-            mode {str} -- conversion mode
-                          normal -- replace non US chars
-                          filename -- no space and lowercase
-                          classname -- PascalCase
-        Returns:
-            str -- normalized string
-        """
-
-        res = name_str
-        res = res.replace('á', 'a')
-        res = res.replace('Á', 'A')
-        res = res.replace('é', 'e')
-        res = res.replace('É', 'E')
-        res = res.replace('ö', 'o')
-        res = res.replace('Ö', 'O')
-        res = res.replace('ő', 'o')
-        res = res.replace('Ő', 'O')
-        res = res.replace('ó', 'o')
-        res = res.replace('Ó', 'O')
-        res = res.replace('ü', 'u')
-        res = res.replace('Ü', 'U')
-        res = res.replace('ű', 'u')
-        res = res.replace('Ű', 'U')
-        res = res.replace('ú', 'u')
-        res = res.replace('Ú', 'U')
-        res = res.replace('í', 'i')
-        res = res.replace('Í', 'i')
-        if mode != 'normal':
-            res = res.replace(' ', '_')
-            res = res.replace('.', '_')
-            res = res.replace(':', '_')
-        if mode == 'filename':
-            res = res.lower()
-        if mode == 'classname':
-            full_res = ''
-            parts = res.split('_')
-            for part in parts:
-                full_res += part.capitalize()+'_'
-            res = full_res[:-1]
-        return res
 
     @staticmethod
     def create_folder(folder_name):
