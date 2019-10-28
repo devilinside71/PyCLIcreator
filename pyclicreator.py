@@ -412,12 +412,12 @@ class PyCLIcreator():
             self.create_unittest_file()
             self.create_notes_file()
 
-    def replace_arg_data(self, data, argstr, argushort, argulong, arguhelp, argubool):
+    def replace_arg_data(self, data, argnumber, argushort, argulong, arguhelp, argubool):
         """Replace arg data.
 
         Arguments:
             data {str} -- data
-            argstr {str} -- number of argument
+            argnumber {str} -- number of argument
             argushort {str} -- short name
             argulong {str} -- long name
             arguhelp {str} -- help text
@@ -428,23 +428,23 @@ class PyCLIcreator():
         """
         if self.is_arg_valid(argushort, argulong, arguhelp):
             data = data.replace(
-                '# __ARG'+argstr+'__',
+                '# __ARG'+argnumber+'__',
                 self.get_arg_line(argushort,
                                   argulong, arguhelp,
                                   argubool))
             data = data.replace(
-                '# __INITARG'+argstr+'__', self.get_init_arg_line(
+                '# __INITARG'+argnumber+'__', self.get_init_arg_line(
                     argulong))
             data = data.replace(
-                '# __EXECARG'+argstr+'__', self.get_exec_arg_line(argulong))
+                '# __EXECARG'+argnumber+'__', self.get_exec_arg_line(argulong))
             data = data.replace(
-                '# __EXECLOGARG'+argstr+'__',
+                '# __EXECLOGARG'+argnumber+'__',
                 self.get_execlog_arg_line(arguhelp, argulong))
         else:
-            data = data.replace('# __ARG'+argstr+'__', '')
-            data = data.replace('# __INITARG'+argstr+'__', '')
-            data = data.replace('# __EXECARG'+argstr+'__', '')
-            data = data.replace('# __EXECLOGARG'+argstr+'__', '')
+            data = data.replace('# __ARG'+argnumber+'__', '')
+            data = data.replace('# __INITARG'+argnumber+'__', '')
+            data = data.replace('# __EXECARG'+argnumber+'__', '')
+            data = data.replace('# __EXECLOGARG'+argnumber+'__', '')
         return data
 
     def replace_general_data(self, data):
