@@ -275,6 +275,9 @@ class PyCLIcreator():
                     self.gui.par_arg1s = 'i'
                     self.gui.par_arg1l = 'input'
                     self.gui.par_arg1help = 'input file'
+                    self.gui.par_arg2s = 'o'
+                    self.gui.par_arg2l = 'output'
+                    self.gui.par_arg2help = 'output file'
             self.gui.create_gui()
             self.par_name = self.gui.par_name
             self.par_description = self.gui.par_description
