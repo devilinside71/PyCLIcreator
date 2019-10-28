@@ -270,6 +270,11 @@ class PyCLIcreator():
 
         self.is_gui_needed()
         if self.gui_needed:
+            if self.par_predefined != '':
+                if self.par_predefined == 'IO':
+                    self.gui.par_arg1s = 'i'
+                    self.gui.par_arg1l = 'input'
+                    self.gui.par_arg1help = 'input file'
             self.gui.create_gui()
             self.par_name = self.gui.par_name
             self.par_description = self.gui.par_description
