@@ -5,6 +5,7 @@ Text formatter class
 
 import logging
 import sys
+from enum import Enum
 
 __author__ = 'Laszlo Tamas'
 __copyright__ = 'Copyright 2027, Laszlo Tamas'
@@ -35,6 +36,12 @@ LOGGER_CH.setFormatter(FORMATTER)
 # add the handlers to the LOGGER
 LOGGER.addHandler(LOGGER_FH)
 LOGGER.addHandler(LOGGER_CH)
+
+
+class FormatType(Enum):
+    NORMAL = 1
+    FILENAME = 2
+    CLASSNAME = 3
 
 
 class TextFormatter():
@@ -77,13 +84,13 @@ class TextFormatter():
         res = res.replace('Ú', 'U')
         res = res.replace('í', 'i')
         res = res.replace('Í', 'i')
-        if mode != 'normal':
+        if mode != FormatType.NORMAL:
             res = res.replace(' ', '_')
             res = res.replace('.', '_')
             res = res.replace(':', '_')
-        if mode == 'filename':
+        if mode == FormatType.FILENAME:
             res = res.lower()
-        if mode == 'classname':
+        if mode == FormatType.CLASSNAME:
             full_res = ''
             parts = res.split('_')
             for part in parts:
@@ -95,10 +102,10 @@ class TextFormatter():
 if __name__ == '__main__':
     LOGGER.debug('Start program')
     PROG = TextFormatter()
-    LOGGER.debug(PROG.get_normalized_name('Árvíztűrő tükörfúrógép', 'normal'))
+    LOGGER.debug(PROG.get_normalized_name('Árvíztűrő tükörfúrógép', FormatType.NORMAL))
     LOGGER.debug(PROG.get_normalized_name(
-        'Árvíztűrő tükörfúrógép', 'filename'))
+        'Árvíztűrő tükörfúrógép', FormatType.FILENAME))
     LOGGER.debug(PROG.get_normalized_name(
-        'Árvíztűrő tükörfúrógép', 'classname'))
+        'Árvíztűrő tükörfúrógép', FormatType.CLASSNAME))
     LOGGER.debug('Exit program')
     sys.exit()

@@ -8,6 +8,7 @@ pyclicreator module:
 import unittest
 import pyclicreator
 import textformatter
+from textformatter import FormatType
 
 
 class TestFunctions(unittest.TestCase):
@@ -20,18 +21,19 @@ class TestFunctions(unittest.TestCase):
     def setUp(self):
         self.test_class = pyclicreator.PyCLIcreator()
         self.test_formatter_class = textformatter.TextFormatter()
+        self.format_types = FormatType()
 
     def test_get_normalized_name1(self):
         self.assertEqual(self.test_formatter_class.get_normalized_name(
-            'Árvíztűrő tükörfúrógép', 'normal'), 'Arvizturo tukorfurogep')
+            'Árvíztűrő tükörfúrógép', self.format_types.NORMAL), 'Arvizturo tukorfurogep')
 
     def test_get_normalized_name2(self):
         self.assertEqual(self.test_formatter_class.get_normalized_name(
-            'Árvíztűrő tükörfúrógép', 'filename'), 'arvizturo_tukorfurogep')
+            'Árvíztűrő tükörfúrógép', self.format_types.FILENAME), 'arvizturo_tukorfurogep')
 
     def test_get_normalized_name3(self):
         self.assertEqual(self.test_formatter_class.get_normalized_name(
-            'Árvíztűrő tükörfúrógép', 'classname'), 'Arvizturo_Tukorfurogep')
+            'Árvíztűrő tükörfúrógép', self.format_types.CLASSNAME), 'Arvizturo_Tukorfurogep')
 
     def test_create_arg_line1(self):
         self.assertEqual(
