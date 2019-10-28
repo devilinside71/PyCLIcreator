@@ -564,12 +564,13 @@ class PyCLIcreator():
             str -- args line
         """
         ret = ''
-        if (argshort != '' and arglong != '' and arghelp != '' and
-                argshort is not None and arglong is not None and arghelp is not None):
-            ret = 'parser.add_argument(\'-'+argshort+'\', \'--'+arglong+'\', '
-            if argbool:
-                ret += 'action=\'store_true\', '
-            ret += 'help=\''+arghelp+'\')'
+        if argshort != '' and arglong != '' and arghelp != '':
+            if argshort is not None and arglong is not None and arghelp is not None:
+                ret = 'parser.add_argument(\'-' + \
+                    argshort+'\', \'--'+arglong+'\', '
+                if argbool:
+                    ret += 'action=\'store_true\', '
+                ret += 'help=\''+arghelp+'\')'
         return ret
 
     @staticmethod
