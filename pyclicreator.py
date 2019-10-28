@@ -8,7 +8,7 @@ import errno
 import logging
 import os
 import sys
-from textformatter import TextFormatter
+from textformatter import TextFormatter, FormatType
 from pycligui import PyCLIGUI
 
 __author__ = 'Laszlo Tamas'
@@ -572,28 +572,28 @@ class PyCLIcreator():
         """Create main project filename.
         """
         self.main_filename = self.tfm.get_normalized_name(
-            self.par_name, 'filename')+'.py'
+            self.par_name, FormatType.FILENAME)+'.py'
         self.main_filename = self.par_folder+'/'+self.main_filename
 
     def create_test_filename(self):
         """Create unittest filename.
         """
         self.test_filename = self.tfm.get_normalized_name(
-            self.par_name, 'filename')+'_test.py'
+            self.par_name, FormatType.FILENAME)+'_test.py'
         self.test_filename = self.par_folder+'/'+self.test_filename
 
     def create_notes_filename(self):
         """Create notes.txt with command line examples.
         """
         self.notes_filename = self.tfm.get_normalized_name(
-            self.par_name, 'filename')+'_notes.txt'
+            self.par_name, FormatType.FILENAME)+'_notes.txt'
         self.notes_filename = self.par_folder+'/'+self.notes_filename
 
     def create_class_name(self):
         """Create class name.
         """
         self.class_name = self.tfm.get_normalized_name(
-            self.par_name, 'classname')
+            self.par_name, FormatType.CLASSNAME)
 
     @staticmethod
     def create_arg_line(argshort, arglong, arghelp, argbool):
