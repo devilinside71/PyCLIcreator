@@ -48,7 +48,7 @@ class PyCLIcreator():
     """
 
     def __init__(self):
-        self.tfm = TextFormatter()
+        self.text_formatter = TextFormatter()
         self.args = self.parse_arguments()
         self.gui = PyCLIGUI()
 
@@ -261,41 +261,14 @@ class PyCLIcreator():
         if self.args.arg5bool is not None:
             self.par_arg5bool = self.args.arg5bool
 
-        LOGGER.debug('Name: %s', self.par_name)
-        LOGGER.debug('Description: %s', self.par_description)
-        LOGGER.debug('Author: %s', self.par_author)
-        LOGGER.debug('Copyright: %s', self.par_copyright)
-        LOGGER.debug('Folder: %s', self.par_folder)
-        LOGGER.debug('Version: %s', self.par_version)
-        LOGGER.debug('SQLite: %s', self.par_sqlite)
-        LOGGER.debug('Template: %s', self.par_template)
-        LOGGER.debug('Test template: %s', self.par_testtemplate)
-        LOGGER.debug('Licence: %s', self.par_licence)
-        LOGGER.debug('Email: %s', self.par_email)
-        LOGGER.debug('Status: %s', self.par_status)
-        LOGGER.debug('Force GUI mode: %s', self.par_forcegui)
-
         self.create_main_filename()
         self.create_test_filename()
         self.create_notes_filename()
         self.create_class_name()
-        LOGGER.debug('Main filename: %s', self.main_filename)
-        LOGGER.debug('Test filename: %s', self.test_filename)
-        LOGGER.debug('Notes filename: %s', self.notes_filename)
-        LOGGER.debug('Class name: %s', self.class_name)
-        LOGGER.debug('Predefined: %s', self.par_predefined)
-        LOGGER.debug('ARG1: %s', self.par_arg1s+'|'+self.par_arg1l +
-                     '|'+self.par_arg1help+'|'+str(self.par_arg1bool))
-        LOGGER.debug('ARG2: %s', self.par_arg2s+'|'+self.par_arg2l +
-                     '|'+self.par_arg2help+'|'+str(self.par_arg2bool))
-        LOGGER.debug('ARG3: %s', self.par_arg3s+'|'+self.par_arg3l +
-                     '|'+self.par_arg3help+'|'+str(self.par_arg3bool))
-        LOGGER.debug('ARG4: %s', self.par_arg4s+'|'+self.par_arg4l +
-                     '|'+self.par_arg4help+'|'+str(self.par_arg4bool))
-        LOGGER.debug('ARG5: %s', self.par_arg5s+'|'+self.par_arg5l +
-                     '|'+self.par_arg5help+'|'+str(self.par_arg5bool))
 
-        self.check_if_gui_needed()
+        self.log_parameters()
+
+        self.is_gui_needed()
         if self.gui_needed:
             self.gui.create_gui()
             self.par_name = self.gui.par_name
@@ -336,35 +309,42 @@ class PyCLIcreator():
             self.create_test_filename()
             self.create_notes_filename()
             self.create_class_name()
-            LOGGER.debug('Name: %s', self.par_name)
-            LOGGER.debug('Description: %s', self.par_description)
-            LOGGER.debug('Author: %s', self.par_author)
-            LOGGER.debug('Copyright: %s', self.par_copyright)
-            LOGGER.debug('Folder: %s', self.par_folder)
-            LOGGER.debug('Version: %s', self.par_version)
-            LOGGER.debug('SQLite: %s', self.par_sqlite)
-            LOGGER.debug('Template: %s', self.par_template)
-            LOGGER.debug('Test template: %s', self.par_testtemplate)
-            LOGGER.debug('Licence: %s', self.par_licence)
-            LOGGER.debug('Email: %s', self.par_email)
-            LOGGER.debug('Status: %s', self.par_status)
-            LOGGER.debug('Force GUI mode: %s', self.par_forcegui)
-            LOGGER.debug('Main filename: %s', self.main_filename)
-            LOGGER.debug('Test filename: %s', self.test_filename)
-            LOGGER.debug('Notes filename: %s', self.notes_filename)
-            LOGGER.debug('Class name: %s', self.class_name)
-            LOGGER.debug('Predefined: %s', self.par_predefined)
-            LOGGER.debug('ARG1: %s', self.par_arg1s+'|'+self.par_arg1l +
-                         '|'+self.par_arg1help+'|'+str(self.par_arg1bool))
-            LOGGER.debug('ARG2: %s', self.par_arg2s+'|'+self.par_arg2l +
-                         '|'+self.par_arg2help+'|'+str(self.par_arg2bool))
-            LOGGER.debug('ARG3: %s', self.par_arg3s+'|'+self.par_arg3l +
-                         '|'+self.par_arg3help+'|'+str(self.par_arg3bool))
-            LOGGER.debug('ARG4: %s', self.par_arg4s+'|'+self.par_arg4l +
-                         '|'+self.par_arg4help+'|'+str(self.par_arg4bool))
-            LOGGER.debug('ARG5: %s', self.par_arg5s+'|'+self.par_arg5l +
-                         '|'+self.par_arg5help+'|'+str(self.par_arg5bool))
+
+            self.log_parameters()
+
         self.create_project()
+
+    def log_parameters(self):
+        """Write log for all parameters.
+        """
+        LOGGER.debug('Name: %s', self.par_name)
+        LOGGER.debug('Description: %s', self.par_description)
+        LOGGER.debug('Author: %s', self.par_author)
+        LOGGER.debug('Copyright: %s', self.par_copyright)
+        LOGGER.debug('Folder: %s', self.par_folder)
+        LOGGER.debug('Version: %s', self.par_version)
+        LOGGER.debug('SQLite: %s', self.par_sqlite)
+        LOGGER.debug('Template: %s', self.par_template)
+        LOGGER.debug('Test template: %s', self.par_testtemplate)
+        LOGGER.debug('Licence: %s', self.par_licence)
+        LOGGER.debug('Email: %s', self.par_email)
+        LOGGER.debug('Status: %s', self.par_status)
+        LOGGER.debug('Force GUI mode: %s', self.par_forcegui)
+        LOGGER.debug('Main filename: %s', self.main_filename)
+        LOGGER.debug('Test filename: %s', self.test_filename)
+        LOGGER.debug('Notes filename: %s', self.notes_filename)
+        LOGGER.debug('Class name: %s', self.class_name)
+        LOGGER.debug('Predefined: %s', self.par_predefined)
+        LOGGER.debug('ARG1: %s', self.par_arg1s+'|'+self.par_arg1l +
+                     '|'+self.par_arg1help+'|'+str(self.par_arg1bool))
+        LOGGER.debug('ARG2: %s', self.par_arg2s+'|'+self.par_arg2l +
+                     '|'+self.par_arg2help+'|'+str(self.par_arg2bool))
+        LOGGER.debug('ARG3: %s', self.par_arg3s+'|'+self.par_arg3l +
+                     '|'+self.par_arg3help+'|'+str(self.par_arg3bool))
+        LOGGER.debug('ARG4: %s', self.par_arg4s+'|'+self.par_arg4l +
+                     '|'+self.par_arg4help+'|'+str(self.par_arg4bool))
+        LOGGER.debug('ARG5: %s', self.par_arg5s+'|'+self.par_arg5l +
+                     '|'+self.par_arg5help+'|'+str(self.par_arg5bool))
 
     def create_project(self):
         """Create project.
@@ -374,37 +354,27 @@ class PyCLIcreator():
             # Create main file
             with open(self.par_template, 'r') as myfile:
                 data = myfile.read()
-                data = data.replace('__AUTHOR__', self.par_author)
-                data = data.replace('ProjectName()',
-                                    self.class_name+'()')
-                data = data.replace('__PROJECTNAMELCASE__',
-                                    self.class_name.lower())
-                data = data.replace('__DESCRIPTION__', self.par_description)
-                data = data.replace('__COPYRIGHT__', self.par_copyright)
-                data = data.replace('__LICENCE__', self.par_licence)
-                data = data.replace('__VERSION__', self.par_version)
-                data = data.replace('__EMAIL__', self.par_email)
-                data = data.replace('__STATUS__', self.par_status)
+                data = self.replace_general_data(data)
                 if self.par_predefined != '':
                     if self.par_predefined == 'IO':
                         data = data.replace(
-                            '# __ARG1__', self.create_arg_line('i', 'input', 'input file', False))
+                            '# __ARG1__', self.get_arg_line('i', 'input', 'input file', False))
                         data = data.replace(
-                            '# __INITARG1__', self.create_init_arg_line('input'))
+                            '# __INITARG1__', self.get_init_arg_line('input'))
                         data = data.replace(
-                            '# __EXECARG1__', self.create_exec_arg_line('input'))
+                            '# __EXECARG1__', self.get_exec_arg_line('input'))
                         data = data.replace(
                             '# __EXECLOGARG1__',
-                            self.create_execlog_arg_line('input file', 'input'))
+                            self.get_execlog_arg_line('input file', 'input'))
                         data = data.replace(
-                            '# __ARG2__', self.create_arg_line('o', 'output', 'output file', False))
+                            '# __ARG2__', self.get_arg_line('o', 'output', 'output file', False))
                         data = data.replace(
-                            '# __INITARG2__', self.create_init_arg_line('output'))
+                            '# __INITARG2__', self.get_init_arg_line('output'))
                         data = data.replace(
-                            '# __EXECARG2__', self.create_exec_arg_line('output'))
+                            '# __EXECARG2__', self.get_exec_arg_line('output'))
                         data = data.replace(
                             '# __EXECLOGARG2__',
-                            self.create_execlog_arg_line('output file', 'output'))
+                            self.get_execlog_arg_line('output file', 'output'))
                         data = data.replace('# __ARG3__', '')
                         data = data.replace('# __INITARG3__', '')
                         data = data.replace('# __EXECARG3__', '')
@@ -419,130 +389,115 @@ class PyCLIcreator():
                         data = data.replace('# __EXECLOGARG5__', '')
 
                 else:
-                    if self.arg_valid(self.par_arg1s, self.par_arg2l, self.par_arg1help):
-                        data = data.replace(
-                            '# __ARG1__',
-                            self.create_arg_line(self.par_arg1s,
-                                                 self.par_arg1l, self.par_arg1help,
-                                                 self.par_arg1bool))
-                        data = data.replace(
-                            '# __INITARG1__', self.create_init_arg_line(
-                                self.par_arg1l))
-                        data = data.replace(
-                            '# __EXECARG1__', self.create_exec_arg_line(self.par_arg1l))
-                        data = data.replace(
-                            '# __EXECLOGARG1__',
-                            self.create_execlog_arg_line(self.par_arg1help, self.par_arg1l))
-                    else:
-                        data = data.replace('# __ARG1__', '')
-                        data = data.replace('# __INITARG1__', '')
-                        data = data.replace('# __EXECARG1__', '')
-                        data = data.replace('# __EXECLOGARG1__', '')
-                    if self.arg_valid(self.par_arg2s, self.par_arg2l, self.par_arg2help):
-                        data = data.replace(
-                            '# __ARG2__',
-                            self.create_arg_line(self.par_arg2s,
-                                                 self.par_arg2l, self.par_arg2help,
-                                                 self.par_arg2bool))
-                        data = data.replace(
-                            '# __INITARG2__', self.create_init_arg_line(
-                                self.par_arg2l))
-                        data = data.replace(
-                            '# __EXECARG2__', self.create_exec_arg_line(self.par_arg2l))
-                        data = data.replace(
-                            '# __EXECLOGARG2__',
-                            self.create_execlog_arg_line(self.par_arg2help, self.par_arg2l))
-                    else:
-                        data = data.replace('# __ARG2__', '')
-                        data = data.replace('# __INITARG2__', '')
-                        data = data.replace('# __EXECARG2__', '')
-                        data = data.replace('# __EXECLOGARG2__', '')
-                    if self.arg_valid(self.par_arg3s, self.par_arg3l, self.par_arg3help):
-                        data = data.replace(
-                            '# __ARG3__',
-                            self.create_arg_line(self.par_arg3s,
-                                                 self.par_arg3l, self.par_arg3help,
-                                                 self.par_arg3bool))
-                        data = data.replace(
-                            '# __INITARG3__', self.create_init_arg_line(
-                                self.par_arg3l))
-                        data = data.replace(
-                            '# __EXECARG3__', self.create_exec_arg_line(self.par_arg3l))
-                        data = data.replace(
-                            '# __EXECLOGARG3__',
-                            self.create_execlog_arg_line(self.par_arg3help, self.par_arg3l))
-                    else:
-                        data = data.replace('# __ARG3__', '')
-                        data = data.replace('# __INITARG3__', '')
-                        data = data.replace('# __EXECARG3__', '')
-                        data = data.replace('# __EXECLOGARG3__', '')
-                    if self.arg_valid(self.par_arg4s, self.par_arg4l, self.par_arg4help):
-                        data = data.replace(
-                            '# __ARG4__',
-                            self.create_arg_line(self.par_arg4s,
-                                                 self.par_arg4l, self.par_arg4help,
-                                                 self.par_arg4bool))
-                        data = data.replace(
-                            '# __INITARG4__', self.create_init_arg_line(
-                                self.par_arg4l))
-                        data = data.replace(
-                            '# __EXECARG4__', self.create_exec_arg_line(self.par_arg4l))
-                        data = data.replace(
-                            '# __EXECLOGARG4__',
-                            self.create_execlog_arg_line(self.par_arg4help, self.par_arg4l))
-                    else:
-                        data = data.replace('# __ARG4__', '')
-                        data = data.replace('# __INITARG4__', '')
-                        data = data.replace('# __EXECARG4__', '')
-                        data = data.replace('# __EXECLOGARG4__', '')
-                    if self.arg_valid(self.par_arg5s, self.par_arg5l, self.par_arg5help):
-                        data = data.replace(
-                            '# __ARG5__',
-                            self.create_arg_line(self.par_arg5s,
-                                                 self.par_arg5l, self.par_arg5help,
-                                                 self.par_arg5bool))
-                        data = data.replace(
-                            '# __INITARG5__', self.create_init_arg_line(
-                                self.par_arg5l))
-                        data = data.replace(
-                            '# __EXECARG5__', self.create_exec_arg_line(self.par_arg5l))
-                        data = data.replace(
-                            '# __EXECLOGARG5__',
-                            self.create_execlog_arg_line(self.par_arg5help, self.par_arg5l))
-                    else:
-                        data = data.replace('# __ARG5__', '')
-                        data = data.replace('# __INITARG5__', '')
-                        data = data.replace('# __EXECARG5__', '')
-                        data = data.replace('# __EXECLOGARG5__', '')
+                    data = self.replace_arg_data(
+                        data, '1', self.par_arg1s, self.par_arg1l, self.par_arg1help,
+                        self.par_arg1bool)
+                    data = self.replace_arg_data(
+                        data, '2', self.par_arg2s, self.par_arg2l, self.par_arg2help,
+                        self.par_arg2bool)
+                    data = self.replace_arg_data(
+                        data, '3', self.par_arg3s, self.par_arg3l, self.par_arg3help,
+                        self.par_arg3bool)
+                    data = self.replace_arg_data(
+                        data, '4', self.par_arg4s, self.par_arg4l, self.par_arg4help,
+                        self.par_arg4bool)
+                    data = self.replace_arg_data(
+                        data, '5', self.par_arg5s, self.par_arg5l, self.par_arg5help,
+                        self.par_arg5bool)
 
                 # print(data)
                 text_file = open(self.main_filename, 'w', encoding='utf-8')
                 text_file.write(data)
                 text_file.close()
-            # Create unittest file
-            with open(self.par_testtemplate, 'r') as myfile:
-                data = myfile.read()
-                data = data.replace('__PROJECTNAME__', self.class_name)
-                data = data.replace('__PROJECTNAMELCASE__',
-                                    self.class_name.lower())
-                data = data.replace('__DESCRIPTION__', self.par_description)
-                # print(data)
-                text_file = open(self.test_filename, 'w', encoding='utf-8')
-                text_file.write(data)
-                text_file.close()
-            # Create notes file
-            with open(self.par_notestemplate, 'r') as myfile:
-                data = myfile.read()
-                data = data.replace('__PROJECTNAME__', self.class_name)
-                data = data.replace('__PROJECTNAMELCASE__',
-                                    self.class_name.lower())
-                data = data.replace('__DESCRIPTION__', self.par_description)
-                # print(data)
-                text_file = open(self.notes_filename, 'w', encoding='utf-8')
-                text_file.write(data)
-                text_file.close()
+            self.create_unittest_file()
+            self.create_notes_file()
 
-    def check_if_gui_needed(self):
+    def replace_arg_data(self, data, argstr, argushort, argulong, arguhelp, argubool):
+        """Replace arg data.
+
+        Arguments:
+            data {str} -- data
+            argstr {str} -- number of argument
+            argushort {str} -- short name
+            argulong {str} -- long name
+            arguhelp {str} -- help text
+            argubool {bool} -- boolean
+
+        Returns:
+            str -- modified data
+        """
+        if self.is_arg_valid(argushort, argulong, arguhelp):
+            data = data.replace(
+                '# __ARG'+argstr+'__',
+                self.get_arg_line(argushort,
+                                  argulong, arguhelp,
+                                  argubool))
+            data = data.replace(
+                '# __INITARG'+argstr+'__', self.get_init_arg_line(
+                    argulong))
+            data = data.replace(
+                '# __EXECARG'+argstr+'__', self.get_exec_arg_line(argulong))
+            data = data.replace(
+                '# __EXECLOGARG'+argstr+'__',
+                self.get_execlog_arg_line(arguhelp, argulong))
+        else:
+            data = data.replace('# __ARG'+argstr+'__', '')
+            data = data.replace('# __INITARG'+argstr+'__', '')
+            data = data.replace('# __EXECARG'+argstr+'__', '')
+            data = data.replace('# __EXECLOGARG'+argstr+'__', '')
+        return data
+
+    def replace_general_data(self, data):
+        """Replace general project data.
+
+        Arguments:
+            data {str} -- data
+
+        Returns:
+            str -- modified data
+        """
+        data = data.replace('__AUTHOR__', self.par_author)
+        data = data.replace('ProjectName()',
+                            self.class_name+'()')
+        data = data.replace('__PROJECTNAMELCASE__',
+                            self.class_name.lower())
+        data = data.replace('__DESCRIPTION__', self.par_description)
+        data = data.replace('__COPYRIGHT__', self.par_copyright)
+        data = data.replace('__LICENCE__', self.par_licence)
+        data = data.replace('__VERSION__', self.par_version)
+        data = data.replace('__EMAIL__', self.par_email)
+        data = data.replace('__STATUS__', self.par_status)
+        return data
+
+    def create_unittest_file(self):
+        """Create unittest.
+        """
+        with open(self.par_testtemplate, 'r') as myfile:
+            data = myfile.read()
+            data = data.replace('__PROJECTNAME__', self.class_name)
+            data = data.replace('__PROJECTNAMELCASE__',
+                                self.class_name.lower())
+            data = data.replace('__DESCRIPTION__', self.par_description)
+            # print(data)
+            text_file = open(self.test_filename, 'w', encoding='utf-8')
+            text_file.write(data)
+            text_file.close()
+
+    def create_notes_file(self):
+        """Create notes txt file for running commands.
+        """
+        with open(self.par_notestemplate, 'r') as myfile:
+            data = myfile.read()
+            data = data.replace('__PROJECTNAME__', self.class_name)
+            data = data.replace('__PROJECTNAMELCASE__',
+                                self.class_name.lower())
+            data = data.replace('__DESCRIPTION__', self.par_description)
+            # print(data)
+            text_file = open(self.notes_filename, 'w', encoding='utf-8')
+            text_file.write(data)
+            text_file.close()
+
+    def is_gui_needed(self):
         """Check if GUI needed becacuse of missing parameters.
         """
         self.gui_needed = False
@@ -551,7 +506,7 @@ class PyCLIcreator():
         LOGGER.debug('GUI needed: %s', self.gui_needed)
 
     @staticmethod
-    def arg_valid(argshort, arglong, arghelp):
+    def is_arg_valid(argshort, arglong, arghelp):
         """Check if arg is valid
 
         Arguments:
@@ -571,32 +526,32 @@ class PyCLIcreator():
     def create_main_filename(self):
         """Create main project filename.
         """
-        self.main_filename = self.tfm.get_normalized_name(
+        self.main_filename = self.text_formatter.get_normalized_name(
             self.par_name, FormatType.FILENAME)+'.py'
         self.main_filename = self.par_folder+'/'+self.main_filename
 
     def create_test_filename(self):
         """Create unittest filename.
         """
-        self.test_filename = self.tfm.get_normalized_name(
+        self.test_filename = self.text_formatter.get_normalized_name(
             self.par_name, FormatType.FILENAME)+'_test.py'
         self.test_filename = self.par_folder+'/'+self.test_filename
 
     def create_notes_filename(self):
         """Create notes.txt with command line examples.
         """
-        self.notes_filename = self.tfm.get_normalized_name(
+        self.notes_filename = self.text_formatter.get_normalized_name(
             self.par_name, FormatType.FILENAME)+'_notes.txt'
         self.notes_filename = self.par_folder+'/'+self.notes_filename
 
     def create_class_name(self):
         """Create class name.
         """
-        self.class_name = self.tfm.get_normalized_name(
+        self.class_name = self.text_formatter.get_normalized_name(
             self.par_name, FormatType.CLASSNAME)
 
     @staticmethod
-    def create_arg_line(argshort, arglong, arghelp, argbool):
+    def get_arg_line(argshort, arglong, arghelp, argbool):
         """Create argumentum line.
 
         Arguments:
@@ -618,7 +573,7 @@ class PyCLIcreator():
         return ret
 
     @staticmethod
-    def create_execlog_arg_line(arghelp, arglong):
+    def get_execlog_arg_line(arghelp, arglong):
         """Create LOGGER line
 
         Arguments:
@@ -634,7 +589,7 @@ class PyCLIcreator():
         return ret
 
     @staticmethod
-    def create_exec_arg_line(arglong):
+    def get_exec_arg_line(arglong):
         """Create execute arg line
 
         Arguments:
@@ -650,7 +605,7 @@ class PyCLIcreator():
         return ret
 
     @staticmethod
-    def create_init_arg_line(arglong):
+    def get_init_arg_line(arglong):
         """Create init argumentum line
 
         Arguments:

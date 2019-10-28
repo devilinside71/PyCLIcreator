@@ -2870,3 +2870,54 @@
 2019-10-27 15:54:10,422 - pyclicreator - DEBUG - Target folder: C:/Users/Molnár Attila/Documents/GitHub/PyCLIcreator/kutya
 2019-10-27 15:54:10,422 - pyclicreator - DEBUG - Folder "C:/Users/Molnár Attila/Documents/GitHub/PyCLIcreator/kutya" already exists
 2019-10-27 15:54:10,426 - pyclicreator - DEBUG - Exit program
+2019-10-28 08:06:55,168 - pyclicreator - DEBUG - Start program
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Name: 
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Description: 
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Folder: 
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - SQLite: False
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Licence: MIT
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Status: Initial
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Main filename: /.py
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Class name: 
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - Predefined: 
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - ARG1: |||False
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - ARG2: |||False
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - ARG3: |||False
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - ARG4: |||False
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - ARG5: |||False
+2019-10-28 08:06:55,436 - pyclicreator - DEBUG - GUI needed: True
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Name: qqqq
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Description: 
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Folder: C:/Users/tamas.laszlo9/Documents/test
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - SQLite: False
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Licence: MIT
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Status: Initial
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Main filename: C:/Users/tamas.laszlo9/Documents/test/qqqq.py
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Test filename: C:/Users/tamas.laszlo9/Documents/test/qqqq_test.py
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Notes filename: C:/Users/tamas.laszlo9/Documents/test/qqqq_notes.txt
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Class name: Qqqq
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Predefined: 
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - ARG1: i|inputka|valami|False
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - ARG2: o|outka|gfdgfd|True
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - ARG3: |||False
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - ARG4: |||False
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - ARG5: |||False
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Target folder: C:/Users/tamas.laszlo9/Documents/test
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Folder "C:/Users/tamas.laszlo9/Documents/test" already exists
+2019-10-28 08:07:38,055 - pyclicreator - DEBUG - Exit program
