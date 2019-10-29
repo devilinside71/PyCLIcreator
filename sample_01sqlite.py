@@ -107,7 +107,7 @@ class ProjectName():
         # __EXECLOGARG3__
         # __EXECLOGARG4__
         # __EXECLOGARG5__
-        LOGGER.debug('Database: %s', self.database)            
+        LOGGER.debug('Database path: %s', self.database)
 
     def create_connection(self, db_file):
         """ Create a database connection to the SQLite database
