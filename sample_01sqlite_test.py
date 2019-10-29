@@ -31,6 +31,10 @@ class TestFunctions(unittest.TestCase):
 
         self.assertEqual(self.test_class.sample_function('sample result2'), 'sample wrong result2')
 
+    def test_gui(self):
+        """Test GUI.
+        """
+        self.test_class.create_gui()
 
 if __name__ == '__main__':
     unittest.main()
