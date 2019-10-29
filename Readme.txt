@@ -1,6 +1,8 @@
-Az SQLite külön sample legyen
+Samples:
+sample_01
+sample_01sql
+sample_01tkinter
 
-Test without GUI
 Doxygen
 
 self.par_name
