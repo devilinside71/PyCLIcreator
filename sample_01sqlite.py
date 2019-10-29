@@ -121,7 +121,7 @@ class ProjectName():
 
         try:
             conn = sqlite3.connect(db_file)
-            LOGGER.debug('SQLite version: {0}'.format(sqlite3.version))
+            LOGGER.debug('SQLite version: %s', sqlite3.version)
             return conn
         except sqlite3.Error as sql_err:
             LOGGER.error(sql_err)
