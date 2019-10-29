@@ -86,6 +86,7 @@ class ProjectName():
         # __ARG3__
         # __ARG4__
         # __ARG5__
+        parser.add_argument('-db', '--database', help='database path')
         parser.add_argument('-v', '--verbose', action='store_true',
                             help='increase output verbosity')
         return parser.parse_args()
@@ -98,13 +99,15 @@ class ProjectName():
         # __EXECARG3__
         # __EXECARG4__
         # __EXECARG5__
+        if self.args.database is not None:
+            self.database = self.args.database
 
         # __EXECLOGARG1__
         # __EXECLOGARG2__
         # __EXECLOGARG3__
         # __EXECLOGARG4__
         # __EXECLOGARG5__
-        pass
+        LOGGER.debug('Database: %s', self.database)            
 
     def create_connection(self, db_file):
         """ Create a database connection to the SQLite database
