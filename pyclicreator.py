@@ -661,8 +661,8 @@ class PyCLIcreator():
         """
         ret = ''
         if arglong != '' and arglong is not None:
-            ret = 'if args.'+arglong+' is not None:\n            self.par_' + \
-                arglong+' = args.'+arglong
+            ret = 'if self.args.'+arglong+' is not None:\n            self.par_' + \
+                arglong+' = self.args.'+arglong
         return ret
 
     @staticmethod

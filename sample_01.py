@@ -8,7 +8,6 @@ import errno
 import logging
 import os
 import sys
-# __SQLITEIMPORT__
 
 __author__ = '__AUTHOR__'
 __copyright__ = '__COPYRIGHT__, __AUTHOR__'
@@ -46,12 +45,12 @@ class ProjectName():
     """
 
     def __init__(self):
+        self.args = self.parse_arguments()
         # __INITARG1__
         # __INITARG2__
         # __INITARG3__
         # __INITARG4__
         # __INITARG5__
-        pass
 
     @staticmethod
     def parse_arguments():
@@ -74,7 +73,6 @@ class ProjectName():
     def execute_program(self):
         """Execute the program by arguments.
         """
-        args = self.parse_arguments()
         # __EXECARG1__
         # __EXECARG2__
         # __EXECARG3__

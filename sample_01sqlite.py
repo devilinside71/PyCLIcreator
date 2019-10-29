@@ -1,15 +1,57 @@
 # -*- coding: utf-8 -*-
-""" Sample SQLite3 module.
+"""
+__DESCRIPTION__
 """
 
 import sqlite3
+import argparse
+import errno
+import logging
+import os
+import sys
+
+__author__ = '__AUTHOR__'
+__copyright__ = '__COPYRIGHT__, __AUTHOR__'
+__license__ = '__LICENCE__'
+__version__ = '__VERSION__'
+__maintainer__ = '__AUTHOR__'
+__email__ = '__EMAIL__'
+__status__ = '__STATUS__'
+
+LOGGER = logging.getLogger('__PROJECTNAMELCASE__')
+# set level for file handling (NOTSET>DEBUG>INFO>WARNING>ERROR>CRITICAL)
+LOGGER.setLevel(logging.DEBUG)
+
+# create file handler which logs even debug messages
+LOGGER_FH = logging.FileHandler('__PROJECTNAMELCASE__.log')
+
+# create console handler with a higher log level
+LOGGER_CH = logging.StreamHandler()
+LOGGER_CH.setLevel(logging.INFO)
+
+# create FORMATTER and add it to the handlers
+FORMATTER = \
+    logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+                      )
+LOGGER_FH.setFormatter(FORMATTER)
+LOGGER_CH.setFormatter(FORMATTER)
+
+# add the handlers to the LOGGER
+LOGGER.addHandler(LOGGER_FH)
+LOGGER.addHandler(LOGGER_CH)
 
 
-class MAIN():
+class ProjectName():
     """ Sample SQLite3 class.
     """
 
     def __init__(self):
+        self.args = self.parse_arguments()
+        # __INITARG1__
+        # __INITARG2__
+        # __INITARG3__
+        # __INITARG4__
+        # __INITARG5__
         self.database = "C:\\sqlite\\db\\pythonsqlite.db"
         self.sql_create_projects_table = """ CREATE TABLE IF NOT EXISTS projects (
                                             id integer PRIMARY KEY,
@@ -30,6 +72,40 @@ class MAIN():
                                     );"""
         self.connection = None
 
+    @staticmethod
+    def parse_arguments():
+        """Parse arguments.
+
+        Returns:
+            parser args -- parser argumnents
+        """
+
+        parser = argparse.ArgumentParser()
+        # __ARG1__
+        # __ARG2__
+        # __ARG3__
+        # __ARG4__
+        # __ARG5__
+        parser.add_argument('-v', '--verbose', action='store_true',
+                            help='increase output verbosity')
+        return parser.parse_args()
+
+    def execute_program(self):
+        """Execute the program by arguments.
+        """
+        # __EXECARG1__
+        # __EXECARG2__
+        # __EXECARG3__
+        # __EXECARG4__
+        # __EXECARG5__
+
+        # __EXECLOGARG1__
+        # __EXECLOGARG2__
+        # __EXECLOGARG3__
+        # __EXECLOGARG4__
+        # __EXECLOGARG5__
+        pass
+
     def create_connection(self, db_file):
         """ Create a database connection to the SQLite database
 
@@ -42,10 +118,10 @@ class MAIN():
 
         try:
             conn = sqlite3.connect(db_file)
-            print('SQLite version: {0}'.format(sqlite3.version))
+            LOGGER.debug('SQLite version: {0}'.format(sqlite3.version))
             return conn
         except sqlite3.Error as sql_err:
-            print(sql_err)
+            LOGGER.error(sql_err)
         return None
 
     def create_table(self, conn, create_table_sql):
@@ -60,7 +136,7 @@ class MAIN():
             sql_cursor = conn.cursor()
             sql_cursor.execute(create_table_sql)
         except sqlite3.Error as sql_err:
-            print(sql_err)
+            LOGGER.error(sql_err)
 
     def create_project_data(self, conn, project_data):
         """
@@ -103,7 +179,7 @@ class MAIN():
             if close_connection:
                 self.connection.close()
         else:
-            print('Error! Cannot create the database connection.')
+            LOGGER.error('Error! Cannot create the database connection.')
 
     def add_sample_data(self):
         """ Add sample data.
@@ -111,12 +187,15 @@ class MAIN():
 
         with self.connection:
             # create a new project
-            project = ('Cool App with SQLite & Python', '2015-01-01', '2015-01-30')
+            project = ('Cool App with SQLite & Python',
+                       '2015-01-01', '2015-01-30')
             project_id = self.create_project_data(self.connection, project)
 
             # tasks
-            task_1 = ('Analyze the requirements of the app', 1, 1, project_id, '2015-01-01', '2015-01-02')
-            task_2 = ('Confirm with user about the top requirements', 1, 1, project_id, '2015-01-03', '2015-01-05')
+            task_1 = ('Analyze the requirements of the app', 1,
+                      1, project_id, '2015-01-01', '2015-01-02')
+            task_2 = ('Confirm with user about the top requirements',
+                      1, 1, project_id, '2015-01-03', '2015-01-05')
 
             # create tasks
             self.create_task_data(self.connection, task_1)
@@ -192,7 +271,7 @@ class MAIN():
         rows = cur.fetchall()
 
         for row in rows:
-            print(row)
+            LOGGER.debug(row)
 
     @classmethod
     def select_task_by_priority(cls, conn, priority):
@@ -208,7 +287,7 @@ class MAIN():
         rows = cur.fetchall()
 
         for row in rows:
-            print(row)
+            LOGGER.debug(row)
 
     def select_all_tasks_data(self):
         """ Select all data.
@@ -222,9 +301,24 @@ class MAIN():
 
         self.select_task_by_priority(self.connection, 1)
 
+    def sample_function(self, input_str):
+        """Sample function
+
+        Arguments:
+            input_str {str} -- input string
+
+        Returns:
+            str -- result string
+        """
+        ret = input_str
+        return ret
+
 
 if __name__ == '__main__':
-    MAIN_CLASS = MAIN()
-    MAIN_CLASS.execute_sql_creation()
-    MAIN_CLASS.add_sample_data()
-    MAIN_CLASS.update_task_data()
+    LOGGER.debug('Start program')
+    PROG = ProjectName()
+    PROG.execute_sql_creation()
+    PROG.add_sample_data()
+    PROG.update_task_data()
+    LOGGER.debug('Exit program')
+    sys.exit()
