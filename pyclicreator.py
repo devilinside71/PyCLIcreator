@@ -339,9 +339,9 @@ class PyCLIcreator():
     def setup_gui_variables(self):
         """Setup GUI variables before showing.
         """
+        self.setup_gui_general_variables()
         if self.par_predefined != '':
             if self.par_predefined == 'IO':
-                self.setup_gui_general_variables()
                 self.gui.par_arg1s = 'i'
                 self.gui.par_arg1l = 'input'
                 self.gui.par_arg1help = 'input file'
@@ -349,8 +349,6 @@ class PyCLIcreator():
                 self.gui.par_arg2l = 'output'
                 self.gui.par_arg2help = 'output file'
         else:
-            self.setup_gui_general_variables()
-
             self.gui.par_arg1s = self.par_arg1s
             self.gui.par_arg1l = self.par_arg1l
             self.gui.par_arg1help = self.par_arg1help
