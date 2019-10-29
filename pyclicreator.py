@@ -270,14 +270,7 @@ class PyCLIcreator():
 
         self.is_gui_needed()
         if self.gui_needed:
-            if self.par_predefined != '':
-                if self.par_predefined == 'IO':
-                    self.gui.par_arg1s = 'i'
-                    self.gui.par_arg1l = 'input'
-                    self.gui.par_arg1help = 'input file'
-                    self.gui.par_arg2s = 'o'
-                    self.gui.par_arg2l = 'output'
-                    self.gui.par_arg2help = 'output file'
+            self.setup_gui_variables()
             self.gui.create_gui()
             self.par_name = self.gui.par_name
             self.par_description = self.gui.par_description
@@ -321,6 +314,67 @@ class PyCLIcreator():
             self.log_parameters()
 
         self.create_project()
+
+    def setup_gui_general_variables(self):
+        """Setup GUI general variables.
+        """
+        self.gui.par_name = self.par_name
+        self.gui.par_description = self.par_description
+        self.gui.par_author = self.par_author
+        self.gui.par_copyright = self.par_copyright
+        self.gui.par_folder = self.par_folder
+        self.gui.par_version = self.par_version
+        self.gui.par_sqlite = self.par_sqlite
+        self.gui.par_template = self.par_template
+        self.gui.par_testtemplate = self.par_testtemplate
+        self.gui.par_notestemplate = self.par_notestemplate
+        self.gui.par_licence = self.par_licence
+        self.gui.par_email = self.par_email
+        self.gui.par_status = self.par_status
+        self.gui.par_forcegui = self.par_forcegui
+        self.gui.par_predefined = self.par_predefined
+
+
+
+    def setup_gui_variables(self):
+        """Setup GUI variables before showing.
+        """
+        if self.par_predefined != '':
+            if self.par_predefined == 'IO':
+                self.setup_gui_general_variables()
+                self.gui.par_arg1s = 'i'
+                self.gui.par_arg1l = 'input'
+                self.gui.par_arg1help = 'input file'
+                self.gui.par_arg2s = 'o'
+                self.gui.par_arg2l = 'output'
+                self.gui.par_arg2help = 'output file'
+        else:
+            self.setup_gui_general_variables()
+
+            self.gui.par_arg1s = self.par_arg1s
+            self.gui.par_arg1l = self.par_arg1l
+            self.gui.par_arg1help = self.par_arg1help
+            self.gui.par_arg1bool = self.par_arg1bool
+
+            self.gui.par_arg2s = self.par_arg2s
+            self.gui.par_arg2l = self.par_arg2l
+            self.gui.par_arg2help = self.par_arg2help
+            self.gui.par_arg2bool = self.par_arg2bool
+
+            self.gui.par_arg3s = self.par_arg3s
+            self.gui.par_arg3l = self.par_arg3l
+            self.gui.par_arg3help = self.par_arg3help
+            self.gui.par_arg3bool = self.par_arg3bool
+
+            self.gui.par_arg4s = self.par_arg4s
+            self.gui.par_arg4l = self.par_arg4l
+            self.gui.par_arg4help = self.par_arg4help
+            self.gui.par_arg4bool = self.par_arg4bool
+
+            self.gui.par_arg5s = self.par_arg5s
+            self.gui.par_arg5l = self.par_arg5l
+            self.gui.par_arg5help = self.par_arg5help
+            self.gui.par_arg5bool = self.par_arg5bool
 
     def log_parameters(self):
         """Write log for all parameters.
