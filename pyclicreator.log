@@ -3381,3 +3381,31 @@
 2019-10-29 05:04:33,061 - pyclicreator - DEBUG - Target folder: 
 2019-10-29 05:04:33,061 - pyclicreator - DEBUG - Cannot create folder 
 2019-10-29 05:04:33,061 - pyclicreator - DEBUG - Exit program
+2019-10-29 05:08:50,216 - pyclicreator - DEBUG - Start program
+2019-10-29 05:08:50,271 - pyclicreator - DEBUG - Name: Állat
+2019-10-29 05:08:50,271 - pyclicreator - DEBUG - Description: 
+2019-10-29 05:08:50,271 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-10-29 05:08:50,271 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-10-29 05:08:50,271 - pyclicreator - DEBUG - Folder: Majomka
+2019-10-29 05:08:50,271 - pyclicreator - DEBUG - Version: 0.0.1
+2019-10-29 05:08:50,271 - pyclicreator - DEBUG - SQLite: False
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Template: sample_01.py
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Licence: MIT
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Status: Initial
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Force GUI mode: False
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Main filename: Majomka/allat.py
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Test filename: Majomka/allat_test.py
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Notes filename: Majomka/allat_notes.txt
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Class name: Allat
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - Predefined: IO
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - ARG1: |||False
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - ARG2: |||False
+2019-10-29 05:08:50,272 - pyclicreator - DEBUG - ARG3: |||False
+2019-10-29 05:08:50,273 - pyclicreator - DEBUG - ARG4: |||False
+2019-10-29 05:08:50,273 - pyclicreator - DEBUG - ARG5: |||False
+2019-10-29 05:08:50,273 - pyclicreator - DEBUG - GUI needed: False
+2019-10-29 05:08:50,273 - pyclicreator - DEBUG - Target folder: Majomka
+2019-10-29 05:08:50,273 - pyclicreator - DEBUG - Folder "Majomka" created succesfuly
+2019-10-29 05:08:50,282 - pyclicreator - DEBUG - Exit program
