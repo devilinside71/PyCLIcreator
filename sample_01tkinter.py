@@ -58,8 +58,13 @@ class ProjectName():
         # __INITARG5__
         self.par_folder = ''
         self.par_file = ''
+        self.par_b = BooleanVar()
+        self.par_bool = False
+
         self.entry_folder = Entry(self.master)
         self.entry_file = Entry(self.master)
+        self.chk_bool = Checkbutton(
+            self.master, text="Bool", variable=self.par_b)
         self.btn_ok = Button(self.master, text='OK',
                              command=self.execute_ok)
         self.btn_cancel = Button(
@@ -68,7 +73,6 @@ class ProjectName():
     def execute_ok(self):
         """Execute OK button.
         """
-        pass
 
     def create_gui(self):
         """Create GUI.
@@ -89,9 +93,24 @@ class ProjectName():
         Button(self.master, text='Browse', command=self.set_file).grid(
             row=1, column=4, sticky=W, pady=4)
 
+        self.chk_bool.grid(row=12, column=4)
+
         self.btn_cancel.grid(row=18, column=0, sticky=W)
         self.btn_ok.grid(row=18, column=2, sticky=W, columnspan=3)
         self.btn_ok.config(width=25)
+
+        self.master.mainloop()
+
+    def set_variables(self):
+        """Set variables from GUI.
+        """
+        self.par_folder = self.entry_folder.get()
+        self.par_file = self.entry_file.get()
+        self.par_bool = self.par_b
+
+    def set_gui_variables(self):
+        """Set GUI variables.
+        """
 
     def set_folder(self):
         """Set the folder by filedialog.
