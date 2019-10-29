@@ -84,7 +84,6 @@ class ProjectName():
         # __EXECLOGARG3__
         # __EXECLOGARG4__
         # __EXECLOGARG5__
-        pass
 
     def sample_function(self, input_str):
         """Sample function

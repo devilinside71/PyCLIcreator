@@ -160,3 +160,7 @@
 2019-10-28 15:17:32,520 - pycligui - DEBUG - Folder: C:/Users/tamas.laszlo9/Documents/test
 2019-10-29 06:22:44,188 - pycligui - DEBUG - Folder: C:/Users/tamas.laszlo9/Documents/test
 2019-10-29 06:25:00,348 - pycligui - DEBUG - Folder: C:/Users/tamas.laszlo9/Documents/test
+2019-10-29 13:58:09,530 - pycligui - DEBUG - Start program
+2019-10-29 13:58:09,569 - pycligui - DEBUG - Output: None
+2019-10-29 13:58:22,927 - pycligui - DEBUG - Test template: C:/Users/tamas.laszlo9/Documents/test/proj01_notes.txt
+2019-10-29 13:58:25,795 - pycligui - DEBUG - Exit program
