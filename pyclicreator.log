@@ -3511,3 +3511,666 @@
 2019-10-29 06:25:01,259 - pyclicreator - DEBUG - Target folder: C:/Users/tamas.laszlo9/Documents/test
 2019-10-29 06:25:01,259 - pyclicreator - DEBUG - Folder "C:/Users/tamas.laszlo9/Documents/test" already exists
 2019-10-29 06:25:01,259 - pyclicreator - DEBUG - Exit program
+2019-12-18 03:49:06,086 - pyclicreator - DEBUG - Start program
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Name: 
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Description: 
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Folder: 
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - SQLite: False
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Licence: MIT
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Status: Initial
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Class name: 
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - Predefined: 
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-18 03:49:06,789 - pyclicreator - DEBUG - GUI needed: True
+2019-12-18 03:50:13,430 - pyclicreator - DEBUG - Name: PrepOSINT
+2019-12-18 03:50:13,430 - pyclicreator - DEBUG - Description: Prepare laguage folders
+2019-12-18 03:50:13,430 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - SQLite: False
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Licence: MIT
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Status: Initial
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT/preposint.py
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT/preposint_test.py
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT/preposint_notes.txt
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Class name: Preposint
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Predefined: 
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT
+2019-12-18 03:50:13,431 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepOSINT" already exists
+2019-12-18 03:50:13,521 - pyclicreator - DEBUG - Exit program
+2019-12-23 12:45:18,190 - pyclicreator - DEBUG - Start program
+2019-12-23 12:45:18,639 - pyclicreator - DEBUG - Name: 
+2019-12-23 12:45:18,639 - pyclicreator - DEBUG - Description: 
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Folder: 
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - SQLite: False
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Licence: MIT
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Status: Initial
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Class name: 
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - Predefined: 
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-23 12:45:18,640 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-23 12:45:18,641 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-23 12:45:18,641 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-23 12:45:18,641 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-23 12:45:18,641 - pyclicreator - DEBUG - GUI needed: True
+2019-12-23 12:46:35,870 - pyclicreator - DEBUG - Name: Osint Convert
+2019-12-23 12:46:35,870 - pyclicreator - DEBUG - Description: Convert files to UTF-8 TXT
+2019-12-23 12:46:35,870 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-23 12:46:35,870 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-23 12:46:35,870 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT
+2019-12-23 12:46:35,870 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-23 12:46:35,870 - pyclicreator - DEBUG - SQLite: False
+2019-12-23 12:46:35,870 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-23 12:46:35,871 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-23 12:46:35,871 - pyclicreator - DEBUG - Licence: MIT
+2019-12-23 12:46:35,871 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-23 12:46:35,871 - pyclicreator - DEBUG - Status: Initial
+2019-12-23 12:46:35,871 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-23 12:46:35,871 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT/osint_convert.py
+2019-12-23 12:46:35,871 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT/osint_convert_test.py
+2019-12-23 12:46:35,871 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT/osint_convert_notes.txt
+2019-12-23 12:46:35,871 - pyclicreator - DEBUG - Class name: Osint_Convert
+2019-12-23 12:46:35,871 - pyclicreator - DEBUG - Predefined: 
+2019-12-23 12:46:35,872 - pyclicreator - DEBUG - ARG1: f|folder|base folder to check|False
+2019-12-23 12:46:35,872 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-23 12:46:35,872 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-23 12:46:35,872 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-23 12:46:35,872 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-23 12:46:35,872 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT
+2019-12-23 12:46:35,872 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepOSINT" already exists
+2019-12-23 12:46:35,877 - pyclicreator - DEBUG - Exit program
+2019-12-23 12:47:22,308 - pyclicreator - DEBUG - Start program
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Name: 
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Description: 
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Folder: 
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - SQLite: False
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Licence: MIT
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-23 12:47:22,444 - pyclicreator - DEBUG - Status: Initial
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - Class name: 
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - Predefined: 
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-23 12:47:22,445 - pyclicreator - DEBUG - GUI needed: True
+2019-12-23 12:48:50,062 - pyclicreator - DEBUG - Name: Twitter Translator
+2019-12-23 12:48:50,063 - pyclicreator - DEBUG - Description: Translate search term to Twitter @Account and #Hashtag
+2019-12-23 12:48:50,063 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-23 12:48:50,063 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-23 12:48:50,063 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT
+2019-12-23 12:48:50,063 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-23 12:48:50,063 - pyclicreator - DEBUG - SQLite: False
+2019-12-23 12:48:50,063 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-23 12:48:50,063 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-23 12:48:50,063 - pyclicreator - DEBUG - Licence: MIT
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - Status: Initial
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT/twitter_translator.py
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT/twitter_translator_test.py
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT/twitter_translator_notes.txt
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - Class name: Twitter_Translator
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - Predefined: 
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - ARG1: s|searchterm|Search term to translate and convert|False
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-23 12:48:50,064 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-23 12:48:50,065 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-23 12:48:50,065 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-23 12:48:50,065 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepOSINT
+2019-12-23 12:48:50,065 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepOSINT" already exists
+2019-12-23 12:48:50,185 - pyclicreator - DEBUG - Exit program
+2019-12-27 16:02:23,119 - pyclicreator - DEBUG - Start program
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Name: 
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Description: 
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Folder: 
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - SQLite: False
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Licence: MIT
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Status: Initial
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-27 16:02:23,433 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-27 16:02:23,434 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-27 16:02:23,434 - pyclicreator - DEBUG - Class name: 
+2019-12-27 16:02:23,434 - pyclicreator - DEBUG - Predefined: 
+2019-12-27 16:02:23,434 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-27 16:02:23,434 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-27 16:02:23,434 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-27 16:02:23,434 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-27 16:02:23,434 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-27 16:02:23,434 - pyclicreator - DEBUG - GUI needed: True
+2019-12-27 16:06:54,106 - pyclicreator - DEBUG - Name: Prepare MM
+2019-12-27 16:06:54,106 - pyclicreator - DEBUG - Description: Prepare Media Mining Test
+2019-12-27 16:06:54,106 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-27 16:06:54,106 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-27 16:06:54,106 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-27 16:06:54,107 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-27 16:06:54,107 - pyclicreator - DEBUG - SQLite: False
+2019-12-27 16:06:54,107 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-27 16:06:54,107 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-27 16:06:54,107 - pyclicreator - DEBUG - Licence: MIT
+2019-12-27 16:06:54,107 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-27 16:06:54,107 - pyclicreator - DEBUG - Status: Initial
+2019-12-27 16:06:54,107 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-27 16:06:54,107 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/prepare_mm.py
+2019-12-27 16:06:54,107 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/prepare_mm_test.py
+2019-12-27 16:06:54,108 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/prepare_mm_notes.txt
+2019-12-27 16:06:54,108 - pyclicreator - DEBUG - Class name: Prepare_Mm
+2019-12-27 16:06:54,108 - pyclicreator - DEBUG - Predefined: 
+2019-12-27 16:06:54,108 - pyclicreator - DEBUG - ARG1: st|searchterm|search term|False
+2019-12-27 16:06:54,108 - pyclicreator - DEBUG - ARG2: o|overwrite|overwrite existing directories and files|True
+2019-12-27 16:06:54,108 - pyclicreator - DEBUG - ARG3: mw|maxwebpages|max number of extracted web pages|False
+2019-12-27 16:06:54,108 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-27 16:06:54,108 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-27 16:06:54,108 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-27 16:06:54,109 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepMM" already exists
+2019-12-27 16:06:54,132 - pyclicreator - DEBUG - Exit program
+2019-12-27 16:17:42,644 - pyclicreator - DEBUG - Start program
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Name: 
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Description: 
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Folder: 
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - SQLite: False
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Licence: MIT
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-27 16:17:42,938 - pyclicreator - DEBUG - Status: Initial
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - Class name: 
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - Predefined: 
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-27 16:17:42,939 - pyclicreator - DEBUG - GUI needed: True
+2019-12-27 16:20:22,543 - pyclicreator - DEBUG - Name: www
+2019-12-27 16:20:22,544 - pyclicreator - DEBUG - Description: 
+2019-12-27 16:20:22,544 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-27 16:20:22,544 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-27 16:20:22,544 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/ttt
+2019-12-27 16:20:22,544 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-27 16:20:22,544 - pyclicreator - DEBUG - SQLite: False
+2019-12-27 16:20:22,544 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-27 16:20:22,544 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-27 16:20:22,545 - pyclicreator - DEBUG - Licence: MIT
+2019-12-27 16:20:22,545 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-27 16:20:22,545 - pyclicreator - DEBUG - Status: Initial
+2019-12-27 16:20:22,545 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-27 16:20:22,545 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/ttt/www.py
+2019-12-27 16:20:22,545 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/ttt/www_test.py
+2019-12-27 16:20:22,545 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/ttt/www_notes.txt
+2019-12-27 16:20:22,545 - pyclicreator - DEBUG - Class name: Www
+2019-12-27 16:20:22,545 - pyclicreator - DEBUG - Predefined: 
+2019-12-27 16:20:22,545 - pyclicreator - DEBUG - ARG1: mp|maxpdfs|max number of extracted PDF files|False
+2019-12-27 16:20:22,546 - pyclicreator - DEBUG - ARG2: my|maxyoutube|max number of extracted Youtube files|False
+2019-12-27 16:20:22,546 - pyclicreator - DEBUG - ARG3: mf|maxfacebook|max number of extracted FaceBook pages|False
+2019-12-27 16:20:22,546 - pyclicreator - DEBUG - ARG4: mt|maxtwitter|max number of extracted Twitter pages|False
+2019-12-27 16:20:22,546 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-27 16:20:22,546 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/ttt
+2019-12-27 16:20:22,546 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/ttt" already exists
+2019-12-27 16:20:22,561 - pyclicreator - DEBUG - Exit program
+2019-12-27 16:28:00,850 - pyclicreator - DEBUG - Start program
+2019-12-27 16:28:00,903 - pyclicreator - DEBUG - Name: 
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Description: 
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Folder: 
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - SQLite: False
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Licence: MIT
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Status: Initial
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Class name: 
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - Predefined: 
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-27 16:28:00,904 - pyclicreator - DEBUG - GUI needed: True
+2019-12-27 16:30:42,294 - pyclicreator - DEBUG - Name: fff
+2019-12-27 16:30:42,294 - pyclicreator - DEBUG - Description: 
+2019-12-27 16:30:42,294 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-27 16:30:42,295 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-27 16:30:42,295 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/ttt
+2019-12-27 16:30:42,295 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-27 16:30:42,295 - pyclicreator - DEBUG - SQLite: False
+2019-12-27 16:30:42,295 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-27 16:30:42,295 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-27 16:30:42,295 - pyclicreator - DEBUG - Licence: MIT
+2019-12-27 16:30:42,295 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-27 16:30:42,295 - pyclicreator - DEBUG - Status: Initial
+2019-12-27 16:30:42,296 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-27 16:30:42,296 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/ttt/fff.py
+2019-12-27 16:30:42,296 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/ttt/fff_test.py
+2019-12-27 16:30:42,296 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/ttt/fff_notes.txt
+2019-12-27 16:30:42,296 - pyclicreator - DEBUG - Class name: Fff
+2019-12-27 16:30:42,296 - pyclicreator - DEBUG - Predefined: 
+2019-12-27 16:30:42,296 - pyclicreator - DEBUG - ARG1: a|after|search after this date (USformat: 11/20/2019, default: 1 month before current date)|False
+2019-12-27 16:30:42,296 - pyclicreator - DEBUG - ARG2: sl|sourcelanguage|source language (code, i.e. tr, default:en)|False
+2019-12-27 16:30:42,296 - pyclicreator - DEBUG - ARG3: st|searchterm|search term|False
+2019-12-27 16:30:42,297 - pyclicreator - DEBUG - ARG4: o|overwrite|overwrite existing directories and files|True
+2019-12-27 16:30:42,297 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-27 16:30:42,297 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/ttt
+2019-12-27 16:30:42,297 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/ttt" already exists
+2019-12-27 16:30:42,307 - pyclicreator - DEBUG - Exit program
+2019-12-27 16:43:11,580 - pyclicreator - DEBUG - Start program
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Name: 
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Description: 
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Folder: 
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - SQLite: False
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Licence: MIT
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Status: Initial
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Class name: 
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - Predefined: 
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-27 16:43:11,638 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-27 16:43:11,639 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-27 16:43:11,639 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-27 16:43:11,639 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-27 16:43:11,639 - pyclicreator - DEBUG - GUI needed: True
+2019-12-27 16:51:03,536 - pyclicreator - DEBUG - Name: TLGSearch
+2019-12-27 16:51:03,536 - pyclicreator - DEBUG - Description: My Google Search Class
+2019-12-27 16:51:03,536 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-27 16:51:03,536 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-27 16:51:03,537 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-27 16:51:03,537 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-27 16:51:03,537 - pyclicreator - DEBUG - SQLite: False
+2019-12-27 16:51:03,537 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-27 16:51:03,537 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-27 16:51:03,537 - pyclicreator - DEBUG - Licence: MIT
+2019-12-27 16:51:03,537 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-27 16:51:03,537 - pyclicreator - DEBUG - Status: Initial
+2019-12-27 16:51:03,537 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlgsearch.py
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlgsearch_test.py
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlgsearch_notes.txt
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - Class name: Tlgsearch
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - Predefined: 
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - ARG1: mp|maxpages|maximum extracted pages|False
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-27 16:51:03,538 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-27 16:51:03,539 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepMM" already exists
+2019-12-27 16:51:03,542 - pyclicreator - DEBUG - Exit program
+2019-12-27 17:38:20,553 - pyclicreator - DEBUG - Start program
+2019-12-27 17:38:20,607 - pyclicreator - DEBUG - Name: 
+2019-12-27 17:38:20,607 - pyclicreator - DEBUG - Description: 
+2019-12-27 17:38:20,607 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Folder: 
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - SQLite: False
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Licence: MIT
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Status: Initial
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Class name: 
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - Predefined: 
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-27 17:38:20,608 - pyclicreator - DEBUG - GUI needed: True
+2019-12-27 17:39:30,786 - pyclicreator - DEBUG - Name: TLTwitter
+2019-12-27 17:39:30,786 - pyclicreator - DEBUG - Description: My Twitter handling Class
+2019-12-27 17:39:30,786 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-27 17:39:30,786 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-27 17:39:30,787 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-27 17:39:30,787 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-27 17:39:30,787 - pyclicreator - DEBUG - SQLite: False
+2019-12-27 17:39:30,787 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-27 17:39:30,787 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-27 17:39:30,787 - pyclicreator - DEBUG - Licence: MIT
+2019-12-27 17:39:30,787 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-27 17:39:30,787 - pyclicreator - DEBUG - Status: Initial
+2019-12-27 17:39:30,787 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-27 17:39:30,787 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tltwitter.py
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tltwitter_test.py
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tltwitter_notes.txt
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - Class name: Tltwitter
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - Predefined: 
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - ARG1: mp|maxpages|maximum extracted pages|False
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-27 17:39:30,788 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepMM" already exists
+2019-12-27 17:39:30,795 - pyclicreator - DEBUG - Exit program
+2019-12-28 04:02:23,371 - pyclicreator - DEBUG - Start program
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Name: 
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Description: 
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Folder: 
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - SQLite: False
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Licence: MIT
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Status: Initial
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Class name: 
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - Predefined: 
+2019-12-28 04:02:23,430 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-28 04:02:23,431 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-28 04:02:23,431 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-28 04:02:23,431 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-28 04:02:23,431 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-28 04:02:23,431 - pyclicreator - DEBUG - GUI needed: True
+2019-12-28 04:03:15,110 - pyclicreator - DEBUG - Name: tlfacebook
+2019-12-28 04:03:15,110 - pyclicreator - DEBUG - Description: My Twitter handling Class
+2019-12-28 04:03:15,111 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-28 04:03:15,111 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-28 04:03:15,111 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-28 04:03:15,111 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-28 04:03:15,111 - pyclicreator - DEBUG - SQLite: False
+2019-12-28 04:03:15,111 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-28 04:03:15,111 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-28 04:03:15,111 - pyclicreator - DEBUG - Licence: MIT
+2019-12-28 04:03:15,111 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-28 04:03:15,112 - pyclicreator - DEBUG - Status: Initial
+2019-12-28 04:03:15,112 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-28 04:03:15,112 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlfacebook.py
+2019-12-28 04:03:15,112 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlfacebook_test.py
+2019-12-28 04:03:15,112 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlfacebook_notes.txt
+2019-12-28 04:03:15,112 - pyclicreator - DEBUG - Class name: Tlfacebook
+2019-12-28 04:03:15,112 - pyclicreator - DEBUG - Predefined: 
+2019-12-28 04:03:15,112 - pyclicreator - DEBUG - ARG1: mp|maxpages|maximum extracted pages|False
+2019-12-28 04:03:15,112 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-28 04:03:15,112 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-28 04:03:15,113 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-28 04:03:15,113 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-28 04:03:15,113 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-28 04:03:15,113 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepMM" already exists
+2019-12-28 04:03:15,125 - pyclicreator - DEBUG - Exit program
+2019-12-28 04:07:25,701 - pyclicreator - DEBUG - Start program
+2019-12-28 04:07:25,759 - pyclicreator - DEBUG - Name: 
+2019-12-28 04:07:25,759 - pyclicreator - DEBUG - Description: 
+2019-12-28 04:07:25,759 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-28 04:07:25,759 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-28 04:07:25,759 - pyclicreator - DEBUG - Folder: 
+2019-12-28 04:07:25,759 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-28 04:07:25,759 - pyclicreator - DEBUG - SQLite: False
+2019-12-28 04:07:25,759 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-28 04:07:25,759 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - Licence: MIT
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - Status: Initial
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - Class name: 
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - Predefined: 
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-28 04:07:25,760 - pyclicreator - DEBUG - GUI needed: True
+2019-12-28 04:08:19,218 - pyclicreator - DEBUG - Name: tlpdf
+2019-12-28 04:08:19,219 - pyclicreator - DEBUG - Description: My FaceBook handling Class
+2019-12-28 04:08:19,219 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-28 04:08:19,219 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-28 04:08:19,219 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-28 04:08:19,219 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-28 04:08:19,219 - pyclicreator - DEBUG - SQLite: False
+2019-12-28 04:08:19,219 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-28 04:08:19,219 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-28 04:08:19,219 - pyclicreator - DEBUG - Licence: MIT
+2019-12-28 04:08:19,219 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-28 04:08:19,220 - pyclicreator - DEBUG - Status: Initial
+2019-12-28 04:08:19,220 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-28 04:08:19,220 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlpdf.py
+2019-12-28 04:08:19,220 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlpdf_test.py
+2019-12-28 04:08:19,220 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlpdf_notes.txt
+2019-12-28 04:08:19,220 - pyclicreator - DEBUG - Class name: Tlpdf
+2019-12-28 04:08:19,220 - pyclicreator - DEBUG - Predefined: 
+2019-12-28 04:08:19,220 - pyclicreator - DEBUG - ARG1: mp|maxpages|maximum extracted pages|False
+2019-12-28 04:08:19,220 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-28 04:08:19,220 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-28 04:08:19,221 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-28 04:08:19,221 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-28 04:08:19,221 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-28 04:08:19,221 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepMM" already exists
+2019-12-28 04:08:19,225 - pyclicreator - DEBUG - Exit program
+2019-12-28 04:31:54,679 - pyclicreator - DEBUG - Start program
+2019-12-28 04:31:54,738 - pyclicreator - DEBUG - Name: 
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Description: 
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Folder: 
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - SQLite: False
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Licence: MIT
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Status: Initial
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Class name: 
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - Predefined: 
+2019-12-28 04:31:54,739 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-28 04:31:54,740 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-28 04:31:54,740 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-28 04:31:54,740 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-28 04:31:54,740 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-28 04:31:54,740 - pyclicreator - DEBUG - GUI needed: True
+2019-12-28 04:32:52,717 - pyclicreator - DEBUG - Name: tlYoutube
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Description: My Youtube handling Class
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - SQLite: False
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Licence: MIT
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Status: Initial
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlyoutube.py
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlyoutube_test.py
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/tlyoutube_notes.txt
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Class name: Tlyoutube
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - Predefined: 
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - ARG1: mp|maxpages|maximum extracted pages|False
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-28 04:32:52,718 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-28 04:32:52,719 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-28 04:32:52,719 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-28 04:32:52,719 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepMM" already exists
+2019-12-28 04:32:52,722 - pyclicreator - DEBUG - Exit program
+2019-12-29 19:03:34,497 - pyclicreator - DEBUG - Start program
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Name: 
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Description: 
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Folder: 
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - SQLite: False
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Licence: MIT
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Status: Initial
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-29 19:03:34,838 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-29 19:03:34,839 - pyclicreator - DEBUG - Class name: 
+2019-12-29 19:03:34,839 - pyclicreator - DEBUG - Predefined: 
+2019-12-29 19:03:34,839 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-29 19:03:34,839 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-29 19:03:34,839 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-29 19:03:34,839 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-29 19:03:34,839 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-29 19:03:34,839 - pyclicreator - DEBUG - GUI needed: True
+2019-12-29 19:04:04,826 - pyclicreator - DEBUG - Name: OSINTConvert
+2019-12-29 19:04:04,826 - pyclicreator - DEBUG - Description: Convert files to TXT
+2019-12-29 19:04:04,827 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-29 19:04:04,827 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-29 19:04:04,827 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-29 19:04:04,827 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-29 19:04:04,827 - pyclicreator - DEBUG - SQLite: False
+2019-12-29 19:04:04,827 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-29 19:04:04,827 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-29 19:04:04,827 - pyclicreator - DEBUG - Licence: MIT
+2019-12-29 19:04:04,827 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - Status: Initial
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/osintconvert.py
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/osintconvert_test.py
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/osintconvert_notes.txt
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - Class name: Osintconvert
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - Predefined: 
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-29 19:04:04,828 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-29 19:04:04,829 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-29 19:04:04,829 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-29 19:04:04,829 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepMM" already exists
+2019-12-29 19:04:04,858 - pyclicreator - DEBUG - Exit program
+2019-12-30 16:36:48,240 - pyclicreator - DEBUG - Start program
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Name: 
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Description: 
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Folder: 
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - SQLite: False
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Licence: MIT
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-30 16:36:48,668 - pyclicreator - DEBUG - Status: Initial
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - Main filename: /.py
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - Test filename: /_test.py
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - Class name: 
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - Predefined: 
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-30 16:36:48,669 - pyclicreator - DEBUG - GUI needed: True
+2019-12-30 16:37:06,144 - pyclicreator - DEBUG - Name: OSINTTranslate
+2019-12-30 16:37:06,144 - pyclicreator - DEBUG - Description: 
+2019-12-30 16:37:06,144 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - Copyright: (C) 2027
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - Version: 0.0.1
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - SQLite: False
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - Template: sample_01.py
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - Licence: MIT
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - Status: Initial
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - Force GUI mode: False
+2019-12-30 16:37:06,145 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/osinttranslate.py
+2019-12-30 16:37:06,146 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/osinttranslate_test.py
+2019-12-30 16:37:06,146 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/PrepMM/osinttranslate_notes.txt
+2019-12-30 16:37:06,146 - pyclicreator - DEBUG - Class name: Osinttranslate
+2019-12-30 16:37:06,146 - pyclicreator - DEBUG - Predefined: 
+2019-12-30 16:37:06,146 - pyclicreator - DEBUG - ARG1: |||False
+2019-12-30 16:37:06,146 - pyclicreator - DEBUG - ARG2: |||False
+2019-12-30 16:37:06,146 - pyclicreator - DEBUG - ARG3: |||False
+2019-12-30 16:37:06,146 - pyclicreator - DEBUG - ARG4: |||False
+2019-12-30 16:37:06,146 - pyclicreator - DEBUG - ARG5: |||False
+2019-12-30 16:37:06,146 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
+2019-12-30 16:37:06,147 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepMM" already exists
+2019-12-30 16:37:06,177 - pyclicreator - DEBUG - Exit program
