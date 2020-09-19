@@ -10,6 +10,7 @@
 
 import sys
 import re
+from shutil import copyfile
 import os
 from pathlib import Path
 
@@ -29,10 +30,10 @@ PROJECT_TYPES = [
           ["bootstrap.bundle.js.map", "js", "bootstrap.bundle.js.map", False],
           ["bootstrap.bundle.js", "js", "bootstrap.bundle.js", False],
           ["jquery-ui.min.js", "js", "jquery-ui.min.js", False],
-          ["jquery-ui.min.map", "js", "jquery-ui.min.map", False],
+          #   ["jquery-ui.min.map", "js", "jquery-ui.min.map", False],
           ["jquery-3.5.1.min.js", "js", "jquery-3.5.1.min.js", False],
           ["jquery-3.5.1.min.map", "js", "jquery-3.5.1.min.map", False],
-          ["eslint.json", "", ".eslint.json", True],
+          ["eslintrc.json", "", ".eslintrc.json", True],
           ["package.json", "", "package.json", True],
           ["README.md", "", "README.md", True],
 
@@ -60,7 +61,7 @@ class Creator():
         """Init
         """
         # self.q_common = []
-        self.project_type=""
+        self.project_type = ""
         self.project_file_name = ""
         self.project_folder = ""
         self.project_file = ""
@@ -87,13 +88,13 @@ class Creator():
         print(len(PROJECT_TYPES))
         if int(in_text) < 1 or int(in_text) > len(PROJECT_TYPES):
             sys.exit()
-        self.project_type=PROJECT_TYPES[int(in_text)-1][0]
+        self.project_type = PROJECT_TYPES[int(in_text)-1][0]
         # self.q_common.append(PROJECT_TYPES[int(in_text)-1][0])
         print("Before creating a project, create it on GitHub\nwith the same name (CamelCase)!!!")
         in_text = input("Project name:\n")
         if in_text.strip == '':
             sys.exit()
-        self.project_class_name=in_text
+        self.project_class_name = in_text
         # self.q_common.append(in_text)
 
     def process_questions(self):
@@ -128,14 +129,22 @@ class Creator():
                     target_file = os.path.join(
                         self.project_folder, proj_files[1], temp_file_name)
                     print("Copy "+source_file+" to "+target_file + " > Change inner text: "+str(proj_files[3]))
+                    self.create_folder(os.path.join(self.project_folder, proj_files[1]))
+                    copyfile(source_file, target_file)
+                    if proj_files[3]:
+                        self.replace_in_file(target_file)
 
     def replace_in_file(self, file_name):
-         with open(file_name, 'r') as myfile:
-             data = myfile.read()
-             data = data.replace("PROJECT_NAME",self.project_class_name)
-             data = data.replace("PROJECT_NAME_LOW",self.project_file_name)
+        data = ""
+        with open(file_name, 'r') as myfile:
+            data = myfile.read()
+            data = data.replace("PROJECT_NAME", self.project_class_name)
+            data = data.replace("PROJECT_SNAKE", self.project_file_name)
 
-
+        # print(data)
+        text_file = open(file_name, 'w', encoding='utf-8')
+        text_file.write(data)
+        text_file.close()
 
     def get_sapmle_dir(self, project_type):
         for proj_type in PROJECT_TYPES:
