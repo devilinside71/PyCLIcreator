@@ -15,14 +15,35 @@ from pathlib import Path
 
 # PROJECT_TYPES = ["Javascript", "Python3 CLI"]
 
+
+# All "sample" will be repleced by project filename
 PROJECT_TYPES = [
     ["Javascript",
      ["javascript_samples",
       [
-          ["test.html", ""],
-          ["test.js", "js"]]]
+          ["sample.html", "", "index.html", True],
+          ["sample.js", "js", "sample.js", True],
+          ["sample.css", "css", "sample.css", True],
+          ["bootstrap.css.map", "css", "bootstrap.css.map", False],
+          ["bootstrap.css", "css", "bootstrap.css", False],
+          ["bootstrap.bundle.js.map", "js", "bootstrap.bundle.js.map", False],
+          ["bootstrap.bundle.js", "js", "bootstrap.bundle.js", False],
+          ["jquery-ui.min.js", "js", "jquery-ui.min.js", False],
+          ["jquery-ui.min.map", "js", "jquery-ui.min.map", False],
+          ["jquery-3.5.1.min.js", "js", "jquery-3.5.1.min.js", False],
+          ["jquery-3.5.1.min.map", "js", "jquery-3.5.1.min.map", False],
+          [".eslint.json", "", ".eslint.json", True],
+          ["package.json", "", "package.json", True],
+
+      ]]
      ],
-    ["Python3", ["python3_samples"]]
+    ["Python3",
+     ["python3_samples",
+      [
+          ["sample.py", "", "sample.py", True],
+          ["sample_unittest.py", "", "sample_unittest.py", True]
+      ]]
+     ]
 ]
 
 
@@ -76,9 +97,11 @@ class Creator():
         print("Projext type: " + self.q_common[0])
         print("Project name: " + self.q_common[1])
         self.project_class_name = self.q_common[1]
-        self.project_file_name = self.camelcase_to_snakcase(self.q_common[1])+".py"
+        self.project_file_name = self.camelcase_to_snakcase(self.q_common[1])
         self.project_folder = os.path.join(self.get_home_dir(), "dev", self.project_class_name)
-        self.project_file = os.path.join(self.get_home_dir(), "dev", self.project_class_name, self.project_file_name)
+        self.project_file = os.path.join(
+            self.get_home_dir(),
+            "dev", self.project_class_name, self.project_file_name, ".py")
         # Create project folder
         self.create_folder(self.project_folder)
 
@@ -93,7 +116,14 @@ class Creator():
         # print("Sample dir: "+sample_dir)
         for proj_type in PROJECT_TYPES:
             if proj_type[0] == self.q_common[0]:
-                print("Sample dir: "+os.path.join(os.getcwd(), proj_type[1][0]))
+                sample_dir = os.path.join(os.getcwd(), proj_type[1][0])
+                print("Sample dir: "+sample_dir)
+                for proj_files in proj_type[1][1]:
+                    source_file = os.path.join(sample_dir, proj_files[0])
+                    temp_file_name = proj_files[2].replace("sample", self.project_file_name)
+                    target_file = os.path.join(
+                        self.project_folder, proj_files[1], temp_file_name)
+                    print("Copy "+source_file+" to "+target_file + " > Change inner text: "+str(proj_files[3]))
 
     def get_sapmle_dir(self, project_type):
         for proj_type in PROJECT_TYPES:
