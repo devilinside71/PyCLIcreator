@@ -13,11 +13,11 @@
 - .eslint.json
 - package.json
 - css/
-  - PROJECT_NAME.css
+  - PROJECT_SNAKE.css
   - bootsrap.css
   - bootstrap.css.map
 - js/
-  - PROJECT_NAME.js
+  - PROJECT_SNAKE.js
   - jquery-3.3.1.min.js
   - jquery-3.3.1.min.js.map
   - bootstrap.bundle.js
