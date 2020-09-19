@@ -28,12 +28,18 @@ class TestFunctions(unittest.TestCase):
 
         self.assertEqual(self.test_class.snakecase_to_camelcase('almas_retes'), 'AlmasRetes')
 
-
     def test_sample_function_03(self):
         """Test01 for sample_function
         """
 
         self.assertEqual(self.test_class.create_folder("test"), True)
+
+    def test_sample_function_04(self):
+        """Test01 for sample_function
+        """
+
+        self.assertEqual(self.test_class.get_home_dir(), "j")
+
 
 if __name__ == '__main__':
     unittest.main()
