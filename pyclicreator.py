@@ -334,8 +334,6 @@ class PyCLIcreator():
         self.gui.par_forcegui = self.par_forcegui
         self.gui.par_predefined = self.par_predefined
 
-
-
     def setup_gui_variables(self):
         """Setup GUI variables before showing.
         """
