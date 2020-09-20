@@ -1,12 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Todo
-# Character input qustion
-# Process questions method
-# Questions COMMON
-# Project name, type
-
 
 import sys
 import re
@@ -14,10 +8,10 @@ from shutil import copyfile
 import os
 from pathlib import Path
 
-# PROJECT_TYPES = ["Javascript", "Python3 CLI"]
 
-
-# All "sample" will be repleced by project filename
+# All "sample" will be repleced by project filename.
+# First entry must be the main file.
+# [source_file, target_subfolder, target_file, replace_in_file]
 PROJECT_TYPES = [
     ["Javascript",
      ["javascript_samples",
@@ -30,7 +24,6 @@ PROJECT_TYPES = [
           ["bootstrap.bundle.js.map", "js", "bootstrap.bundle.js.map", False],
           ["bootstrap.bundle.js", "js", "bootstrap.bundle.js", False],
           ["jquery-ui.min.js", "js", "jquery-ui.min.js", False],
-          #   ["jquery-ui.min.map", "js", "jquery-ui.min.map", False],
           ["jquery-3.5.1.min.js", "js", "jquery-3.5.1.min.js", False],
           ["jquery-3.5.1.min.map", "js", "jquery-3.5.1.min.map", False],
           ["eslintrc.json", "", ".eslintrc.json", True],
@@ -48,9 +41,6 @@ PROJECT_TYPES = [
       ]]
      ],
 ]
-
-
-PYTHON3_TYPES = ["Standard", "With SQLite3"]
 
 
 class Creator():
@@ -119,20 +109,43 @@ class Creator():
         # Sample files
         # sample_dir = self.get_sapmle_dir(self.q_common[0])
         # print("Sample dir: "+sample_dir)
+        main_file = ""
         for proj_type in PROJECT_TYPES:
+            file_count = 0
             if proj_type[0] == self.project_type:
                 sample_dir = os.path.join(os.getcwd(), proj_type[1][0])
                 print("Sample dir: "+sample_dir)
                 for proj_files in proj_type[1][1]:
+                    file_count = file_count+1
                     source_file = os.path.join(sample_dir, proj_files[0])
                     temp_file_name = proj_files[2].replace("sample", self.project_file_name)
                     target_file = os.path.join(
                         self.project_folder, proj_files[1], temp_file_name)
+                    if file_count == 1:
+                        main_file = target_file
                     print("Copy "+source_file+" to "+target_file + " > Change inner text: "+str(proj_files[3]))
                     self.create_folder(os.path.join(self.project_folder, proj_files[1]))
                     copyfile(source_file, target_file)
                     if proj_files[3]:
                         self.replace_in_file(target_file)
+
+        # Python3 specific
+        if self.project_type == "Python3":
+            print("Do you want logging?")
+            print("1 - Yes")
+            print("2 - No")
+            in_text = input()
+            if in_text == "1":
+                data = ""
+                with open(main_file, 'r') as myfile:
+                    data = myfile.read()
+                    data = data.replace("# LOGGER", "LOGGER")
+                    data = data.replace("# FORMATTER", "FORMATTER")
+                text_file = open(main_file, 'w', encoding='utf-8')
+                text_file.write(data)
+                text_file.close()
+            else:
+                pass
 
     def replace_in_file(self, file_name):
         data = ""
@@ -141,7 +154,6 @@ class Creator():
             data = data.replace("PROJECT_NAME", self.project_class_name)
             data = data.replace("PROJECT_SNAKE", self.project_file_name)
 
-        # print(data)
         text_file = open(file_name, 'w', encoding='utf-8')
         text_file.write(data)
         text_file.close()
