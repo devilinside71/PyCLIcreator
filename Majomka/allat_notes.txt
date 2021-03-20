@@ -1,8 +1,0 @@
-python allat.py -v
-
-python allat_test.py -v
-
-python allat.py -h
-python allat.py --help
-
-from allat import Allat

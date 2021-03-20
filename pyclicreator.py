@@ -61,7 +61,7 @@ class PyCLIcreator():
         self.par_sqlite = True
         self.par_template = 'sample_01.py'
         self.par_testtemplate = 'sample_01_test.py'
-        self.par_notestemplate = 'sample_01_notes.txt'
+        self.par_notestemplate = 'sample_01_README.md'
         self.par_licence = 'MIT'
         self.par_email = 'noreply@gmail.com'
         self.par_status = 'Initial'
@@ -334,8 +334,6 @@ class PyCLIcreator():
         self.gui.par_forcegui = self.par_forcegui
         self.gui.par_predefined = self.par_predefined
 
-
-
     def setup_gui_variables(self):
         """Setup GUI variables before showing.
         """
@@ -392,7 +390,7 @@ class PyCLIcreator():
         LOGGER.debug('Force GUI mode: %s', self.par_forcegui)
         LOGGER.debug('Main filename: %s', self.main_filename)
         LOGGER.debug('Test filename: %s', self.test_filename)
-        LOGGER.debug('Notes filename: %s', self.notes_filename)
+        LOGGER.debug('README filename: %s', self.notes_filename)
         LOGGER.debug('Class name: %s', self.class_name)
         LOGGER.debug('Predefined: %s', self.par_predefined)
         LOGGER.debug('ARG1: %s', self.par_arg1s+'|'+self.par_arg1l +
@@ -600,8 +598,9 @@ class PyCLIcreator():
     def create_notes_filename(self):
         """Create notes.txt with command line examples.
         """
-        self.notes_filename = self.text_formatter.get_normalized_name(
-            self.par_name, FormatType.FILENAME)+'_notes.txt'
+        # self.notes_filename = self.text_formatter.get_normalized_name(
+        #     self.par_name, FormatType.FILENAME)+'_notes.txt'
+        self.notes_filename = 'README.md'
         self.notes_filename = self.par_folder+'/'+self.notes_filename
 
     def create_class_name(self):
