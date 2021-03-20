@@ -5,4 +5,4 @@ GOTO Fin
 :Def
 git commit -m "Bugfix"
 :Fin
-git push origin main
+git push origin master
