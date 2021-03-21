@@ -81,7 +81,7 @@ class ProjectName():
             # __EXECARG3__
             # __EXECARG4__
             # __EXECARG5__
-            self.verbose = args.verbose
+            self.verbose = self.args.verbose
 
         # __EXECLOGARG1__
         # __EXECLOGARG2__
