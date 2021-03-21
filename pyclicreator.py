@@ -536,6 +536,11 @@ class PyCLIcreator():
             data = data.replace('__PROJECTNAMELCASE__',
                                 self.class_name.lower())
             data = data.replace('__DESCRIPTION__', self.par_description)
+            data = data.replace('# __UNITTESTARG1__', self.get_unittest_arg_line(self.par_arg1l))
+            data = data.replace('# __UNITTESTARG2__', self.get_unittest_arg_line(self.par_arg2l))
+            data = data.replace('# __UNITTESTARG3__', self.get_unittest_arg_line(self.par_arg3l))
+            data = data.replace('# __UNITTESTARG4__', self.get_unittest_arg_line(self.par_arg4l))
+            data = data.replace('# __UNITTESTARG5__', self.get_unittest_arg_line(self.par_arg5l))
             # print(data)
             text_file = open(self.test_filename, 'w', encoding='utf-8')
             text_file.write(data)
@@ -677,6 +682,21 @@ class PyCLIcreator():
         ret = ''
         if arglong != '' and arglong is not None:
             ret = 'self.par_'+arglong+' = \'\''
+        return ret
+
+    @staticmethod
+    def get_unittest_arg_line(arglong):
+        """Create init argumentum line
+
+        Arguments:
+            arglong {str} -- long name
+
+        Returns:
+            str -- init args line
+        """
+        ret = ''
+        if arglong != '' and arglong is not None:
+            ret = 'self.test_class.par_'+arglong+' = \'\''
         return ret
 
     @staticmethod
