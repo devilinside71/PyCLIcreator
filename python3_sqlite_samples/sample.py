@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 __DESCRIPTION__
@@ -18,41 +19,36 @@ __maintainer__ = '__AUTHOR__'
 __email__ = '__EMAIL__'
 __status__ = '__STATUS__'
 
-LOGGER = logging.getLogger('__PROJECTNAMELCASE__')
+# LOGGER = logging.getLogger('PROJECT_NAME')
 # set level for file handling (NOTSET>DEBUG>INFO>WARNING>ERROR>CRITICAL)
-LOGGER.setLevel(logging.DEBUG)
+# LOGGER.setLevel(logging.DEBUG)
 
 # create file handler which logs even debug messages
-LOGGER_FH = logging.FileHandler('__PROJECTNAMELCASE__.log', 'w', 'utf-8')
+# LOGGER_FH = logging.FileHandler('PROJECT_SNAKE.log')
 
 # create console handler with a higher log level
-LOGGER_CH = logging.StreamHandler()
-LOGGER_CH.setLevel(logging.INFO)
+# LOGGER_CH = logging.StreamHandler()
+# LOGGER_CH.setLevel(logging.INFO)
 
 # create FORMATTER and add it to the handlers
-FORMATTER = \
-    logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-                      )
-LOGGER_FH.setFormatter(FORMATTER)
-LOGGER_CH.setFormatter(FORMATTER)
+# FORMATTER = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# LOGGER_FH.setFormatter(FORMATTER)
+# LOGGER_CH.setFormatter(FORMATTER)
 
 # add the handlers to the LOGGER
-LOGGER.addHandler(LOGGER_FH)
-LOGGER.addHandler(LOGGER_CH)
+# LOGGER.addHandler(LOGGER_FH)
+# LOGGER.addHandler(LOGGER_CH)
 
 
-class ProjectName():
+
+class PROJECT_NAME():
     """ Sample SQLite3 class.
     """
 
     def __init__(self):
         self.args = self.parse_arguments()
-        # __INITARG1__
-        # __INITARG2__
-        # __INITARG3__
-        # __INITARG4__
-        # __INITARG5__
-        self.database = "C:\\sqlite\\db\\pythonsqlite.db"
+        # database with full path
+        self.database = "PROJECT_NAME_sqlite.db"
         self.sql_create_projects_table = """ CREATE TABLE IF NOT EXISTS projects (
                                             id integer PRIMARY KEY,
                                             name text NOT NULL,
@@ -75,61 +71,55 @@ class ProjectName():
     @staticmethod
     def parse_arguments():
         """Parse arguments.
-
         Returns:
             parser args -- parser argumnents
         """
 
         parser = argparse.ArgumentParser()
-        # __ARG1__
-        # __ARG2__
-        # __ARG3__
-        # __ARG4__
-        # __ARG5__
-        parser.add_argument('-db', '--database', help='database path')
+        parser.add_argument('-l', '--character-list',
+                            help='character set. See details below',
+                            type=str)
+        parser.add_argument('-n', '--no-bold',
+                            action='store_true',
+                            help='do not use bold characters')
+        parser.add_argument('-g', '--bg-color',
+                            default='default',
+                            help='background color (see -c)',
+                            type=str)
         parser.add_argument('-v', '--verbose', action='store_true',
                             help='increase output verbosity')
+        if parser.parse_args().help:
+            print(help_msg)
+            exit()
         return parser.parse_args()
 
     def execute_program(self):
         """Execute the program by arguments.
         """
-        # __EXECARG1__
-        # __EXECARG2__
-        # __EXECARG3__
-        # __EXECARG4__
-        # __EXECARG5__
         if self.args.database is not None:
             self.database = self.args.database
 
-        # __EXECLOGARG1__
-        # __EXECLOGARG2__
-        # __EXECLOGARG3__
-        # __EXECLOGARG4__
-        # __EXECLOGARG5__
-        LOGGER.debug('Database path: %s', self.database)
+        # LOGGER.debug('Database path: %s', self.database)
 
     def create_connection(self, db_file):
         """ Create a database connection to the SQLite database
-
         Arguments:
             db_file {sqlite3 db} -- database file name
-
         Returns:
             various -- database connection or None
         """
 
         try:
             conn = sqlite3.connect(db_file)
-            LOGGER.debug('SQLite version: %s', sqlite3.version)
+            # LOGGER.debug('SQLite version: %s', sqlite3.version)
             return conn
         except sqlite3.Error as sql_err:
-            LOGGER.error(sql_err)
+            # LOGGER.error(sql_err)
+            pass
         return None
 
     def create_table(self, conn, create_table_sql):
         """ Create a table from the create_table_sql statement.
-
         Arguments:
             conn {obj} -- Connection object
             create_table_sql {statement} -- a CREATE TABLE statement
@@ -139,7 +129,8 @@ class ProjectName():
             sql_cursor = conn.cursor()
             sql_cursor.execute(create_table_sql)
         except sqlite3.Error as sql_err:
-            LOGGER.error(sql_err)
+            # LOGGER.error(sql_err)
+            pass
 
     def create_project_data(self, conn, project_data):
         """
@@ -182,7 +173,8 @@ class ProjectName():
             if close_connection:
                 self.connection.close()
         else:
-            LOGGER.error('Error! Cannot create the database connection.')
+            # LOGGER.error('Error! Cannot create the database connection.')
+            pass
 
     def add_sample_data(self):
         """ Add sample data.
@@ -274,7 +266,8 @@ class ProjectName():
         rows = cur.fetchall()
 
         for row in rows:
-            LOGGER.debug(row)
+            # LOGGER.debug(row)
+            pass
 
     @classmethod
     def select_task_by_priority(cls, conn, priority):
@@ -290,7 +283,8 @@ class ProjectName():
         rows = cur.fetchall()
 
         for row in rows:
-            LOGGER.debug(row)
+            # LOGGER.debug(row)
+            pass
 
     def select_all_tasks_data(self):
         """ Select all data.
@@ -306,10 +300,8 @@ class ProjectName():
 
     def sample_function(self, input_str):
         """Sample function
-
         Arguments:
             input_str {str} -- input string
-
         Returns:
             str -- result string
         """
@@ -318,10 +310,10 @@ class ProjectName():
 
 
 if __name__ == '__main__':
-    LOGGER.debug('Start program')
-    PROG = ProjectName()
+    # LOGGER.debug('Start program')
+    PROG = PROJECT_NAME()
     PROG.execute_sql_creation()
     PROG.add_sample_data()
     PROG.update_task_data()
-    LOGGER.debug('Exit program')
+    # LOGGER.debug('Exit program')
     sys.exit()
