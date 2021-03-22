@@ -4174,3 +4174,564 @@
 2019-12-30 16:37:06,146 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/PrepMM
 2019-12-30 16:37:06,147 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/PrepMM" already exists
 2019-12-30 16:37:06,177 - pyclicreator - DEBUG - Exit program
+2021-03-20 08:33:22,186 - pyclicreator - DEBUG - Start program
+2021-03-20 08:33:22,764 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:33:22,764 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:33:22,779 - pyclicreator - DEBUG - GUI needed: True
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Name: Test2
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Description: semmise
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/CLItest2
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/CLItest2/test2.py
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/CLItest2/test2_test.py
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/CLItest2/test2_notes.txt
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Class name: Test2
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - ARG1: i|input|input file|False
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - ARG2: f|format|file format|False
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - ARG5: v|verbose|verbose output|True
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/CLItest2
+2021-03-20 08:35:07,566 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/CLItest2" created succesfuly
+2021-03-20 08:35:07,613 - pyclicreator - DEBUG - Exit program
+2021-03-20 08:44:04,073 - pyclicreator - DEBUG - Start program
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:44:04,151 - pyclicreator - DEBUG - GUI needed: True
+2021-03-20 08:51:37,712 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:51:37,712 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:51:37,713 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:51:37,713 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:51:37,713 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:51:37,713 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:51:37,713 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:51:37,713 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:51:37,714 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:51:37,714 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:51:37,714 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:51:37,714 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:51:37,714 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:51:37,714 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:51:37,714 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:51:37,714 - pyclicreator - DEBUG - Notes filename: /_notes.txt
+2021-03-20 08:51:37,715 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:51:37,715 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:51:37,715 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:51:37,715 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:51:37,715 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:51:37,715 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:51:37,715 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:51:37,715 - pyclicreator - DEBUG - Target folder: 
+2021-03-20 08:51:37,715 - pyclicreator - DEBUG - Cannot create folder 
+2021-03-20 08:51:37,716 - pyclicreator - DEBUG - Exit program
+2021-03-20 08:52:06,517 - pyclicreator - DEBUG - Start program
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Notes filename: /README.md
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:52:06,595 - pyclicreator - DEBUG - GUI needed: True
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Name: Test3
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Description: sasasa
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/CLItest3
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/CLItest3/test3.py
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/CLItest3/test3_test.py
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Notes filename: C:/Users/Tamás László9/Documents/GitHub/CLItest3/README.md
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Class name: Test3
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/CLItest3
+2021-03-20 08:52:30,013 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/CLItest3" created succesfuly
+2021-03-20 08:52:30,060 - pyclicreator - DEBUG - Exit program
+2021-03-20 08:53:17,718 - pyclicreator - DEBUG - Start program
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Notes filename: /README.md
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:53:17,796 - pyclicreator - DEBUG - GUI needed: True
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:53:21,306 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - Notes filename: /README.md
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - Target folder: 
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - Cannot create folder 
+2021-03-20 08:53:21,307 - pyclicreator - DEBUG - Exit program
+2021-03-20 08:54:37,695 - pyclicreator - DEBUG - Start program
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:54:37,797 - pyclicreator - DEBUG - GUI needed: True
+2021-03-20 08:54:41,834 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:54:41,834 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:54:41,834 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:54:41,834 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:54:41,834 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:54:41,834 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:54:41,834 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:54:41,835 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:54:41,836 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:54:41,836 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:54:41,836 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:54:41,836 - pyclicreator - DEBUG - Target folder: 
+2021-03-20 08:54:41,836 - pyclicreator - DEBUG - Cannot create folder 
+2021-03-20 08:54:41,836 - pyclicreator - DEBUG - Exit program
+2021-03-20 08:55:05,564 - pyclicreator - DEBUG - Start program
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:55:05,655 - pyclicreator - DEBUG - GUI needed: True
+2021-03-20 08:55:19,874 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:55:19,875 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - Target folder: 
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - Cannot create folder 
+2021-03-20 08:55:19,876 - pyclicreator - DEBUG - Exit program
+2021-03-20 08:57:04,410 - pyclicreator - DEBUG - Start program
+2021-03-20 08:57:04,488 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:57:04,504 - pyclicreator - DEBUG - GUI needed: True
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:57:12,418 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - Target folder: 
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - Cannot create folder 
+2021-03-20 08:57:12,419 - pyclicreator - DEBUG - Exit program
+2021-03-20 08:57:57,883 - pyclicreator - DEBUG - Start program
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:57:57,977 - pyclicreator - DEBUG - GUI needed: True
+2021-03-20 08:58:07,417 - pyclicreator - DEBUG - Name: 
+2021-03-20 08:58:07,417 - pyclicreator - DEBUG - Description: 
+2021-03-20 08:58:07,417 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 08:58:07,417 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 08:58:07,417 - pyclicreator - DEBUG - Folder: 
+2021-03-20 08:58:07,417 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 08:58:07,417 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 08:58:07,417 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 08:58:07,417 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - Class name: 
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 08:58:07,418 - pyclicreator - DEBUG - Target folder: 
+2021-03-20 08:58:07,419 - pyclicreator - DEBUG - Cannot create folder 
+2021-03-20 08:58:07,419 - pyclicreator - DEBUG - Exit program
+2021-03-20 18:44:06,671 - pyclicreator - DEBUG - Start program
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Name: 
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Description: 
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Folder: 
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Class name: 
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 18:44:06,940 - pyclicreator - DEBUG - GUI needed: True
+2021-03-20 18:45:08,495 - pyclicreator - DEBUG - Name: ttt01
+2021-03-20 18:45:08,496 - pyclicreator - DEBUG - Description: Valilyen prog.
+2021-03-20 18:45:08,496 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 18:45:08,496 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 18:45:08,496 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/CLItest4
+2021-03-20 18:45:08,496 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 18:45:08,496 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 18:45:08,496 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 18:45:08,496 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/CLItest4/ttt01.py
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/CLItest4/ttt01_test.py
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - README filename: C:/Users/Tamás László9/Documents/GitHub/CLItest4/README.md
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - Class name: Ttt01
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - ARG1: i|input|dfsdfsd|False
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - ARG2: o|output|qewewqeqw|False
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/CLItest4
+2021-03-20 18:45:08,497 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/CLItest4" created succesfuly
+2021-03-20 18:45:08,663 - pyclicreator - DEBUG - Exit program
+2021-03-20 18:47:48,633 - pyclicreator - DEBUG - Start program
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Name: 
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Description: 
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Folder: 
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Class name: 
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 18:47:48,764 - pyclicreator - DEBUG - GUI needed: True
+2021-03-20 18:48:12,585 - pyclicreator - DEBUG - Name: qqqq
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Description: ASasasasasa
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/CLItest4
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - SQLite: False
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Licence: MIT
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Status: Initial
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/CLItest4/qqqq.py
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/CLItest4/qqqq_test.py
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - README filename: C:/Users/Tamás László9/Documents/GitHub/CLItest4/README.md
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Class name: Qqqq
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Predefined: 
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - ARG1: i|input||False
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - ARG2: o|output||False
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/CLItest4
+2021-03-20 18:48:12,586 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/CLItest4" already exists
+2021-03-20 18:48:12,721 - pyclicreator - DEBUG - Exit program
+2021-03-21 11:29:57,892 - pyclicreator - DEBUG - Start program
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Name: 
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Description: 
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Folder: 
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - SQLite: False
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Licence: MIT
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Status: Initial
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Main filename: /.py
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Test filename: /_test.py
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - README filename: /README.md
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Class name: 
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - Predefined: 
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-21 11:29:58,001 - pyclicreator - DEBUG - GUI needed: True
+2021-03-21 11:31:02,498 - pyclicreator - DEBUG - Name: WGS84Deg
+2021-03-21 11:31:02,498 - pyclicreator - DEBUG - Description: Convert between WGS84 and degrees.
+2021-03-21 11:31:02,498 - pyclicreator - DEBUG - Author: Laszlo Tamas
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Copyright: (C) 2027
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Folder: C:/Users/Tamás László9/Documents/GitHub/CLItest4
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Version: 0.0.1
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - SQLite: False
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Template: sample_01.py
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Test template: sample_01_test.py
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Licence: MIT
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Email: noreply@gmail.com
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Status: Initial
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Force GUI mode: False
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Main filename: C:/Users/Tamás László9/Documents/GitHub/CLItest4/wgs84deg.py
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Test filename: C:/Users/Tamás László9/Documents/GitHub/CLItest4/wgs84deg_test.py
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - README filename: C:/Users/Tamás László9/Documents/GitHub/CLItest4/README.md
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Class name: Wgs84deg
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Predefined: 
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - ARG1: |||False
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - ARG2: |||False
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - ARG3: |||False
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - ARG4: |||False
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - ARG5: |||False
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Target folder: C:/Users/Tamás László9/Documents/GitHub/CLItest4
+2021-03-21 11:31:02,499 - pyclicreator - DEBUG - Folder "C:/Users/Tamás László9/Documents/GitHub/CLItest4" already exists
+2021-03-21 11:31:02,657 - pyclicreator - DEBUG - Exit program

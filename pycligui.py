@@ -59,7 +59,7 @@ class PyCLIGUI():
         # self.par_sqlite = True
         self.par_template = 'sample_01.py'
         self.par_testtemplate = 'sample_01_test.py'
-        self.par_notestemplate = 'sample_01_notes.txt'
+        self.par_notestemplate = 'sample_01_README.md'
         self.par_licence = 'MIT'
         self.par_email = 'noreply@gmail.com'
         self.par_status = 'Initial'
@@ -230,7 +230,7 @@ class PyCLIGUI():
         Button(self.master, text='Browse', command=self.set_test_templatefile).grid(
             row=7, column=4, sticky=W, pady=4)
 
-        Label(self.master, text='Notes template').grid(
+        Label(self.master, text='README template').grid(
             row=8, column=0, sticky=E)
         self.entry_notestemplate.delete(0, END)
         self.entry_notestemplate.insert(0, self.par_notestemplate)
@@ -409,7 +409,7 @@ class PyCLIGUI():
         self.par_notestemplate = filedialog.askopenfilename()
         self.entry_notestemplate.delete(0, END)
         self.entry_notestemplate.insert(0, self.par_notestemplate)
-        LOGGER.debug('Notes template: %s', self.par_notestemplate)
+        LOGGER.debug('README template: %s', self.par_notestemplate)
 
 
 if __name__ == '__main__':
