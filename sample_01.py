@@ -22,7 +22,7 @@ LOGGER = logging.getLogger('__PROJECTNAMELCASE__')
 LOGGER.setLevel(logging.DEBUG)
 
 # create file handler which logs even debug messages
-LOGGER_FH = logging.FileHandler('__PROJECTNAMELCASE__.log', 'w', 'utf-8')
+LOGGER_FH = logging.FileHandler('__PROJECTNAMELCASE__.log', 'a', 'utf-8')
 
 # create console handler with a higher log level
 LOGGER_CH = logging.StreamHandler()
