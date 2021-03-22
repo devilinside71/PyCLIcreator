@@ -61,7 +61,7 @@ class PyCLIcreator():
         self.par_sqlite = True
         self.par_template = 'sample_01.py'
         self.par_testtemplate = 'sample_01_test.py'
-        self.par_notestemplate = 'sample_01_notes.txt'
+        self.par_notestemplate = 'sample_01_README.md'
         self.par_licence = 'MIT'
         self.par_email = 'noreply@gmail.com'
         self.par_status = 'Initial'
@@ -390,7 +390,7 @@ class PyCLIcreator():
         LOGGER.debug('Force GUI mode: %s', self.par_forcegui)
         LOGGER.debug('Main filename: %s', self.main_filename)
         LOGGER.debug('Test filename: %s', self.test_filename)
-        LOGGER.debug('Notes filename: %s', self.notes_filename)
+        LOGGER.debug('README filename: %s', self.notes_filename)
         LOGGER.debug('Class name: %s', self.class_name)
         LOGGER.debug('Predefined: %s', self.par_predefined)
         LOGGER.debug('ARG1: %s', self.par_arg1s+'|'+self.par_arg1l +
@@ -536,6 +536,11 @@ class PyCLIcreator():
             data = data.replace('__PROJECTNAMELCASE__',
                                 self.class_name.lower())
             data = data.replace('__DESCRIPTION__', self.par_description)
+            data = data.replace('# __UNITTESTARG1__', self.get_unittest_arg_line(self.par_arg1l))
+            data = data.replace('# __UNITTESTARG2__', self.get_unittest_arg_line(self.par_arg2l))
+            data = data.replace('# __UNITTESTARG3__', self.get_unittest_arg_line(self.par_arg3l))
+            data = data.replace('# __UNITTESTARG4__', self.get_unittest_arg_line(self.par_arg4l))
+            data = data.replace('# __UNITTESTARG5__', self.get_unittest_arg_line(self.par_arg5l))
             # print(data)
             text_file = open(self.test_filename, 'w', encoding='utf-8')
             text_file.write(data)
@@ -598,8 +603,9 @@ class PyCLIcreator():
     def create_notes_filename(self):
         """Create notes.txt with command line examples.
         """
-        self.notes_filename = self.text_formatter.get_normalized_name(
-            self.par_name, FormatType.FILENAME)+'_notes.txt'
+        # self.notes_filename = self.text_formatter.get_normalized_name(
+        #     self.par_name, FormatType.FILENAME)+'_notes.txt'
+        self.notes_filename = 'README.md'
         self.notes_filename = self.par_folder+'/'+self.notes_filename
 
     def create_class_name(self):
@@ -676,6 +682,21 @@ class PyCLIcreator():
         ret = ''
         if arglong != '' and arglong is not None:
             ret = 'self.par_'+arglong+' = \'\''
+        return ret
+
+    @staticmethod
+    def get_unittest_arg_line(arglong):
+        """Create init argumentum line
+
+        Arguments:
+            arglong {str} -- long name
+
+        Returns:
+            str -- init args line
+        """
+        ret = ''
+        if arglong != '' and arglong is not None:
+            ret = 'self.test_class.par_'+arglong+' = \'\''
         return ret
 
     @staticmethod

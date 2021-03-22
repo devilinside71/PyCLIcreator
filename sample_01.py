@@ -44,8 +44,10 @@ class ProjectName():
     """Main class.
     """
 
-    def __init__(self):
+    def __init__(self, unittesing=False):
         self.args = self.parse_arguments()
+        self.unittesting = unittesing
+        self.verbose = False
         # __INITARG1__
         # __INITARG2__
         # __INITARG3__
@@ -73,11 +75,13 @@ class ProjectName():
     def execute_program(self):
         """Execute the program by arguments.
         """
-        # __EXECARG1__
-        # __EXECARG2__
-        # __EXECARG3__
-        # __EXECARG4__
-        # __EXECARG5__
+        if not self.unittesting:
+            # __EXECARG1__
+            # __EXECARG2__
+            # __EXECARG3__
+            # __EXECARG4__
+            # __EXECARG5__
+            self.verbose = self.args.verbose
 
         # __EXECLOGARG1__
         # __EXECLOGARG2__
@@ -86,13 +90,13 @@ class ProjectName():
         # __EXECLOGARG5__
 
     def sample_function(self, input_str):
-        """Sample function
+        """Sample function.
 
         Arguments:
             input_str {str} -- input string
 
         Returns:
-            str -- result string
+            {str} -- result string
         """
         ret = input_str
         return ret

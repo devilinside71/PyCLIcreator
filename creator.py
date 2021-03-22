@@ -40,6 +40,14 @@ PROJECT_TYPES = [
           ["README.md", "", "README.md", True],
       ]]
      ],
+    ["Python3 with SQLite3",
+     ["python3_sqlite_samples",
+      [
+          ["sample.py", "", "sample.py", True],
+          ["sample_unittest.py", "", "sample_unittest.py", True],
+          ["README.md", "", "README.md", True],
+      ]]
+     ],
 ]
 
 
@@ -130,7 +138,7 @@ class Creator():
                         self.replace_in_file(target_file)
 
         # Python3 specific
-        if self.project_type == "Python3":
+        if self.project_type.startswith("Python3"):
             print("Do you want logging?")
             print("1 - Yes")
             print("2 - No")
